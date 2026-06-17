@@ -13,8 +13,11 @@ body{
 .logo img{
   width:280px;
   max-width:90%;
-}
 
+  filter:
+  drop-shadow(0 0 20px rgba(245,197,66,.35))
+  drop-shadow(0 0 40px rgba(245,197,66,.20));
+}
 .hero{
   min-height:70vh;
   display:flex;
