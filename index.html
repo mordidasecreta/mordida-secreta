@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mordida Secreta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mordida Secreta</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.hero{
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1550317138-10000687a72b');
+    background-size:cover;
+    background-position:center;
+}
+
+h1{
+    font-size:3rem;
+    color:#f5c542;
+}
+
+.slogan{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu{
+    padding:50px 20px;
+}
+
+.card{
+    background:#222;
+    margin:20px auto;
+    max-width:400px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.card h2{
+    color:#f5c542;
+}
+
+footer{
+    padding:30px;
+    background:#000;
+}
+</style>
+
 </head>
 <body>
-    <h1>Mordida Secreta</h1>
-    <p>El sabor que no podrás guardar en secreto.</p>
+
+<section class="hero">
+    <h1>🍔 Mordida Secreta</h1>
+    <p class="slogan">El sabor que no podrás guardar en secreto.</p>
+
+    <a class="btn"
+    href="https://wa.me/573183785587">
+    📲 Pedir por WhatsApp
+    </a>
+</section>
+
+<section class="menu">
+    <h2>Nuestros Sándwiches</h2>
+
+    <div class="card">
+        <h2>🥪 El Secreto</h2>
+        <p>Pollo y carne seleccionados con nuestra salsa especial.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔥 La Explosiva</h2>
+        <p>Una combinación intensa para los amantes del sabor.</p>
+    </div>
+
+    <div class="card">
+        <h2>🌆 La Callejera</h2>
+        <p>Inspirada en los sabores urbanos más irresistibles.</p>
+    </div>
+</section>
+
+<footer>
+📍 Cali, Colombia<br>
+🚚 Domicilios y recogida
+</footer>
+
 </body>
 </html>
