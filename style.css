@@ -82,11 +82,6 @@ body{
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-linear-gradient(
-    rgba(0,0,0,.75),
-    rgba(0,0,0,.90)
-  ),
- url("https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1600")
 }
 
 .card{
