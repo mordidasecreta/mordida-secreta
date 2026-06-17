@@ -35,11 +35,16 @@ body {
 }
 .card {
   background: #222222;
-  border-radius: 8px;
+  border-radius: 15px; /* antes 8px */
   width: 250px;
   text-align: center;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 .card img {
   width: 100%;
