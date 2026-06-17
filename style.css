@@ -40,9 +40,11 @@ body{
 }
 
 .hero h1{
-  font-size:3rem;
+  font-size:3.5rem;
   color:#F5C542;
-  margin-bottom:10px;
+  text-shadow:
+    0 0 10px rgba(245,197,66,.5),
+    0 0 30px rgba(245,197,66,.3);
 }
 
 .slogan{
