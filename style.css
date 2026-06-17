@@ -1,138 +1,55 @@
-body {
-  margin: 0; padding: 0;
-  background: #111111;
-  color: #FFFFFF;
-  font-family: Arial, sans-serif;
+.hero {
+text-align: center;
+padding: 40px 20px;
+background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-}
-.hero {
-  text-align: center;
-  padding: 20px;
-}
 .hero h1 {
-  margin: 15px 0 5px;
-  color: #F5C542;
-  font-size: 42px;
-  font-weight: 800;
-  letter-spacing: 1px;
+font-size: 48px;
+color: #F5C542;
+margin-bottom: 10px;
+text-transform: uppercase;
 }
+
 .hero p {
-  margin: 0 0 20px;
-  color: #CCCCCC;
-  font-size: 16px;
+font-size: 18px;
+color: #ffffff;
 }
 
 .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 20px;
+max-width: 500px;
+margin: auto;
 }
+
 .card {
-  background: #222222;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
-  border: 1px solid rgba(245, 197, 66, 0.25);
+background: #1c1c1c;
+border: 2px solid #F5C542;
+border-radius: 20px;
+padding: 20px;
+width: auto;
 }
-.card:hover {
-  transform: translateY(-5px);
-}
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .card h2 {
-  margin: 10px 0;
-  font-size: 18px;
-  color: #F5C542;
-}
-.card p {
-  margin: 0 10px 15px;
-  font-size: 14px;
-  color: #DDDDDD;
+color: #F5C542;
+font-size: 24px;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #FFFFFF;
-  padding: 14px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease;
+.card h3 {
+color: #25D366;
+font-size: 22px;
 }
 
-.whatsapp:hover {
-  transform: scale(1.05);
-}
-.logo {
-  text-align: center;
-  padding: 20px 0 10px;
-}
-.logo img {
-  width: 80%;
-  max-width: 280px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .card {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-}
-.badge{
-  background:#D62828;
-  padding:10px 15px;
-  border-radius:30px;
-  margin:10px auto;
-  width:fit-content;
-  font-weight:bold;
-}
-
-.btn-principal{
-  display:inline-block;
-  margin-top:20px;
-  background:#25D366;
-  color:white;
-  padding:15px 25px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.btn-card{
-  display:inline-block;
-  margin-bottom:15px;
-  background:#25D366;
-  color:white;
-  padding:10px 20px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.card h3{
-  color:#F5C542;
-  margin-top:-5px;
+.btn-card {
+display: inline-block;
+background: #25D366;
+color: white;
+padding: 12px 20px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;
+margin-top: 10px;
 }
