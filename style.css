@@ -101,3 +101,38 @@ body {
     font-size: 34px;
   }
 }
+.badge{
+  background:#D62828;
+  padding:10px 15px;
+  border-radius:30px;
+  margin:10px auto;
+  width:fit-content;
+  font-weight:bold;
+}
+
+.btn-principal{
+  display:inline-block;
+  margin-top:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-card{
+  display:inline-block;
+  margin-bottom:15px;
+  background:#25D366;
+  color:white;
+  padding:10px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.card h3{
+  color:#F5C542;
+  margin-top:-5px;
+}
