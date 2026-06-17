@@ -137,6 +137,15 @@ body{
 }
 
 .btn-whatsapp{
+   width:100%;
+  background:#25D366;
+  color:white;
+  border:none;
+  padding:15px;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;-
   background:linear-gradient(
     135deg,
     #25D366,
