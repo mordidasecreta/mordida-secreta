@@ -1,1 +1,69 @@
+body {
+  margin: 0; padding: 0;
+  background: #111111;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
 
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  margin: 15px 0 5px;
+  color: #F5C542;
+  font-size: 32px;
+}
+.hero p {
+  margin: 0 0 20px;
+  color: #CCCCCC;
+  font-size: 16px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: #222222;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #F5C542;
+}
+.card p {
+  margin: 0 10px 15px;
+  font-size: 14px;
+  color: #DDDDDD;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #FFFFFF;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
