@@ -79,11 +79,6 @@ body{
   padding:20px;
 }
 
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-
 .card{
   background:#1d1d1d;
   border:1px solid #F5C542;
