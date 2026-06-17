@@ -16,7 +16,9 @@ body {
 .hero h1 {
   margin: 15px 0 5px;
   color: #F5C542;
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 .hero p {
   margin: 0 0 20px;
