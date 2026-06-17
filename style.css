@@ -53,3 +53,7 @@ text-decoration: none;
 font-weight: bold;
 margin-top: 10px;
 }
+.logo img {
+  width: 95%;
+  max-width: 380px;
+}
