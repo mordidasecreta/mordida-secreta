@@ -19,7 +19,7 @@
     <h1>MORDIDA SECRETA</h1>
 
     <p class="slogan">
-      </h1>El sabor que no podrás guardar en secreto</h1>
+      El sabor que no podrás guardar en secreto
     </p>
 
     <div class="alerta">🔥 Disponible únicamente los sábados</div>
@@ -91,6 +91,17 @@
   </section>
 
   <section class="pedido">
+    <h3>Método de pago</h3>
+
+<label>
+  <input type="radio" name="pago" value="Efectivo" checked>
+  💵 Efectivo
+</label>
+
+<label>
+  <input type="radio" name="pago" value="Transferencia">
+  📲 Transferencia
+</label>
     <h2>Haz tu pedido</h2>
 
     <input type="text" id="nombre" placeholder="Nombre">
@@ -147,25 +158,8 @@ Barrio: ${barrio}
 
 Dirección: ${direccion}
 
-pago: ${Efectivo} ;
+Método de pago: ${pago}
 
-<h3>Método de pago</h3>
-
-<label>
-  <input type="radio"
-         name="pago"
-         value="Efectivo"
-         checked>
-  💵 Efectivo
-</label>
-
-<label>
-  <input type="radio"
-         name="pago"
-         value="Transferencia">
-  📲 Transferencia
-</label>
- 
 
       window.open(
         "https://wa.me/573183785587?text=" +
