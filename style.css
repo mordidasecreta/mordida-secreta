@@ -1,59 +1,43 @@
-.hero {
-text-align: center;
-padding: 40px 20px;
-background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+.hero{
+min-height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:#111;
 }
 
-.hero h1 {
-font-size: 48px;
-color: #F5C542;
-margin-bottom: 10px;
-text-transform: uppercase;
+.hero h1{
+font-size:3rem;
+color:#F5C542;
+margin-bottom:10px;
 }
 
-.hero p {
-font-size: 18px;
-color: #ffffff;
+.slogan{
+font-size:1.2rem;
+color:white;
+margin-bottom:25px;
 }
 
-.menu {
-display: flex;
-flex-direction: column;
-gap: 20px;
-padding: 20px;
-max-width: 500px;
-margin: auto;
+.alerta{
+background:#D62828;
+color:white;
+padding:12px;
+margin:10px auto;
+border-radius:30px;
+max-width:300px;
+font-weight:bold;
 }
 
-.card {
-background: #1c1c1c;
-border: 2px solid #F5C542;
-border-radius: 20px;
-padding: 20px;
-width: auto;
-}
-
-.card h2 {
-color: #F5C542;
-font-size: 24px;
-}
-
-.card h3 {
-color: #25D366;
-font-size: 22px;
-}
-
-.btn-card {
-display: inline-block;
-background: #25D366;
-color: white;
-padding: 12px 20px;
-border-radius: 10px;
-text-decoration: none;
-font-weight: bold;
-margin-top: 10px;
-}
-.logo img {
-  width: 95%;
-  max-width: 380px;
+.btn-principal{
+display:inline-block;
+margin-top:25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:16px 28px;
+border-radius:12px;
+font-weight:bold;
+font-size:18px;
 }
