@@ -1,100 +1,162 @@
-<div class="logo">
-  <img src="images/ChatGPT Image 17 jun 2026, 12_40_58.png" alt="Mordida Secreta">
-</div>
+<!DOCTYPE html>
+<html lang="es">
 
-<section class="hero">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mordida Secreta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <h1>MORDIDA SECRETA</h1>
+<body>
 
-  <p class="slogan">
-    El sabor que no podrás guardar en secreto
-  </p>
-
-  <div class="alerta">
-    🔥 Disponible únicamente los sábados
+  <div class="logo">
+    <img src="images/ChatGPT Image 17 jun 2026, 12_40_58.png" alt="Mordida Secreta">
   </div>
 
-  <div class="alerta">
-    🚚 Domicilios en Cali
-  </div>
+  <section class="hero">
 
-  <div class="alerta">
-    ⚠️ Producción limitada
-  </div>
+    <h1>MORDIDA SECRETA</h1>
 
-  <a href="https://wa.me/573183785587" class="btn-principal">
-    PEDIR AHORA
-  </a>
+    <p class="slogan">
+      El sabor que no podrás guardar en secreto
+    </p>
 
-</section>
+    <div class="alerta">🔥 Disponible únicamente los sábados</div>
+    <div class="alerta">🚚 Domicilios en Cali</div>
+    <div class="alerta">⚠️ Producción limitada</div>
 
-<section class="menu">
+    <button class="btn-principal" onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
+      VER MENÚ
+    </button>
 
-  <div class="card">
-    <h2>🥪 El Secreto</h2>
-    <h3>$15.000</h3>
-     <div class="cantidad">
-  <button onclick="cambiarCantidad('secreto',-1)">-</button>
-  <span id="secreto">0</span>
-  <button onclick="cambiarCantidad('secreto',1)">+</button>
-</div>
+  </section>
 
-```
-<p>
-  Pollo y carne seleccionados,
-  vegetales frescos y nuestra salsa especial.
-</p>
+  <section class="menu">
 
-<a href="https://wa.me/573183785587?text=Hola,%20quiero%20pedir%20El%20Secreto"
-   class="btn-card">
-   Pedir
-</a>
-```
+    <div class="card">
 
-  </div>
+      <h2>🥪 El Secreto</h2>
 
-  <div class="card">
-    <h2>💥 La Explosiva</h2>
-    <h3>$18.000</h3>
-  <div class="cantidad">
-  <button onclick="cambiarCantidad('explosiva',-1)">-</button>
-  <span id="explosiva">0</span>
-  <button onclick="cambiarCantidad('explosiva',1)">+</button>
-</div>
+      <h3>$15.000</h3>
 
-```
-<p>
-  Una combinación intensa para quienes buscan algo diferente.
-</p>
+      <p>
+        Pollo y carne seleccionados, vegetales frescos y nuestra salsa especial.
+      </p>
 
-<a href="https://wa.me/573183785587?text=Hola,%20quiero%20pedir%20La%20Explosiva"
-   class="btn-card">
-   Pedir
-</a>
-```
+      <div class="cantidad">
+        <button onclick="cambiarCantidad('secreto',-1)">−</button>
+        <span id="secreto">0</span>
+        <button onclick="cambiarCantidad('secreto',1)">+</button>
+      </div>
 
-  </div>
+    </div>
 
-  <div class="card">
-    <h2>🌆 La Callejera</h2>
-    <h3>$20.000</h3>
-    <div class="cantidad">
-  <button onclick="cambiarCantidad('callejera',-1)">-</button>
-  <span id="callejera">0</span>
-  <button onclick="cambiarCantidad('callejera',1)">+</button>
-</div>
+    <div class="card">
 
-```
-<p>
-  Inspirada en el auténtico sabor de la comida urbana.
-</p>
+      <h2>💥 La Explosiva</h2>
 
-<a href="https://wa.me/573183785587?text=Hola,%20quiero%20pedir%20La%20Callejera"
-   class="btn-card">
-   Pedir
-</a>
-```
+      <h3>$18.000</h3>
 
-  </div>
+      <p>
+        Una combinación intensa para quienes buscan algo diferente.
+      </p>
 
-</section>
+      <div class="cantidad">
+        <button onclick="cambiarCantidad('explosiva',-1)">−</button>
+        <span id="explosiva">0</span>
+        <button onclick="cambiarCantidad('explosiva',1)">+</button>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h2>🌆 La Callejera</h2>
+
+      <h3>$20.000</h3>
+
+      <p>
+        Inspirada en el auténtico sabor de la comida urbana.
+      </p>
+
+      <div class="cantidad">
+        <button onclick="cambiarCantidad('callejera',-1)">−</button>
+        <span id="callejera">0</span>
+        <button onclick="cambiarCantidad('callejera',1)">+</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="pedido">
+    <h2>Haz tu pedido</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+
+    <input type="text" id="barrio" placeholder="Barrio">
+
+    <input type="text" id="direccion" placeholder="Dirección">
+
+    <button class="btn-whatsapp" onclick="pedirWhatsapp()">
+      🟢 PEDIR POR WHATSAPP
+    </button>
+  </section>
+
+  <script>
+
+    function cambiarCantidad(id, cambio) {
+
+      let elemento = document.getElementById(id);
+
+      let valor = parseInt(elemento.innerText);
+
+      valor += cambio;
+
+      if (valor < 0) valor = 0;
+
+      elemento.innerText = valor;
+    }
+
+    function pedirWhatsapp() {
+
+      let secreto = document.getElementById('secreto').innerText;
+      let explosiva = document.getElementById('explosiva').innerText;
+      let callejera = document.getElementById('callejera').innerText;
+
+      let nombre = document.getElementById('nombre').value;
+      let barrio = document.getElementById('barrio').value;
+      let direccion = document.getElementById('direccion').value;
+
+      let mensaje =
+`Hola Mordida Secreta.
+
+Quiero realizar el siguiente pedido:
+
+🥪 El Secreto: ${secreto}
+
+💥 La Explosiva: ${explosiva}
+
+🌆 La Callejera: ${callejera}
+
+Nombre: ${nombre}
+
+Barrio: ${barrio}
+
+Dirección: ${direccion}
+
+Pago: Efectivo`;
+
+      window.open(
+        "https://wa.me/573183785587?text=" +
+        encodeURIComponent(mensaje),
+        "_blank"
+      );
+    }
+
+  </script>
+
+</body>
+
+</html>
