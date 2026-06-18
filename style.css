@@ -352,20 +352,29 @@ body{
 }
 .secreto{
   background:
-  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
   url("images/secreto.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
 
 .explosiva{
   background:
-  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
   url("images/explosiva.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
 
 .callejera{
   background:
-  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
   url("images/callejera.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
 .card h2,
 .card h3,
