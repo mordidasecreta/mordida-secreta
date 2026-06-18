@@ -146,6 +146,21 @@ body{
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(245,197,66,.25);
 }
+.card{
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
 
 .card h2{
   color:#F5C542;
@@ -334,4 +349,28 @@ body{
     padding:0 15px;
   }
 
+}
+.secreto{
+  background:
+  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  url("images/secreto.jpg");
+}
+
+.explosiva{
+  background:
+  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  url("images/explosiva.jpg");
+}
+
+.callejera{
+  background:
+  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+  url("images/callejera.jpg");
+}
+.card h2,
+.card h3,
+.card p{
+  text-shadow:
+    0 0 8px rgba(0,0,0,.8),
+    0 0 15px rgba(0,0,0,.8);
 }
