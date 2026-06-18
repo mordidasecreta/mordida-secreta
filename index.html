@@ -179,6 +179,10 @@ let callejera = parseInt(document.getElementById('callejera').innerText);
       let barrio = document.getElementById('barrio').value;
       let direccion = document.getElementById('direccion').value;
       let pago = document.querySelector('input[name="pago"]:checked').value;
+      if(nombre === "" || barrio === "" || direccion === ""){
+  alert("Por favor completa todos los campos.");
+  return;
+}
       let total =
 (secreto * 15000) +
 (explosiva * 18000) +
