@@ -67,6 +67,24 @@ body{
     0 0 30px rgba(255,255,255,.6),
     0 0 60px rgba(255,255,255,.4);
 }
+.slogan{
+  animation: brillo 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes brillo{
+  from{
+    text-shadow:
+      0 0 10px rgba(255,255,255,.7),
+      0 0 20px rgba(255,255,255,.4);
+  }
+
+  to{
+    text-shadow:
+      0 0 20px rgba(255,255,255,1),
+      0 0 40px rgba(255,255,255,.8),
+      0 0 80px rgba(255,255,255,.4);
+  }
+}
 
 .alerta{
   background:#D62828;
