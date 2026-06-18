@@ -187,8 +187,12 @@ function cambiarCantidad(id, cambio) {
       let barrio = document.getElementById('barrio').value;
       let direccion = document.getElementById('direccion').value;
       let pago = document.querySelector('input[name="pago"]:checked').value;
+      let total =
+(secreto * 15000) +
+(explosiva * 18000) +
+(callejera * 20000);
 
-      let mensaje =
+     let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
@@ -198,6 +202,8 @@ Quiero realizar el siguiente pedido:
 💥 La Explosiva: ${explosiva}
 
 🌆 La Callejera: ${callejera}
+
+💰 Total: $${total.toLocaleString('es-CO')}
 
 Nombre: ${nombre}
 
