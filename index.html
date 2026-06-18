@@ -141,19 +141,22 @@
 
   <script>
 
-    function cambiarCantidad(id, cambio) {
+function cambiarCantidad(id, cambio) {
 
-      let elemento = document.getElementById(id);
+  let elemento = document.getElementById(id);
 
-      let valor = parseInt(elemento.innerText);
+  let valor = parseInt(elemento.innerText);
 
-      valor += cambio;
+  valor += cambio;
 
-      if (valor < 0) valor = 0;
+  if(valor < 0){
+    valor = 0;
+  }
 
-      elemento.innerText = valor;
-    }
+  elemento.innerText = valor;
 
+  actualizarTotal();
+}
     function pedirWhatsapp() {
 
       let secreto = document.getElementById('secreto').innerText;
