@@ -131,35 +131,23 @@ body{
 }
 
 .card{
-  background:#1d1d1d;
   border:1px solid #F5C542;
   border-radius:20px;
   padding:20px;
   margin-bottom:20px;
+
+  position:relative;
+  overflow:hidden;
+
+  min-height:350px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   text-align:center;
-}
-.card{
-  transition: .3s;
-}
 
-.card:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(245,197,66,.25);
-}
-.card{
-  position: relative;
-  overflow: hidden;
-
-  background-size: cover;
-  background-position: center;
-
-  min-height: 350px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  text-align: center;
+  background-size:cover;
+  background-position:center;
 }
 
 .card h2{
@@ -389,4 +377,7 @@ body{
   text-shadow:
     0 0 8px rgba(0,0,0,.8),
     0 0 15px rgba(0,0,0,.8);
+}
+.secreto{
+  background:red !important;
 }
