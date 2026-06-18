@@ -264,3 +264,12 @@ body{
   font-weight:bold;
   color:#25D366;
 }
+.info{
+  text-align:center;
+  padding:40px 20px;
+  color:#ccc;
+}
+
+.info h2{
+  color:#F5C542;
+}
