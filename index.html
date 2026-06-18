@@ -102,17 +102,26 @@
     
      <h3>Método de pago</h3>
 
-<label> 
-  <input type="radio" name="pago" value="Efectivo" checked>
-  💵 Efectivo
-</label>
+<div class="metodo-pago">
 
-<label> 
-  <input type="radio" name="pago" value="Transferencia">
-  📲 Transferencia
-  
-</label>
+  <label class="opcion-pago">
+    <input type="radio"
+           name="pago"
+           value="Efectivo"
+           checked>
 
+    <span>💵 Efectivo</span>
+  </label>
+
+  <label class="opcion-pago">
+    <input type="radio"
+           name="pago"
+           value="Transferencia">
+
+    <span>📲 Transferencia</span>
+  </label>
+
+</div>
     <button class="btn-whatsapp" onclick="pedirWhatsapp()">
       🟢 PEDIR POR WHATSAPP
     </button>
