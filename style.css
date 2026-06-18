@@ -179,3 +179,48 @@ body{
 .btn-principal:hover{
   opacity:0.9;
 }
+.metodo-pago{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin:20px 0;
+  flex-wrap:wrap;
+}
+
+.opcion-pago{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 18px;
+
+  background:#1d1d1d;
+  border:2px solid #333;
+  border-radius:15px;
+
+  cursor:pointer;
+  transition:.3s;
+}
+
+.opcion-pago input{
+  display:none;
+}
+
+.opcion-pago span{
+  color:white;
+  font-weight:bold;
+}
+
+.opcion-pago:hover{
+  transform:translateY(-2px);
+  border-color:#F5C542;
+}
+
+.opcion-pago:has(input:checked){
+  background:#16241b;
+  border-color:#25D366;
+  box-shadow:0 0 15px rgba(37,211,102,.35);
+}
+
+.opcion-pago:has(input:checked) span{
+  color:#25D366;
+}
