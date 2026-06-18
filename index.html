@@ -96,6 +96,9 @@
   <div id="total">
     $0
   </div>
+<div id="cantidad-total">
+  0 productos
+</div>
 
 </div>
 
@@ -156,11 +159,16 @@ function cambiarCantidad(id, cambio) {
 
   actualizarTotal();
 }
-  function actualizarTotal(){
+ function actualizarTotal(){
 
-  let secreto = parseInt(document.getElementById('secreto').innerText);
-let explosiva = parseInt(document.getElementById('explosiva').innerText);
-let callejera = parseInt(document.getElementById('callejera').innerText);
+  let secreto =
+  parseInt(document.getElementById('secreto').innerText);
+
+  let explosiva =
+  parseInt(document.getElementById('explosiva').innerText);
+
+  let callejera =
+  parseInt(document.getElementById('callejera').innerText);
 
   let total =
   (secreto * 15000) +
