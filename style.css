@@ -224,3 +224,21 @@ body{
 .opcion-pago:has(input:checked) span{
   color:#25D366;
 }
+.estado-semanal{
+  width:fit-content;
+  margin:10px auto 20px;
+  padding:12px 20px;
+
+  background:linear-gradient(
+    135deg,
+    #F5C542,
+    #ffdd77
+  );
+
+  color:#111;
+  font-weight:bold;
+
+  border-radius:999px;
+
+  box-shadow:0 0 20px rgba(245,197,66,.4);
+}
