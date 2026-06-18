@@ -78,10 +78,12 @@ body{
   cursor:pointer;
 }
 
-.menu{
-  max-width:800px;
-  margin:auto;
-  padding:40px 20px;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 
   background:
   linear-gradient(
