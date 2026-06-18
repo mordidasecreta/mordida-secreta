@@ -159,7 +159,7 @@ function cambiarCantidad(id, cambio) {
 
   actualizarTotal();
 }
- function actualizarTotal(){
+function actualizarTotal(){
 
   let secreto =
   parseInt(document.getElementById('secreto').innerText);
@@ -177,6 +177,12 @@ function cambiarCantidad(id, cambio) {
 
   document.getElementById('total').innerText =
   "$" + total.toLocaleString('es-CO');
+
+  let cantidadTotal =
+  secreto + explosiva + callejera;
+
+  document.getElementById('cantidad-total').innerText =
+  cantidadTotal + " productos";
 }
     function pedirWhatsapp() {
 
