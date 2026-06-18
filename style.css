@@ -91,8 +91,7 @@ body{
 .menu {
   max-width: 1200px;
   margin: 0 auto;
-}
-.menu {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -293,4 +292,16 @@ body{
 
 .info h2{
   color:#F5C542;
+}
+@media (max-width:768px){
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .slogan{
+    font-size:1.8rem;
+    padding:0 15px;
+  }
+
 }
