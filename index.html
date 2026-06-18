@@ -16,6 +16,7 @@
   <div class="estado-semanal">
   🔥 Pedidos abiertos para este sábado
 </div>
+  
 
   <section class="hero">
 
@@ -156,6 +157,25 @@ function cambiarCantidad(id, cambio) {
   elemento.innerText = valor;
 
   actualizarTotal();
+}
+  function actualizarTotal(){
+
+  let secreto =
+  parseInt(document.getElementById('secreto').innerText);
+
+  let explosiva =
+  parseInt(document.getElementById('explosiva').innerText);
+
+  let callejera =
+  parseInt(document.getElementById('callejera').innerText);
+
+  let total =
+  (secreto * 15000) +
+  (explosiva * 18000) +
+  (callejera * 20000);
+
+  document.getElementById('total').innerText =
+  "$" + total.toLocaleString('es-CO');
 }
     function pedirWhatsapp() {
 
