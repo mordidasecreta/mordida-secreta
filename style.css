@@ -401,7 +401,44 @@ box-shadow:0 4px 15px rgba(0,0,0,.3);
 transition:.3s;
 }
 
-.btn-whatsapp-top:hover{
+.btn-whatsapp-top{
+display:block;
+width:90%;
+max-width:500px;
+margin:25px auto;
+padding:22px;
+
+background:linear-gradient(
+135deg,
+#25D366,
+#1fb857
+);
+
+color:white;
+font-size:26px;
+font-weight:900;
+text-align:center;
+text-decoration:none;
+
+border-radius:15px;
+
+box-shadow:
+0 8px 25px rgba(37,211,102,.45);
+
+animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+
+50%{
 transform:scale(1.03);
+}
+
+100%{
+transform:scale(1);
+}
 }
 
