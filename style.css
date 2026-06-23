@@ -131,6 +131,12 @@ body{
 }
 
 .card{
+  transition:.3s;
+  .card:hover{
+transform:translateY(-5px);
+box-shadow:
+0 10px 30px rgba(245,197,66,.25);
+}
   border:1px solid #F5C542;
   border-radius:20px;
   padding:20px;
@@ -274,6 +280,9 @@ body{
   color:#25D366;
 }
 .estado-semanal{
+  font-size:1.1rem;
+letter-spacing:.5px;
+text-transform:uppercase;
   width:fit-content;
   margin:10px auto 20px;
   padding:12px 20px;
