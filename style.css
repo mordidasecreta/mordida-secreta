@@ -384,3 +384,24 @@ body{
   color:#ccc;
   font-weight:bold;
 }
+.btn-whatsapp-top{
+display:block;
+width:90%;
+max-width:500px;
+margin:20px auto;
+padding:18px;
+background:#25D366;
+color:white;
+font-size:24px;
+font-weight:700;
+text-align:center;
+text-decoration:none;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+.btn-whatsapp-top:hover{
+transform:scale(1.03);
+}
+
