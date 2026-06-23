@@ -31,8 +31,6 @@
   <div class="alerta">🚚 Domicilios en Cali</div>
   <div class="alerta">⚠️ Producción limitada cada fin de semana</div>
 
-    </p>
-
     <button class="btn-principal" onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
       VER MENÚ
     </button>
@@ -204,6 +202,14 @@ function actualizarTotal(){
   alert("Por favor completa todos los campos.");
   return;
 }
+      if(
+parseInt(secreto) === 0 &&
+parseInt(explosiva) === 0 &&
+parseInt(callejera) === 0
+){
+  alert("Selecciona al menos un sándwich.");
+  return;
+}
       let total =
 (secreto * 15000) +
 (explosiva * 18000) +
@@ -242,10 +248,10 @@ window.open(
 
   <h2>📍 Cali</h2>
 
-  <p>Mordida Secreta trabaja por pedidos cada sábado.</p>
-
-  <p>Domicilios disponibles según ubicación.</p>
-
+<p>Pedidos disponibles sábado y domingo.</p>
+<p>Horario: 12:00 PM a 10:00 PM.</p>
+<p>🚚 Domicilios según ubicación.</p>
+<p>⚠️ Producción limitada cada fin de semana.</p>
 </section>
 
 </body>
