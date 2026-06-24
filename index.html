@@ -54,16 +54,21 @@
 
     <h3>$18.000</h3>
 
-    <div class="cantidad">
-      <button onclick="cambiarCantidad('explosiva',-1)">−</button>
-      <span id="explosiva">0</span>
-      <button onclick="cambiarCantidad('explosiva',1)">+</button>
-    </div>
+  <div class="cantidad">
+  <button onclick="cambiarCantidad('explosiva',-1)">−</button>
+  <span id="explosiva">0</span>
+  <button onclick="cambiarCantidad('explosiva',1)">+</button>
+</div>
     
  <label class="combo-opcion">
   <input type="checkbox" id="gaseosaExplosiva" onchange="actualizarTotal()">
   🥤 Agregar Coca-Cola 400 ml (+$3.000)
 </label>
+    <div class="cantidad">
+  <button onclick="cambiarCantidad('comboExplosiva',-1)">−</button>
+  <span id="comboExplosiva">0</span>
+  <button onclick="cambiarCantidad('comboExplosiva',1)">+</button>
+</div>
     
   </div>
 
@@ -93,21 +98,26 @@
   <input type="checkbox" id="gaseosaCallejera" onchange="actualizarTotal()">
   🥤 Agregar Coca-Cola 400 ml (+$3.000)
 </label>
+    <div class="cantidad">
+  <button onclick="cambiarCantidad('comboCallejera',-1)">−</button>
+  <span id="comboCallejera">0</span>
+  <button onclick="cambiarCantidad('comboCallejera',1)">+</button>
+</div>
 
   </div>
-  <div class="total-box">
+<div class="total-box">
 
-    <h2>🛒 Tu Pedido</h2>
+  <h2>🛒 Tu Pedido</h2>
 
-    <div id="cantidad-total">
-      0 productos
-    </div>
-
-    <div id="total">
-      $0
-    </div>
-
+  <div id="cantidad-total">
+    0 productos
   </div>
+
+  <div id="total">
+    $0
+  </div>
+
+</div>
 
 </section>
 
@@ -148,7 +158,7 @@
     </button>
   </section>
 
-  <script>
+ <script>
 
 function cambiarCantidad(id, cambio) {
 
@@ -166,55 +176,53 @@ function cambiarCantidad(id, cambio) {
 
   actualizarTotal();
 }
+
 function actualizarTotal(){
 
-let explosiva =
-parseInt(document.getElementById('explosiva').innerText);
+  let explosiva =
+  parseInt(document.getElementById('explosiva').innerText);
 
-let callejera =
-parseInt(document.getElementById('callejera').innerText);
+  let comboExplosiva =
+  parseInt(document.getElementById('comboExplosiva').innerText);
 
-let gaseosaExplosiva =
-document.getElementById('gaseosaExplosiva').checked;
+  let callejera =
+  parseInt(document.getElementById('callejera').innerText);
 
-let gaseosaCallejera =
-document.getElementById('gaseosaCallejera').checked;
+  let comboCallejera =
+  parseInt(document.getElementById('comboCallejera').innerText);
 
   let cantidadTotal =
-  explosiva + callejera;
+  explosiva +
+  comboExplosiva +
+  callejera +
+  comboCallejera;
 
   document.getElementById('cantidad-total').innerText =
-  cantidadTotal + " sándwiches";
+  cantidadTotal + " productos";
 
   let total =
   (explosiva * 18000) +
-  (callejera * 20000);
-
-  if(gaseosaExplosiva && explosiva > 0){
-    total += explosiva * 3000;
-  }
-
-  if(gaseosaCallejera && callejera > 0){
-    total += callejera * 3000;
-  }
+  (comboExplosiva * 21000) +
+  (callejera * 20000) +
+  (comboCallejera * 23000);
 
   document.getElementById('total').innerText =
   "$" + total.toLocaleString('es-CO');
 }
 
-    function pedirWhatsapp() {
+function pedirWhatsapp() {
 
   let explosiva =
   document.getElementById('explosiva').innerText;
 
+  let comboExplosiva =
+  document.getElementById('comboExplosiva').innerText;
+
   let callejera =
   document.getElementById('callejera').innerText;
-      
-  let gaseosaExplosiva =
-  document.getElementById('gaseosaExplosiva').checked;
-      
-  let gaseosaCallejera =
-  document.getElementById('gaseosaCallejera').checked;
+
+  let comboCallejera =
+  document.getElementById('comboCallejera').innerText;
 
   let nombre =
   document.getElementById('nombre').value;
@@ -233,24 +241,28 @@ document.getElementById('gaseosaCallejera').checked;
     return;
   }
 
-if(
-parseInt(explosiva) === 0 &&
-parseInt(callejera) === 0
-){
-  alert("Selecciona al menos un producto.");
-  return;
-}
+  if(
+    parseInt(explosiva) === 0 &&
+    parseInt(comboExplosiva) === 0 &&
+    parseInt(callejera) === 0 &&
+    parseInt(comboCallejera) === 0
+  ){
+    alert("Selecciona al menos un producto.");
+    return;
+  }
 
- let mensaje =
+  let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
 
 💥 La Explosiva: ${explosiva}
-🥤 Coca-Cola Explosiva: ${gaseosaExplosiva ? "Sí" : "No"}
+
+🥤 Combo Explosiva: ${comboExplosiva}
 
 🥩 La Callejera: ${callejera}
-🥤 Coca-Cola Callejera: ${gaseosaCallejera ? "Sí" : "No"}
+
+🥤 Combo Callejera: ${comboCallejera}
 
 Nombre: ${nombre}
 
@@ -259,12 +271,14 @@ Barrio: ${barrio}
 Dirección: ${direccion}
 
 Método de pago: ${pago}`;
+
   window.open(
     "https://wa.me/573183785587?text=" +
     encodeURIComponent(mensaje),
     "_blank"
   );
 }
+
 </script>
 
 <section class="info">
