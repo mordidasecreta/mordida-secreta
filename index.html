@@ -233,6 +233,15 @@ function actualizarTotal(){
   (callejera * 20000) +
   (comboCallejera * 23000);
 
+  let mensajeAhorro = "";
+
+if(comboExplosiva > 0 || comboCallejera > 0){
+  mensajeAhorro = "⭐ Incluye Coca-Cola 400 ml";
+}
+
+document.getElementById('mensaje-ahorro').innerText =
+mensajeAhorro;
+
   document.getElementById('total').innerText =
   "$" + total.toLocaleString('es-CO');
 }
