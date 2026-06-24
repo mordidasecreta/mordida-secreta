@@ -132,11 +132,7 @@ body{
 
 .card{
   transition:.3s;
-  .card:hover{
-transform:translateY(-5px);
-box-shadow:
-0 10px 30px rgba(245,197,66,.25);
-}
+
   border:1px solid #F5C542;
   border-radius:20px;
   padding:20px;
@@ -145,7 +141,7 @@ box-shadow:
   position:relative;
   overflow:hidden;
 
-  min-height:350px;
+  min-height:280px;
 
   display:flex;
   flex-direction:column;
@@ -154,6 +150,11 @@ box-shadow:
 
   background-size:cover;
   background-position:center;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 30px rgba(245,197,66,.25);
 }
 
 .card h2{
@@ -449,5 +450,15 @@ transform:scale(1.03);
 100%{
 transform:scale(1);
 }
+}
+.combo{
+  border:2px solid #25D366;
+
+  box-shadow:
+  0 0 20px rgba(37,211,102,.25);
+}
+
+.combo h2{
+  color:#25D366;
 }
 
