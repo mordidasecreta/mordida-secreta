@@ -31,6 +31,9 @@
   <p class="slogan">
     El sabor que no podrás guardar en secreto
   </p>
+  <div class="alerta">
+🥤 Combos con Coca-Cola 400 ml disponibles
+</div>
 
   <button class="btn-principal"
     onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
@@ -40,71 +43,89 @@
 
 <section class="menu">
 
-  <div class="card explosiva">
+ <div class="card explosiva">
 
-    <h2>💥 La Explosiva</h2>
+  <h2>💥 La Explosiva</h2>
 
-    <p>
-      Pollo desmechado, tocineta crocante,
-      maicitos, queso cheddar derretido y
-      nuestra receta secreta.
-    </p>
+  <p>
+    Pollo desmechado, tocineta crocante,
+    maicitos, queso cheddar derretido y
+    nuestra receta secreta.
+  </p>
 
-    <p>🍟 Incluye papas artesanales</p>
+  <p>🍟 Incluye papas artesanales</p>
 
-    <h3>$18.000</h3>
+  <h3>$18.000</h3>
 
   <div class="cantidad">
-  <button onclick="cambiarCantidad('explosiva',-1)">−</button>
-  <span id="explosiva">0</span>
-  <button onclick="cambiarCantidad('explosiva',1)">+</button>
-</div>
-    
- <label class="combo-opcion">
-  <input type="checkbox" id="gaseosaExplosiva" onchange="actualizarTotal()">
-  🥤 Agregar Coca-Cola 400 ml (+$3.000)
-</label>
-    <div class="cantidad">
-  <button onclick="cambiarCantidad('comboExplosiva',-1)">−</button>
-  <span id="comboExplosiva">0</span>
-  <button onclick="cambiarCantidad('comboExplosiva',1)">+</button>
-</div>
-    
+    <button onclick="cambiarCantidad('explosiva',-1)">−</button>
+    <span id="explosiva">0</span>
+    <button onclick="cambiarCantidad('explosiva',1)">+</button>
   </div>
 
-
-  <div class="card callejera">
-
-    <h2>🥩 La Callejera</h2>
-
-    <p>
-      Carne desmechada jugosa,
-      cebolla caramelizada,
-      queso cheddar derretido,
-      madurito dulce y nuestra salsa de la casa.
-    </p>
-
-    <p>🍟 Incluye papas artesanales</p>
-
-    <h3>$20.000</h3>
-
-    <div class="cantidad">
-      <button onclick="cambiarCantidad('callejera',-1)">−</button>
-      <span id="callejera">0</span>
-      <button onclick="cambiarCantidad('callejera',1)">+</button>
-    </div>
-
- <label class="combo-opcion">
-  <input type="checkbox" id="gaseosaCallejera" onchange="actualizarTotal()">
-  🥤 Agregar Coca-Cola 400 ml (+$3.000)
-</label>
-    <div class="cantidad">
-  <button onclick="cambiarCantidad('comboCallejera',-1)">−</button>
-  <span id="comboCallejera">0</span>
-  <button onclick="cambiarCantidad('comboCallejera',1)">+</button>
 </div>
 
+<div class="card explosiva combo">
+
+  <h2>🥤 Combo Explosiva</h2>
+
+  <p>
+    💥 La Explosiva + 🍟 Papas artesanales +
+    🥤 Coca-Cola 400 ml
+  </p>
+
+  <h3>$21.000</h3>
+
+  <div class="cantidad">
+    <button onclick="cambiarCantidad('comboExplosiva',-1)">−</button>
+    <span id="comboExplosiva">0</span>
+    <button onclick="cambiarCantidad('comboExplosiva',1)">+</button>
   </div>
+
+</div>
+
+
+<div class="card callejera">
+
+  <h2>🥩 La Callejera</h2>
+
+  <p>
+    Carne desmechada jugosa,
+    cebolla caramelizada,
+    queso cheddar derretido,
+    madurito dulce y nuestra salsa de la casa.
+  </p>
+
+  <p>🍟 Incluye papas artesanales</p>
+
+  <h3>$20.000</h3>
+
+  <div class="cantidad">
+    <button onclick="cambiarCantidad('callejera',-1)">−</button>
+    <span id="callejera">0</span>
+    <button onclick="cambiarCantidad('callejera',1)">+</button>
+  </div>
+
+</div>
+
+<div class="card callejera combo">
+
+  <h2>🥤 Combo Callejera</h2>
+
+  <p>
+    🥩 La Callejera + 🍟 Papas artesanales +
+    🥤 Coca-Cola 400 ml
+  </p>
+
+  <h3>$23.000</h3>
+
+  <div class="cantidad">
+    <button onclick="cambiarCantidad('comboCallejera',-1)">−</button>
+    <span id="comboCallejera">0</span>
+    <button onclick="cambiarCantidad('comboCallejera',1)">+</button>
+  </div>
+
+</div>
 <div class="total-box">
 
   <h2>🛒 Tu Pedido</h2>
