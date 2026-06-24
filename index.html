@@ -280,18 +280,30 @@ let total =
 (parseInt(comboExplosiva) * 21000) +
 (parseInt(callejera) * 20000) +
 (parseInt(comboCallejera) * 23000);
- let mensaje =
+let productos = "";
+
+if(parseInt(explosiva) > 0){
+  productos += `💥 La Explosiva: ${explosiva}\n`;
+}
+
+if(parseInt(comboExplosiva) > 0){
+  productos += `🥤 Combo Explosiva (con Coca-Cola): ${comboExplosiva}\n`;
+}
+
+if(parseInt(callejera) > 0){
+  productos += `🥩 La Callejera: ${callejera}\n`;
+}
+
+if(parseInt(comboCallejera) > 0){
+  productos += `🥤 Combo Callejera (con Coca-Cola): ${comboCallejera}\n`;
+}
+
+let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
 
-💥 La Explosiva: ${explosiva}
-
-🥤 Combo Explosiva (con Coca-Cola): ${comboExplosiva}
-
-🥩 La Callejera: ${callejera}
-
-🥤 Combo Callejera (con Coca-Cola): ${comboCallejera}
+${productos}
 
 Nombre: ${nombre}
 
