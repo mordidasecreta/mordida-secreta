@@ -280,7 +280,7 @@ let total =
 (parseInt(comboExplosiva) * 21000) +
 (parseInt(callejera) * 20000) +
 (parseInt(comboCallejera) * 23000);
-  let mensaje =
+ let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
@@ -299,10 +299,9 @@ Barrio: ${barrio}
 
 Dirección: ${direccion}
 
-Método de pago: ${pago}`;
+Método de pago: ${pago}
 
-Total aproximado: $${total.toLocaleString('es-CO')}
-
+Total aproximado: $${total.toLocaleString('es-CO')}`;
   window.open(
     "https://wa.me/573183785587?text=" +
     encodeURIComponent(mensaje),
