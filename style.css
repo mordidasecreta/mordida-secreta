@@ -141,7 +141,7 @@ body{
   position:relative;
   overflow:hidden;
 
-  min-height:280px;
+  min-height:350px;
 
   display:flex;
   flex-direction:column;
@@ -154,7 +154,9 @@ body{
 
 .card:hover{
   transform:translateY(-5px);
-  box-shadow:0 10px 30px rgba(245,197,66,.25);
+
+  box-shadow:
+  0 10px 30px rgba(245,197,66,.25);
 }
 
 .card h2{
@@ -461,4 +463,22 @@ transform:scale(1);
 .combo h2{
   color:#25D366;
 }
+.combo{
+  position:relative;
+}
 
+.combo::before{
+  content:"🍟 Incluye papas";
+  position:absolute;
+  top:15px;
+  right:15px;
+
+  background:#25D366;
+  color:white;
+
+  padding:6px 12px;
+  border-radius:20px;
+
+  font-size:.8rem;
+  font-weight:bold;
+}
