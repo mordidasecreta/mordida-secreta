@@ -495,6 +495,18 @@ transform:scale(1);
 .combo-opcion input{
   margin-right:8px;
 }
+.combo{
+  min-height:180px !important;
+  padding:15px;
+}
+
+.combo h2{
+  font-size:1.2rem;
+}
+
+.combo p{
+  font-size:0.9rem;
+}
 #mensaje-ahorro{
   margin-top:10px;
   color:#F5C542;
