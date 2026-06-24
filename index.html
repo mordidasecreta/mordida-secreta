@@ -59,13 +59,14 @@
       <span id="explosiva">0</span>
       <button onclick="cambiarCantidad('explosiva',1)">+</button>
     </div>
-
-  </div>
-
+    
  <label class="combo-opcion">
   <input type="checkbox" id="gaseosaExplosiva" onchange="actualizarTotal()">
   🥤 Agregar Coca-Cola 400 ml (+$3.000)
 </label>
+    
+  </div>
+
 
   <div class="card callejera">
 
@@ -88,13 +89,12 @@
       <button onclick="cambiarCantidad('callejera',1)">+</button>
     </div>
 
-  </div>
-
  <label class="combo-opcion">
   <input type="checkbox" id="gaseosaCallejera" onchange="actualizarTotal()">
   🥤 Agregar Coca-Cola 400 ml (+$3.000)
 </label>
 
+  </div>
   <div class="total-box">
 
     <h2>🛒 Tu Pedido</h2>
@@ -202,15 +202,6 @@ document.getElementById('gaseosaCallejera').checked;
   "$" + total.toLocaleString('es-CO');
 }
 
-  let total =
-  (explosiva * 18000) +
-  (comboExplosiva * 21000) +
-  (callejera * 20000) +
-  (comboCallejera * 23000);
-
-  document.getElementById('total').innerText =
-  "$" + total.toLocaleString('es-CO');
-}
     function pedirWhatsapp() {
 
   let explosiva =
@@ -218,6 +209,12 @@ document.getElementById('gaseosaCallejera').checked;
 
   let callejera =
   document.getElementById('callejera').innerText;
+      
+  let gaseosaExplosiva =
+  document.getElementById('gaseosaExplosiva').checked;
+      
+  let gaseosaCallejera =
+  document.getElementById('gaseosaCallejera').checked;
 
   let nombre =
   document.getElementById('nombre').value;
@@ -236,11 +233,9 @@ document.getElementById('gaseosaCallejera').checked;
     return;
   }
 
- if(
+if(
 parseInt(explosiva) === 0 &&
-parseInt(comboExplosiva) === 0 &&
-parseInt(callejera) === 0 &&
-parseInt(comboCallejera) === 0
+parseInt(callejera) === 0
 ){
   alert("Selecciona al menos un producto.");
   return;
