@@ -42,19 +42,16 @@
 
   <div class="card secreto">
 
-    <h2>🍗 El Secreto</h2>
+    <h2>💥 La Explosiva</h2>
 
     <p>
-      Pollo desmechado, queso cheddar,
-      maicitos, lechuga crespa,
-      tocineta crocante, crema bechamel
-      y salsa de ajo.
+Pollo desmechado, tocineta crocante, maicitos, queso cheddar derretido y una combinación cremosa con nuestra receta secreta.
     </p>
 
     <div class="cantidad">
-      <button onclick="cambiarCantidad('secreto',-1)">−</button>
-      <span id="secreto">0</span>
-      <button onclick="cambiarCantidad('secreto',1)">+</button>
+      <button onclick="cambiarCantidad('explosiva',-1)">−</button>
+      <span id="explosiva">0</span>
+      <button onclick="cambiarCantidad('explosiva',1)">+</button>
     </div>
 
   </div>
@@ -64,10 +61,7 @@
     <h2>🥩 La Callejera</h2>
 
     <p>
-      Carne desmechada, cebolla caramelizada,
-      queso cheddar, tomate,
-      lechuga crespa, madurito
-      y salsa secreta de la casa.
+     Carne desmechada jugosa, cebolla caramelizada, queso cheddar derretido, madurito dulce y el toque secreto de la casa.
     </p>
 
     <div class="cantidad">
@@ -147,14 +141,14 @@ function cambiarCantidad(id, cambio) {
 }
 function actualizarTotal(){
 
-  let secreto =
-  parseInt(document.getElementById('secreto').innerText);
+  let explosiva =
+  parseInt(document.getElementById('explosiva').innerText);
 
   let callejera =
   parseInt(document.getElementById('callejera').innerText);
 
   let cantidadTotal =
-  secreto + callejera;
+  explosiva + callejera;
 
 document.getElementById('cantidad-total').innerText =
 cantidadTotal + " sándwiches";
@@ -162,7 +156,7 @@ cantidadTotal + " sándwiches";
     function pedirWhatsapp() {
 
   let secreto =
-  document.getElementById('secreto').innerText;
+  document.getElementById('explosiva').innerText;
 
   let callejera =
   document.getElementById('callejera').innerText;
@@ -185,7 +179,7 @@ cantidadTotal + " sándwiches";
   }
 
   if(
-    parseInt(secreto) === 0 &&
+    parseInt(explosiva) === 0 &&
     parseInt(callejera) === 0
   ){
     alert("Selecciona al menos un sándwich.");
@@ -197,7 +191,7 @@ cantidadTotal + " sándwiches";
 
 Quiero realizar el siguiente pedido:
 
-🍗 El Secreto: ${secreto}
+💥 La Explosiva: ${explosiva}
 
 🥩 La Callejera: ${callejera}
 
