@@ -467,21 +467,6 @@ transform:scale(1);
   position:relative;
 }
 
-.combo::before{
-  content:"🍟 Incluye papas";
-  position:absolute;
-  top:15px;
-  right:15px;
-
-  background:#25D366;
-  color:white;
-
-  padding:6px 12px;
-  border-radius:20px;
-
-  font-size:.8rem;
-  font-weight:bold;
-}
 .combo-opcion{
   display:block;
   margin-top:15px;
