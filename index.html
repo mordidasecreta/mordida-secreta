@@ -27,6 +27,10 @@
   🔥 Pedidos abiertos para este fin de semana
 </div>
 
+  <div class="alerta">
+⚠️ Producción limitada - Cupos disponibles hasta agotar existencias
+</div>
+
 <section class="hero">
   <p class="slogan">
     El sabor que no podrás guardar en secreto
@@ -93,7 +97,7 @@
     Carne desmechada jugosa,
     cebolla caramelizada,
     queso cheddar derretido,
-    madurito dulce y nuestra salsa de la casa.
+    madurito dulce y nuestro toque secreto.
   </p>
 
   <p>🍟 Incluye papas artesanales</p>
@@ -271,7 +275,11 @@ function pedirWhatsapp() {
     alert("Selecciona al menos un producto.");
     return;
   }
-
+let total =
+(parseInt(explosiva) * 18000) +
+(parseInt(comboExplosiva) * 21000) +
+(parseInt(callejera) * 20000) +
+(parseInt(comboCallejera) * 23000);
   let mensaje =
 `Hola Mordida Secreta.
 
@@ -292,6 +300,8 @@ Barrio: ${barrio}
 Dirección: ${direccion}
 
 Método de pago: ${pago}`;
+
+Total aproximado: $${total.toLocaleString('es-CO')}
 
   window.open(
     "https://wa.me/573183785587?text=" +
