@@ -82,9 +82,9 @@
 
     <h2>🛒 Tu Pedido</h2>
 
-    <div id="cantidad-total">
-      0 productos
-    </div>
+ <div id="cantidad-total">
+  0 sándwiches
+</div>
 
   </div>
 
@@ -156,35 +156,43 @@ function actualizarTotal(){
   let cantidadTotal =
   secreto + callejera;
 
-  document.getElementById('cantidad-total').innerText =
-  cantidadTotal + " productos";
+document.getElementById('cantidad-total').innerText =
+cantidadTotal + " sándwiches";
 }
     function pedirWhatsapp() {
-      let secreto = document.getElementById('secreto').innerText;
-      let callejera = document.getElementById('callejera').innerText;
 
-      let nombre = document.getElementById('nombre').value;
-      let barrio = document.getElementById('barrio').value;
-      let direccion = document.getElementById('direccion').value;
-      let pago = document.querySelector('input[name="pago"]:checked').value;
-      if(nombre === "" || barrio === "" || direccion === ""){
-  alert("Por favor completa todos los campos.");
-  return;
-}
- if(
-parseInt(secreto) === 0 &&
-parseInt(callejera) === 0
-)
-{
-  alert("Selecciona al menos un sándwich.");
-  return;
-}
-      let total =
-(secreto * 15000) +
-(explosiva * 18000) +
-(callejera * 20000);
+  let secreto =
+  document.getElementById('secreto').innerText;
 
-    let mensaje =
+  let callejera =
+  document.getElementById('callejera').innerText;
+
+  let nombre =
+  document.getElementById('nombre').value;
+
+  let barrio =
+  document.getElementById('barrio').value;
+
+  let direccion =
+  document.getElementById('direccion').value;
+
+  let pago =
+  document.querySelector('input[name="pago"]:checked').value;
+
+  if(nombre === "" || barrio === "" || direccion === ""){
+    alert("Por favor completa todos los campos.");
+    return;
+  }
+
+  if(
+    parseInt(secreto) === 0 &&
+    parseInt(callejera) === 0
+  ){
+    alert("Selecciona al menos un sándwich.");
+    return;
+  }
+
+  let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
@@ -200,11 +208,12 @@ Barrio: ${barrio}
 Dirección: ${direccion}
 
 Método de pago: ${pago}`;
-window.open(
+
+  window.open(
     "https://wa.me/573183785587?text=" +
     encodeURIComponent(mensaje),
     "_blank"
-);
+  );
 }
 </script>
 
