@@ -40,13 +40,19 @@
 
 <section class="menu">
 
-  <div class="card secreto">
+  <div class="card explosiva">
 
     <h2>💥 La Explosiva</h2>
 
     <p>
-Pollo desmechado, tocineta crocante, maicitos, queso cheddar derretido y una combinación cremosa con nuestra receta secreta.
+      Pollo desmechado, tocineta crocante,
+      maicitos, queso cheddar derretido y
+      nuestra receta secreta.
     </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$18.000</h3>
 
     <div class="cantidad">
       <button onclick="cambiarCantidad('explosiva',-1)">−</button>
@@ -56,13 +62,41 @@ Pollo desmechado, tocineta crocante, maicitos, queso cheddar derretido y una com
 
   </div>
 
+  <div class="card explosiva">
+
+    <h2>🥤 Combo Explosiva</h2>
+
+    <p>
+      La Explosiva + Coca-Cola 400 ml
+    </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$21.000</h3>
+
+    <div class="cantidad">
+      <button onclick="cambiarCantidad('comboExplosiva',-1)">−</button>
+      <span id="comboExplosiva">0</span>
+      <button onclick="cambiarCantidad('comboExplosiva',1)">+</button>
+    </div>
+
+  </div>
+
   <div class="card callejera">
 
     <h2>🥩 La Callejera</h2>
 
     <p>
-     Carne desmechada jugosa, cebolla caramelizada, queso cheddar derretido, madurito dulce y el toque secreto de la casa.
+      Carne desmechada jugosa,
+      cebolla caramelizada,
+      queso cheddar derretido,
+      madurito dulce y el toque
+      secreto de la casa.
     </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$20.000</h3>
 
     <div class="cantidad">
       <button onclick="cambiarCantidad('callejera',-1)">−</button>
@@ -72,13 +106,37 @@ Pollo desmechado, tocineta crocante, maicitos, queso cheddar derretido y una com
 
   </div>
 
+  <div class="card callejera">
+
+    <h2>🥤 Combo Callejera</h2>
+
+    <p>
+      La Callejera + Coca-Cola 400 ml
+    </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$23.000</h3>
+
+    <div class="cantidad">
+      <button onclick="cambiarCantidad('comboCallejera',-1)">−</button>
+      <span id="comboCallejera">0</span>
+      <button onclick="cambiarCantidad('comboCallejera',1)">+</button>
+    </div>
+
+  </div>
+
   <div class="total-box">
 
     <h2>🛒 Tu Pedido</h2>
 
- <div id="cantidad-total">
-  0 sándwiches
-</div>
+    <div id="cantidad-total">
+      0 productos
+    </div>
+
+    <div id="total">
+      $0
+    </div>
 
   </div>
 
@@ -144,18 +202,36 @@ function actualizarTotal(){
   let explosiva =
   parseInt(document.getElementById('explosiva').innerText);
 
+  let comboExplosiva =
+  parseInt(document.getElementById('comboExplosiva').innerText);
+
   let callejera =
   parseInt(document.getElementById('callejera').innerText);
 
-  let cantidadTotal =
-  explosiva + callejera;
+  let comboCallejera =
+  parseInt(document.getElementById('comboCallejera').innerText);
 
-document.getElementById('cantidad-total').innerText =
-cantidadTotal + " sándwiches";
+  let cantidadTotal =
+  explosiva +
+  comboExplosiva +
+  callejera +
+  comboCallejera;
+
+  document.getElementById('cantidad-total').innerText =
+  cantidadTotal + " productos";
+
+  let total =
+  (explosiva * 18000) +
+  (comboExplosiva * 21000) +
+  (callejera * 20000) +
+  (comboCallejera * 23000);
+
+  document.getElementById('total').innerText =
+  "$" + total.toLocaleString('es-CO');
 }
     function pedirWhatsapp() {
 
-  let secreto =
+  let explosiva =
   document.getElementById('explosiva').innerText;
 
   let callejera =
