@@ -80,7 +80,7 @@
 
   <div class="total-box">
 
-    <h2>Tu Pedido</h2>
+    <h2>🛒 Tu Pedido</h2>
 
     <div id="cantidad-total">
       0 productos
@@ -160,9 +160,7 @@ function actualizarTotal(){
   cantidadTotal + " productos";
 }
     function pedirWhatsapp() {
-
       let secreto = document.getElementById('secreto').innerText;
-      let explosiva = document.getElementById('explosiva').innerText;
       let callejera = document.getElementById('callejera').innerText;
 
       let nombre = document.getElementById('nombre').value;
@@ -173,11 +171,11 @@ function actualizarTotal(){
   alert("Por favor completa todos los campos.");
   return;
 }
-      if(
+ if(
 parseInt(secreto) === 0 &&
-parseInt(explosiva) === 0 &&
 parseInt(callejera) === 0
-){
+)
+{
   alert("Selecciona al menos un sándwich.");
   return;
 }
@@ -186,16 +184,14 @@ parseInt(callejera) === 0
 (explosiva * 18000) +
 (callejera * 20000);
 
-     let mensaje =
+    let mensaje =
 `Hola Mordida Secreta.
 
 Quiero realizar el siguiente pedido:
 
-🥪 El Secreto: ${secreto}
+🍗 El Secreto: ${secreto}
 
-🌆 La Callejera: ${callejera}
-
-💰 Total: $${total.toLocaleString('es-CO')}
+🥩 La Callejera: ${callejera}
 
 Nombre: ${nombre}
 
@@ -204,7 +200,6 @@ Barrio: ${barrio}
 Dirección: ${direccion}
 
 Método de pago: ${pago}`;
-
 window.open(
     "https://wa.me/573183785587?text=" +
     encodeURIComponent(mensaje),
