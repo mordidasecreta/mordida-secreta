@@ -67,10 +67,8 @@
     <h2>🥤 Combo Explosiva</h2>
 
     <p>
-      La Explosiva + Coca-Cola 400 ml
+      💥 La Explosiva + Coca-Cola 400 ml + 🍟 Papas Artesanales
     </p>
-
-    <p>🍟 Incluye papas artesanales</p>
 
     <h3>$21.000</h3>
 
@@ -90,8 +88,7 @@
       Carne desmechada jugosa,
       cebolla caramelizada,
       queso cheddar derretido,
-      madurito dulce y el toque
-      secreto de la casa.
+      madurito dulce y nuestra salsa de la casa.
     </p>
 
     <p>🍟 Incluye papas artesanales</p>
@@ -111,10 +108,8 @@
     <h2>🥤 Combo Callejera</h2>
 
     <p>
-      La Callejera + Coca-Cola 400 ml
+      🥩 La Callejera + Coca-Cola 400 ml + 🍟 Papas Artesanales
     </p>
-
-    <p>🍟 Incluye papas artesanales</p>
 
     <h3>$23.000</h3>
 
@@ -210,6 +205,12 @@ function actualizarTotal(){
 
   let comboCallejera =
   parseInt(document.getElementById('comboCallejera').innerText);
+  
+  let comboExplosiva =
+  document.getElementById('comboExplosiva').innerText;
+  
+  let comboCallejera =
+  document.getElementById('comboCallejera').innerText;
 
   let cantidadTotal =
   explosiva +
@@ -254,13 +255,15 @@ function actualizarTotal(){
     return;
   }
 
-  if(
-    parseInt(explosiva) === 0 &&
-    parseInt(callejera) === 0
-  ){
-    alert("Selecciona al menos un sándwich.");
-    return;
-  }
+ if(
+parseInt(explosiva) === 0 &&
+parseInt(comboExplosiva) === 0 &&
+parseInt(callejera) === 0 &&
+parseInt(comboCallejera) === 0
+){
+  alert("Selecciona al menos un producto.");
+  return;
+}
 
   let mensaje =
 `Hola Mordida Secreta.
@@ -269,7 +272,11 @@ Quiero realizar el siguiente pedido:
 
 💥 La Explosiva: ${explosiva}
 
+🥤 Combo Explosiva: ${comboExplosiva}
+
 🥩 La Callejera: ${callejera}
+
+🥤 Combo Callejera: ${comboCallejera}
 
 Nombre: ${nombre}
 
