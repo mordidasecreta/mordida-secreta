@@ -84,6 +84,7 @@
 </div>
 
   <div class="card callejera" id="card-callejera">
+    <div id="estado-callejera"></div>
 
   <h2>🥩 La Callejera</h2>
 
@@ -107,6 +108,7 @@
 </div>
 
   <div class="card callejera combo" id="card-combo-callejera">
+    <div id="estado-combo-callejera"></div>
 
   <h2>🥤 Combo Callejera</h2>
 
@@ -181,7 +183,9 @@
   </section>
 
  <script>
-
+   const callejeraDisponible = true;
+   const callejeraDisponible = false;
+   
 function cambiarCantidad(id, cambio) {
 
   let elemento = document.getElementById(id);
@@ -326,6 +330,22 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
     "_blank"
   );
 }
+window.onload = function(){
+
+  if(!callejeraDisponible){
+
+    document.getElementById("estado-callejera").innerHTML =
+      '<div class="agotado">❌ AGOTADO</div>';
+
+    document.getElementById("estado-combo-callejera").innerHTML =
+      '<div class="agotado">❌ AGOTADO</div>';
+
+    document.querySelector("#card-callejera .cantidad").style.display = "none";
+    document.querySelector("#card-combo-callejera .cantidad").style.display = "none";
+
+  }
+
+};
 
 </script>
 
