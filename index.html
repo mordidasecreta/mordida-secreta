@@ -83,8 +83,6 @@
 
 </div>
 
-
-<div class="card callejera">
   <div class="card callejera" id="card-callejera">
 
   <h2>🥩 La Callejera</h2>
@@ -108,7 +106,6 @@
 
 </div>
 
-<div class="card callejera combo">
   <div class="card callejera combo" id="card-combo-callejera">
 
   <h2>🥤 Combo Callejera</h2>
@@ -127,6 +124,7 @@
   </div>
 
 </div>
+  
 <div class="total-box">
 
   <h2>🛒 Tu Pedido</h2>
@@ -330,24 +328,6 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 }
 
 </script>
-  const callejeraDisponible = false;
-
-window.onload = function(){
-
-  if(!callejeraDisponible){
-
-    document.getElementById("card-callejera").innerHTML = `
-      <h2>🥩 La Callejera</h2>
-      <h3 style="color:red;">❌ AGOTADA</h3>
-      <p>Este producto no está disponible actualmente.</p>
-    `;
-
-    document.getElementById("card-combo-callejera").innerHTML = `
-      <h2>🥤 Combo Callejera</h2>
-      <h3 style="color:red;">❌ AGOTADO</h3>
-      <p>Este producto no está disponible actualmente.</p>
-    `;
-  }
 
 <section class="info">
 
