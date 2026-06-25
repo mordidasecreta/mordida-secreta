@@ -335,7 +335,7 @@ window.onload = function(){
   if(!callejeraDisponible){
 
     document.getElementById("estado-callejera").innerHTML =
-      '<div class="agotado">❌ AGOTADO</div>';
+      '<div class="agotado">❌ AGOTADA</div>';
 
     document.getElementById("estado-combo-callejera").innerHTML =
       '<div class="agotado">❌ AGOTADO</div>';
@@ -343,6 +343,11 @@ window.onload = function(){
     document.querySelector("#card-callejera .cantidad").style.display = "none";
     document.querySelector("#card-combo-callejera .cantidad").style.display = "none";
 
+    document.getElementById("callejera").innerText = "0";
+    document.getElementById("comboCallejera").innerText = "0";
+
+    document.getElementById("card-callejera").style.opacity = "0.6";
+    document.getElementById("card-combo-callejera").style.opacity = "0.6";
   }
 
 };
