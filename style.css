@@ -536,3 +536,12 @@ transform:scale(1);
   font-weight:bold;
   border-radius:10px;
 }
+.agotado{
+  background:#D62828;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  font-weight:bold;
+  margin-bottom:15px;
+  text-align:center;
+}
