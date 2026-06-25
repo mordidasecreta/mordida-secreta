@@ -519,12 +519,11 @@ transform:scale(1);
 
 .agotado{
   background:#555;
-  color:#ddd;
+  color:white;
   font-weight:bold;
   text-align:center;
   padding:10px;
   border-radius:12px;
   margin-bottom:15px;
   font-size:18px;
-  border:1px solid #777;
 }
