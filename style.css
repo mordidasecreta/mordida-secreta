@@ -260,7 +260,8 @@ body{
 }
 
 .opcion-pago input{
-  display:none;
+  position:absolute;
+  opacity:0;
 }
 
 .opcion-pago span{
