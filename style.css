@@ -528,3 +528,20 @@ transform:scale(1);
   margin-bottom:15px;
   font-size:18px;
 }
+.combo-explosiva{
+  background:
+  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+  url("images/explosiva-combo.jpg");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.combo-callejera{
+  background:
+  linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+  url("images/callejera-combo.jpg");
+
+  background-size:cover;
+  background-position:center;
+}
