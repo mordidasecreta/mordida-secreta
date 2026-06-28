@@ -93,12 +93,15 @@ const coca = obtenerCantidad("coca");
   document.getElementById("cantidad-total").innerText =
       cantidadTotal + " seleccionados";
 
-let total =
-    (explosiva * PRECIOS.explosiva) +
-    (comboExplosiva * PRECIOS.comboExplosiva) +
-    (callejera * PRECIOS.callejera) +
-    (comboCallejera * PRECIOS.comboCallejera) +
-    (coca * PRECIOS.coca);
+const cantidades = {
+    explosiva,
+    comboExplosiva,
+    callejera,
+    comboCallejera,
+    coca
+};
+
+const total = calcularTotal(cantidades);
 
   document.getElementById("total").innerText =
       "$" + total.toLocaleString("es-CO");
