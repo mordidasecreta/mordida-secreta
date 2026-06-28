@@ -122,6 +122,38 @@ body{
     transform:translateY(-3px);
     opacity:.95;
 }
+.card{
+
+    width:340px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:360px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:.3s;
+
+    background-size:cover;
+
+    background-position:center;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
 
 }
 /* ===========================
@@ -639,6 +671,46 @@ body{
     font-size:1.05rem;
 
     line-height:1.6;
+
+}
+@media (max-width:768px){
+
+    .card{
+
+        width:100%;
+
+    }
+
+    .slogan{
+
+        font-size:1.7rem;
+
+    }
+
+    .menu{
+
+        padding:15px;
+
+    }
+
+}
+/* ===========================
+   AGOTADOS
+=========================== */
+
+.agotado{
+
+    background:#555;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
 
 }
 
