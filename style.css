@@ -614,3 +614,6 @@ box-shadow:
 z-index:5;
 
 }
+html{
+    touch-action: manipulation;
+}
