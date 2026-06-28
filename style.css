@@ -725,3 +725,36 @@ box-shadow:
 0 8px 18px rgba(228,30,38,.45);
 
 }
+.cinta-combo{
+
+position:absolute;
+
+top:18px;
+left:-42px;
+
+width:160px;
+
+padding:8px;
+
+background:linear-gradient(
+135deg,
+#F5C542,
+#ffd84a
+);
+
+color:#111;
+
+font-weight:900;
+
+font-size:.85rem;
+
+text-align:center;
+
+transform:rotate(-35deg);
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.35);
+
+z-index:5;
+
+}
