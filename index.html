@@ -231,26 +231,26 @@ function actualizarTotal(){
 
   let comboCallejera =
   parseInt(document.getElementById('comboCallejera').innerText);
-
-  let cocaCola =
-  parseInt(document.getElementById('cocaCola').innerText);
   
-  let cantidadTotal =
-  explosiva +
-  comboExplosiva +
-  callejera +
-  comboCallejera +
-  cocaCola;
+  let coca =
+  parseInt(document.getElementById('coca').innerText);
+  
+let cantidadTotal =
+explosiva +
+comboExplosiva +
+callejera +
+comboCallejera +
+coca;
 
   document.getElementById('cantidad-total').innerText =
   cantidadTotal + " seleccionados";
 
   let total =
-  (explosiva * 18000) +
-  (comboExplosiva * 21000) +
-  (callejera * 20000) +
-  (comboCallejera * 23000) +
-  (cocaCola * 3500);
+(explosiva * 18000) +
+(comboExplosiva * 21000) +
+(callejera * 20000) +
+(comboCallejera * 23000) +
+(coca * 3500);
 
   let mensajeAhorro = "";
 
@@ -279,8 +279,8 @@ function pedirWhatsapp() {
   let comboCallejera =
   document.getElementById('comboCallejera').innerText;
 
-  let cocaCola =
-  document.getElementById('cocaCola').innerText;
+  let coca =
+  document.getElementById('coca').innerText;
 
   let nombre =
   document.getElementById('nombre').value;
@@ -304,7 +304,7 @@ function pedirWhatsapp() {
     parseInt(comboExplosiva) === 0 &&
     parseInt(callejera) === 0 &&
     parseInt(comboCallejera) === 0 &&
-    parseInt(cocaCola) === 0
+    parseInt(coca) === 0
   ){
     alert("Selecciona al menos un producto.");
     return;
@@ -314,7 +314,7 @@ let total =
 (parseInt(comboExplosiva) * 21000) +
 (parseInt(callejera) * 20000) +
 (parseInt(comboCallejera) * 23000);
-(parseInt(cocaCola) * 3500);
+(parseInt(coca) * 3500);
   
 let productos = "";
 
@@ -334,8 +334,8 @@ if(parseInt(comboCallejera) > 0){
   productos += `🥤 Combo Callejera (con Coca-Cola): ${comboCallejera}\n`;
   
 }
-if(parseInt(cocaCola) > 0){
-  productos += `🥤 Coca-Cola 400 ml: ${cocaCola}\n`;
+if(parseInt(coca) > 0){
+    productos += `🥤 Coca-Cola 400 ml: ${coca}\n`;
 }
 
 let mensaje =
