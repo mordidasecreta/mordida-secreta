@@ -574,7 +574,32 @@ box-shadow:
 0 15px 35px rgba(0,0,0,.45);
 
 transition:.35s;
+  .coca::before{
+
+content:"";
+
+position:absolute;
+
+top:-20px;
+left:50%;
+
+transform:translateX(-50%);
+
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+background:radial-gradient(
+rgba(228,30,38,.45),
+transparent 70%
+);
+
+filter:blur(12px);
+
+z-index:1;
 }
+
 .foto-coca{
 
 width:240px;
@@ -587,11 +612,12 @@ left:50%;
 
 transform:translateX(-50%);
 
+z-index:2;
+
 filter:
 drop-shadow(0 30px 40px rgba(0,0,0,.55))
-drop-shadow(0 0 25px rgba(255,255,255,.25));
+drop-shadow(0 0 35px rgba(228,30,38,.55));
 
-transition:.35s;
 }
 .coca:hover{
 
@@ -630,11 +656,16 @@ color:white;
 }
 .coca h3{
 
-font-size:2.3rem;
+font-size:2.6rem;
+
+font-weight:900;
 
 color:#25D366;
 
-margin-bottom:20px;
+text-shadow:
+0 0 10px rgba(37,211,102,.6),
+0 0 20px rgba(37,211,102,.4);
+
 }
 .etiqueta-coca{
 
@@ -681,4 +712,16 @@ font-size:1rem;
 font-weight:700;
 
 margin-bottom:15px;
+}
+.coca .cantidad button{
+
+background:#E41E26;
+
+color:white;
+
+font-size:24px;
+
+box-shadow:
+0 8px 18px rgba(228,30,38,.45);
+
 }
