@@ -553,3 +553,25 @@ transform:scale(1);
   background-size: cover;
   background-position: center;
 }
+.coca{
+    position:relative;
+    overflow:visible;
+    padding-top:120px;
+}
+
+.foto-coca{
+
+    width:180px;
+
+    position:absolute;
+
+    top:-70px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    filter:
+    drop-shadow(0 15px 20px rgba(0,0,0,.5))
+    drop-shadow(0 0 20px rgba(255,255,255,.2));
+}
