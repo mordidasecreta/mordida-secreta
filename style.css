@@ -616,6 +616,9 @@ z-index:5;
 }
 html,
 body{
-    touch-action: manipulation;
-    overflow-x: hidden;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+    touch-action:pan-y;
+    overscroll-behavior:none;
 }
