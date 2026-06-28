@@ -234,12 +234,13 @@ function actualizarTotal(){
 
   let cocaCola =
   parseInt(document.getElementById('cocaCola').innerText);
-
+  
   let cantidadTotal =
   explosiva +
   comboExplosiva +
   callejera +
-  comboCallejera;
+  comboCallejera +
+  cocaCola;
 
   document.getElementById('cantidad-total').innerText =
   cantidadTotal + " seleccionados";
