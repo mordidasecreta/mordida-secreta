@@ -397,7 +397,11 @@ body{
 
     position:relative;
 
-    border:2px solid #E41E26;
+   border:2px solid #ff3b3b;
+
+box-shadow:
+    0 0 15px rgba(255,0,0,.35),
+    0 0 35px rgba(255,0,0,.20);
 
     background:#111;
 
