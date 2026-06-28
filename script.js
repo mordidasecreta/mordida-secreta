@@ -15,6 +15,9 @@ function obtenerCantidad(id){
     );
 
 }
+/* ===========================
+         PRECIOS
+=========================== */
 
 const PRECIOS = {
 
@@ -27,6 +30,19 @@ const PRECIOS = {
   comboCallejera: 23000,
 
   coca: 4000
+
+};
+const NOMBRES = {
+
+  explosiva: "💥 La Explosiva",
+
+  comboExplosiva: "🥤 Combo Explosiva (con Coca-Cola)",
+
+  callejera: "🥩 La Callejera",
+
+  comboCallejera: "🥤 Combo Callejera (con Coca-Cola)",
+
+  coca: "🥤 Coca-Cola 400 ml"
 
 };
 
@@ -57,20 +73,15 @@ function cambiarCantidad(id, cambio) {
 
 function actualizarTotal(){
 
-  let explosiva =
-  parseInt(document.getElementById("explosiva").innerText);
+const explosiva = obtenerCantidad("explosiva");
 
-  let comboExplosiva =
-  parseInt(document.getElementById("comboExplosiva").innerText);
+const comboExplosiva = obtenerCantidad("comboExplosiva");
 
-  let callejera =
-  parseInt(document.getElementById("callejera").innerText);
+const callejera = obtenerCantidad("callejera");
 
-  let comboCallejera =
-  parseInt(document.getElementById("comboCallejera").innerText);
+const comboCallejera = obtenerCantidad("comboCallejera");
 
-  let coca =
-  parseInt(document.getElementById("coca").innerText);
+const coca = obtenerCantidad("coca");
 
   let cantidadTotal =
       explosiva +
@@ -82,12 +93,12 @@ function actualizarTotal(){
   document.getElementById("cantidad-total").innerText =
       cantidadTotal + " seleccionados";
 
-  let total =
-      (explosiva * 18000) +
-      (comboExplosiva * 21000) +
-      (callejera * 20000) +
-      (comboCallejera * 23000) +
-      (coca * 4000);
+let total =
+    (explosiva * PRECIOS.explosiva) +
+    (comboExplosiva * PRECIOS.comboExplosiva) +
+    (callejera * PRECIOS.callejera) +
+    (comboCallejera * PRECIOS.comboCallejera) +
+    (coca * PRECIOS.coca);
 
   document.getElementById("total").innerText =
       "$" + total.toLocaleString("es-CO");
@@ -106,20 +117,15 @@ function actualizarTotal(){
 =========================== */
 function pedirWhatsapp() {
 
-  let explosiva =
-  document.getElementById('explosiva').innerText;
+const explosiva = obtenerCantidad("explosiva");
 
-  let comboExplosiva =
-  document.getElementById('comboExplosiva').innerText;
+const comboExplosiva = obtenerCantidad("comboExplosiva");
 
-  let callejera =
-  document.getElementById('callejera').innerText;
+const callejera = obtenerCantidad("callejera");
 
-  let comboCallejera =
-  document.getElementById('comboCallejera').innerText;
+const comboCallejera = obtenerCantidad("comboCallejera");
 
-  let coca =
-  document.getElementById('coca').innerText;
+const coca = obtenerCantidad("coca");
 
   let nombre =
   document.getElementById('nombre').value;
@@ -150,33 +156,32 @@ function pedirWhatsapp() {
   }
 
   let total =
-  (parseInt(explosiva) * 18000) +
-  (parseInt(comboExplosiva) * 21000) +
-  (parseInt(callejera) * 20000) +
-  (parseInt(comboCallejera) * 23000) +
-  (parseInt(coca) * 4000);
+(explosiva * PRECIOS.explosiva) +
+(comboExplosiva * PRECIOS.comboExplosiva) +
+(callejera * PRECIOS.callejera) +
+(comboCallejera * PRECIOS.comboCallejera) +
+(coca * PRECIOS.coca);
+  let productos = "";
 
   let productos = "";
 
-  if(parseInt(explosiva) > 0){
-    productos += `💥 La Explosiva: ${explosiva}\n`;
+const cantidades = {
+  explosiva,
+  comboExplosiva,
+  callejera,
+  comboCallejera,
+  coca
+};
+
+for(const id in cantidades){
+
+  if(cantidades[id] > 0){
+
+    productos += `${NOMBRES[id]}: ${cantidades[id]}\n`;
+
   }
 
-  if(parseInt(comboExplosiva) > 0){
-    productos += `🥤 Combo Explosiva (con Coca-Cola): ${comboExplosiva}\n`;
-  }
-
-  if(parseInt(callejera) > 0){
-    productos += `🥩 La Callejera: ${callejera}\n`;
-  }
-
-  if(parseInt(comboCallejera) > 0){
-    productos += `🥤 Combo Callejera (con Coca-Cola): ${comboCallejera}\n`;
-  }
-
-  if(parseInt(coca) > 0){
-    productos += `🥤 Coca-Cola 400 ml: ${coca}\n`;
-  }
+}
 
   let mensaje =
 `Hola Mordida Secreta.
