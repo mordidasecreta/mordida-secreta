@@ -108,24 +108,16 @@ function actualizarTotal(){
 
 const cantidades = obtenerCantidades();
 
- const {
-    explosiva,
-    comboExplosiva,
-    callejera,
-    comboCallejera,
-    coca
-} = cantidades;
+const cantidadTotal =
+    explosiva +
+    comboExplosiva +
+    callejera +
+    comboCallejera +
+    coca;
 
-  document.getElementById("cantidad-total").innerText =
-      cantidadTotal + " seleccionados";
+document.getElementById("cantidad-total").innerText =
+    cantidadTotal + " seleccionados";
 
-const cantidades = {
-    explosiva,
-    comboExplosiva,
-    callejera,
-    comboCallejera,
-    coca
-};
 
 const total = calcularTotal(cantidades);
 
@@ -190,8 +182,6 @@ const coca = obtenerCantidad("coca");
 (callejera * PRECIOS.callejera) +
 (comboCallejera * PRECIOS.comboCallejera) +
 (coca * PRECIOS.coca);
-  let productos = "";
-
   let productos = "";
 
 const cantidades = {
