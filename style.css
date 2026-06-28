@@ -554,14 +554,26 @@ transform:scale(1);
   background-position: center;
 }
 .coca{
-    position:relative;
+
+    background:linear-gradient(
+    180deg,
+    #202020,
+    #111);
+
+    border:2px solid #E41E26;
+
+    text-align:center;
+
     overflow:visible;
-    padding-top:120px;
+
+    padding-top:150px;
+
+    position:relative;
 }
 
 .foto-coca{
 
-    width:180px;
+    width:220px;
 
     position:absolute;
 
@@ -572,6 +584,26 @@ transform:scale(1);
     transform:translateX(-50%);
 
     filter:
-    drop-shadow(0 15px 20px rgba(0,0,0,.5))
-    drop-shadow(0 0 20px rgba(255,255,255,.2));
+    drop-shadow(0 18px 30px rgba(0,0,0,.45))
+    drop-shadow(0 0 25px rgba(255,255,255,.25));
+
+    transition:.3s;
+}
+
+.foto-coca:hover{
+
+    transform:
+    translateX(-50%)
+    scale(1.08);
+}
+
+.coca h2{
+    color:#fff;
+}
+
+.coca h3{
+
+    color:#25D366;
+
+    font-size:2rem;
 }
