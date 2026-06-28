@@ -345,4 +345,110 @@ body{
     background-position:center;
 
 }
+/* ===========================
+   COMBOS
+=========================== */
 
+.combo{
+
+    border:2px solid #25D366;
+
+    box-shadow:
+    0 0 20px rgba(37,211,102,.25);
+
+}
+
+.combo h2{
+
+    color:#25D366;
+
+}
+/* ===========================
+   CINTA
+=========================== */
+
+.cinta-combo{
+
+    position:absolute;
+
+    top:18px;
+
+    left:-38px;
+
+    width:160px;
+
+    padding:8px 0;
+
+    background:#F5C542;
+
+    color:#111;
+
+    font-size:.8rem;
+
+    font-weight:900;
+
+    text-align:center;
+
+    transform:rotate(-35deg);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.35);
+
+    z-index:20;
+
+}
+/* ===========================
+   COCA COLA
+=========================== */
+
+.coca{
+
+    position:relative;
+
+    border:2px solid #E41E26;
+
+    background:#111;
+
+}
+
+.coca::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("images/coca400.png");
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:65%;
+
+    opacity:.22;
+
+    z-index:0;
+
+}
+
+.coca>*{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.coca h2{
+
+    color:white;
+
+}
+
+.coca h3{
+
+    color:#25D366;
+
+}
