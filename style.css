@@ -745,47 +745,35 @@ box-shadow:
 
 }
 /* ===========================
-   STICKER coca-cola
+   CINTA COCA-COLA
 =========================== */
 
-.etiqueta-coca{
+.cinta-coca{
 
     position:absolute;
-   
-   top:18px;
-   
-   right:18px;
 
-    width:60px;
-   
-   height:60px;
-   
-   font-size:11px;
+    top:20px;
 
-    border-radius:50%;
+    left:-45px;
+
+    width:170px;
+
+    padding:8px 0;
 
     background:#F5C542;
 
     color:#111;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
+    font-size:.85rem;
 
     font-weight:900;
 
-    line-height:1.1;
+    text-align:center;
 
-    border:3px solid #FFD95E;
+    transform:rotate(-35deg);
 
     box-shadow:
-        0 0 20px rgba(245,197,66,.6);
-
-    transform:rotate(15deg);
+        0 8px 18px rgba(0,0,0,.35);
 
     z-index:30;
 
