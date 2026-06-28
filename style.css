@@ -150,3 +150,199 @@ body{
     transform:translateY(-3px);
 
 }
+/* ===========================
+   MENU
+=========================== */
+
+.menu{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:25px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+/* ===========================
+   TARJETAS
+=========================== */
+
+.card{
+
+    position:relative;
+
+    width:320px;
+
+    min-height:340px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+    border:2px solid #F5C542;
+
+    transition:.3s;
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 12px 30px rgba(245,197,66,.25);
+
+}
+
+.card h2{
+
+    color:#F5C542;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    margin:6px 0;
+
+    line-height:1.5;
+
+}
+
+.card h3{
+
+    margin-top:15px;
+
+    color:#25D366;
+
+    font-size:2rem;
+
+}
+
+.card h2,
+.card h3,
+.card p{
+
+    text-shadow:
+
+    0 0 10px rgba(0,0,0,.9);
+
+}
+/* ===========================
+   CANTIDAD
+=========================== */
+
+.cantidad{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.cantidad button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F5C542;
+
+    color:#111;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.cantidad span{
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+/* ===========================
+   FONDOS
+=========================== */
+
+.explosiva{
+
+    background:
+    linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)),
+    url("images/explosiva.jpg");
+
+}
+
+.combo-explosiva{
+
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/explosiva-combo.jpg");
+
+}
+
+.callejera{
+
+    background:
+    linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)),
+    url("images/callejera.jpg");
+
+}
+
+.combo-callejera{
+
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/callejera-combo.jpg");
+
+}
+
+.explosiva,
+.combo-explosiva,
+.callejera,
+.combo-callejera{
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
