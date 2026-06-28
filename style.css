@@ -614,6 +614,8 @@ box-shadow:
 z-index:5;
 
 }
-html{
+html,
+body{
     touch-action: manipulation;
+    overflow-x: hidden;
 }
