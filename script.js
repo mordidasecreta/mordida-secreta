@@ -33,10 +33,19 @@ function obtenerCantidades(){
     };
 
 }
-
 function calcularTotal(cantidades){
 
-    ...
+    let total = 0;
+
+    for(const id in cantidades){
+
+        total += cantidades[id] * PRECIOS[id];
+
+    }
+
+    return total;
+
+}
 
 }
 /* ===========================
