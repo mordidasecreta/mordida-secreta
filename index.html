@@ -108,6 +108,69 @@
     </div>
 
 </div>
+    <div class="card callejera" id="card-callejera">
+
+    <div id="estado-callejera"></div>
+
+    <h2>🥩 La Callejera</h2>
+
+    <p>
+        Carne desmechada jugosa,
+        cebolla caramelizada,
+        queso cheddar derretido,
+        madurito dulce y nuestro toque secreto.
+    </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$20.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('callejera',-1)">
+            −
+        </button>
+
+        <span id="callejera">0</span>
+
+        <button onclick="cambiarCantidad('callejera',1)">
+            +
+        </button>
+
+    </div>
+
+</div>
+
+    <div class="card combo-callejera combo" id="card-combo-callejera">
+
+    <div id="estado-combo-callejera"></div>
+
+    <h2>🥤 Combo Callejera</h2>
+
+    <p>
+        🥩 La Callejera + 🍟 Papas artesanales +
+        🥤 Coca-Cola 400 ml
+    </p>
+
+    <h3>$23.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('comboCallejera',-1)">
+            −
+        </button>
+
+        <span id="comboCallejera">0</span>
+
+        <button onclick="cambiarCantidad('comboCallejera',1)">
+            +
+        </button>
+
+    </div>
+
+</div>
+
+    
 
 
 <script src="script.js"></script>
