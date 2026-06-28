@@ -555,175 +555,31 @@ transform:scale(1);
 }
 
 .coca{
+  background:
+    linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.75)),
+    url("images/coca400.png");
 
-background:linear-gradient(
-180deg,
-#181818,
-#0f0f0f);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
 
-border:2px solid #F5C542;
-
-border-radius:25px;
-
-padding:120px 20px 25px;
-
-position:relative;
-
-overflow:visible;
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.45);
-
-transition:.35s;
-  .coca::before{
-
-content:"";
-
-position:absolute;
-
-top:-20px;
-left:50%;
-
-transform:translateX(-50%);
-
-width:220px;
-height:220px;
-
-border-radius:50%;
-
-background:radial-gradient(
-rgba(228,30,38,.45),
-transparent 70%
-);
-
-filter:blur(12px);
-
-z-index:1;
-}
-
-.foto-coca{
-
-width:160px;
-
-top:-40px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-position:absolute;
-
-z-index:2;
-
-filter:
-drop-shadow(0 18px 25px rgba(0,0,0,.45));
-
-}
-.coca:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-0 25px 45px rgba(228,30,38,.30);
-
-}
-
-.coca:hover .foto-coca{
-
-transform:
-translateX(-50%)
-scale(1.12)
-rotate(-2deg);
-
-}
-
-.coca:hover .foto-coca{
-
-transform:
-translateX(-50%)
-scale(1.12)
-rotate(-2deg);
-
+  border:2px solid #E41E26;
 }
 
 .coca h2{
-
-font-size:1.8rem;
-
-margin-top:10px;
-
-color:white;
+  color:#fff;
 }
+
 .coca h3{
-
-font-size:2.6rem;
-
-font-weight:900;
-
-color:#25D366;
-
-text-shadow:
-0 0 10px rgba(37,211,102,.6),
-0 0 20px rgba(37,211,102,.4);
-
+  color:#25D366;
 }
-.etiqueta-coca{
 
-position:absolute;
-
-top:15px;
-
-right:15px;
-
-width:95px;
-height:95px;
-
-border-radius:50%;
-
-background:linear-gradient(
-135deg,
-#F5C542,
-#ffd84a);
-
-display:flex;
-
-align-items:center;
-justify-content:center;
-
-font-size:.8rem;
-
-font-weight:900;
-
-text-align:center;
-
-color:#111;
-
-transform:rotate(10deg);
-
-box-shadow:
-0 10px 25px rgba(245,197,66,.45);
-}
-.coca p{
-
-color:#F5C542;
-
-font-size:1rem;
-
-font-weight:700;
-
-margin-bottom:15px;
-}
-.coca .cantidad button{
-
-background:#E41E26;
-
-color:white;
-
-font-size:24px;
-
-box-shadow:
-0 8px 18px rgba(228,30,38,.45);
-
+.coca p,
+.coca h2,
+.coca h3{
+  text-shadow:
+    0 0 8px rgba(0,0,0,.95),
+    0 0 20px rgba(0,0,0,1);
 }
 .cinta-combo{
 
