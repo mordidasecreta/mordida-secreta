@@ -47,7 +47,6 @@ function calcularTotal(cantidades){
 
 }
 
-}
 /* ===========================
          PRECIOS
 =========================== */
@@ -107,6 +106,14 @@ function cambiarCantidad(id, cambio) {
 function actualizarTotal(){
 
 const cantidades = obtenerCantidades();
+
+   const {
+    explosiva,
+    comboExplosiva,
+    callejera,
+    comboCallejera,
+    coca
+} = cantidades;
 
 const cantidadTotal =
     explosiva +
@@ -176,21 +183,17 @@ const coca = obtenerCantidad("coca");
     return;
   }
 
-  let total =
-(explosiva * PRECIOS.explosiva) +
-(comboExplosiva * PRECIOS.comboExplosiva) +
-(callejera * PRECIOS.callejera) +
-(comboCallejera * PRECIOS.comboCallejera) +
-(coca * PRECIOS.coca);
+const cantidades = {
+    explosiva,
+    comboExplosiva,
+    callejera,
+    comboCallejera,
+    coca
+};
+
+const total = calcularTotal(cantidades);
   let productos = "";
 
-const cantidades = {
-  explosiva,
-  comboExplosiva,
-  callejera,
-  comboCallejera,
-  coca
-};
 
 for(const id in cantidades){
 
