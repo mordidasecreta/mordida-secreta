@@ -452,3 +452,68 @@ body{
     color:#25D366;
 
 }
+/* ===========================
+   TOTAL DEL PEDIDO
+=========================== */
+
+.total-box{
+
+    width:100%;
+
+    padding:25px;
+
+    margin-top:10px;
+
+    background:#1d1d1d;
+
+    border:2px solid #F5C542;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.total-box h2{
+
+    color:#F5C542;
+
+    margin-bottom:10px;
+
+}
+
+#cantidad-total{
+
+    margin:12px 0;
+
+    font-size:1.1rem;
+
+    color:#ccc;
+
+    font-weight:bold;
+
+}
+
+#total{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    color:#25D366;
+
+    text-shadow:
+    0 0 10px rgba(37,211,102,.6),
+    0 0 25px rgba(37,211,102,.35);
+
+}
+
+#mensaje-ahorro{
+
+    margin-top:12px;
+
+    color:#F5C542;
+
+    font-weight:bold;
+
+}
