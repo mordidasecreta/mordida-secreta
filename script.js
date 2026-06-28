@@ -15,6 +15,30 @@ function obtenerCantidad(id){
     );
 
 }
+
+function obtenerCantidades(){
+
+    return {
+
+        explosiva: obtenerCantidad("explosiva"),
+
+        comboExplosiva: obtenerCantidad("comboExplosiva"),
+
+        callejera: obtenerCantidad("callejera"),
+
+        comboCallejera: obtenerCantidad("comboCallejera"),
+
+        coca: obtenerCantidad("coca")
+
+    };
+
+}
+
+function calcularTotal(cantidades){
+
+    ...
+
+}
 /* ===========================
          PRECIOS
 =========================== */
@@ -73,22 +97,15 @@ function cambiarCantidad(id, cambio) {
 
 function actualizarTotal(){
 
-const explosiva = obtenerCantidad("explosiva");
+const cantidades = obtenerCantidades();
 
-const comboExplosiva = obtenerCantidad("comboExplosiva");
-
-const callejera = obtenerCantidad("callejera");
-
-const comboCallejera = obtenerCantidad("comboCallejera");
-
-const coca = obtenerCantidad("coca");
-
-  let cantidadTotal =
-      explosiva +
-      comboExplosiva +
-      callejera +
-      comboCallejera +
-      coca;
+ const {
+    explosiva,
+    comboExplosiva,
+    callejera,
+    comboCallejera,
+    coca
+} = cantidades;
 
   document.getElementById("cantidad-total").innerText =
       cantidadTotal + " seleccionados";
@@ -232,3 +249,6 @@ window.onload = function(){
     actualizarTotal();
 
 };
+/* ===========================
+   OBTENER CANTIDAD
+=========================== */
