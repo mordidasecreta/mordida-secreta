@@ -714,26 +714,26 @@ body{
 
 }
 /* ===========================
-   STICKER COCA-COLA
+   STICKER coca-cola
 =========================== */
 
 .etiqueta-coca{
 
     position:absolute;
 
-    top:15px;
+    top:18px;
 
-    right:15px;
+    right:18px;
 
-    width:75px;
+    width:80px;
 
-    height:75px;
+    height:80px;
 
     border-radius:50%;
 
-    background:#E41E26;
+    background:#F5C542;
 
-    color:white;
+    color:#111;
 
     display:flex;
 
@@ -745,18 +745,17 @@ body{
 
     font-size:13px;
 
-    font-weight:bold;
+    font-weight:900;
 
     line-height:1.1;
 
-    box-shadow:
-        0 0 18px rgba(228,30,38,.6);
+    border:3px solid #FFD95E;
 
-    transform:rotate(12deg);
+    box-shadow:
+        0 0 20px rgba(245,197,66,.6);
+
+    transform:rotate(15deg);
 
     z-index:30;
 
 }
-
-
-
