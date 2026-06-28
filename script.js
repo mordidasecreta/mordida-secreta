@@ -3,6 +3,19 @@
 =========================== */
 
 const callejeraDisponible = false;
+const PRECIOS = {
+
+  explosiva: 18000,
+
+  comboExplosiva: 21000,
+
+  callejera: 20000,
+
+  comboCallejera: 23000,
+
+  coca: 4000
+
+};
 
 
 /* ===========================
