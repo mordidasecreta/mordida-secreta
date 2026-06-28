@@ -611,21 +611,33 @@ transform:scale(1);
 
 position:absolute;
 
-top:15px;
+top:10px;
 right:15px;
+
+width:90px;
+height:90px;
 
 background:#F5C542;
 
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+font-size:.75rem;
+
+font-weight:900;
+
+line-height:1.1;
+
 color:#111;
 
-padding:8px 15px;
-
-border-radius:30px;
-
-font-size:.85rem;
-
-font-weight:800;
+transform:rotate(12deg);
 
 box-shadow:
-0 5px 15px rgba(245,197,66,.35);
+0 8px 20px rgba(245,197,66,.45);
 }
