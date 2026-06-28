@@ -751,10 +751,12 @@ box-shadow:
 .etiqueta-coca{
 
     position:absolute;
-
-    top:18px;
-
-    right:18px;
+   
+   top:18px;
+   
+   left:18px;
+   
+   right:auto;
 
     width:80px;
 
