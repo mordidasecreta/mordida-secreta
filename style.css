@@ -432,6 +432,25 @@ body{
     z-index:0;
 
 }
+.coca::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,0,0,.30) 0%,
+            rgba(255,0,0,.12) 35%,
+            transparent 75%
+        );
+
+    z-index:0;
+
+}
 
 .coca>*{
 
