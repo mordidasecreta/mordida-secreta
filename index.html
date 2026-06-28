@@ -250,7 +250,7 @@ function actualizarTotal(){
   (comboExplosiva * 21000) +
   (callejera * 20000) +
   (comboCallejera * 23000) +
-  (cocaCola * 3000);
+  (cocaCola * 3500);
 
   let mensajeAhorro = "";
 
@@ -279,6 +279,9 @@ function pedirWhatsapp() {
   let comboCallejera =
   document.getElementById('comboCallejera').innerText;
 
+  let cocaCola =
+  document.getElementById('cocaCola').innerText;
+
   let nombre =
   document.getElementById('nombre').value;
 
@@ -300,7 +303,8 @@ function pedirWhatsapp() {
     parseInt(explosiva) === 0 &&
     parseInt(comboExplosiva) === 0 &&
     parseInt(callejera) === 0 &&
-    parseInt(comboCallejera) === 0
+    parseInt(comboCallejera) === 0 &&
+    parseInt(cocaCola) === 0
   ){
     alert("Selecciona al menos un producto.");
     return;
@@ -310,6 +314,8 @@ let total =
 (parseInt(comboExplosiva) * 21000) +
 (parseInt(callejera) * 20000) +
 (parseInt(comboCallejera) * 23000);
+(parseInt(cocaCola) * 3500);
+  
 let productos = "";
 
 if(parseInt(explosiva) > 0){
@@ -326,6 +332,10 @@ if(parseInt(callejera) > 0){
 
 if(parseInt(comboCallejera) > 0){
   productos += `🥤 Combo Callejera (con Coca-Cola): ${comboCallejera}\n`;
+  
+}
+if(parseInt(cocaCola) > 0){
+  productos += `🥤 Coca-Cola 400 ml: ${cocaCola}\n`;
 }
 
 let mensaje =
