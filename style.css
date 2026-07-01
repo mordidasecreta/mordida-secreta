@@ -191,10 +191,11 @@ body{
 
     0 0 35px rgba(245,197,66,.30);
 
-}
-position:relative;
+    position:relative;
 
-z-index:5;
+    z-index:5;
+
+}
 
 .btn-principal{
 
@@ -226,10 +227,11 @@ z-index:5;
 
     0 10px 35px rgba(245,197,66,.45);
 
-}
-position:relative;
+    position:relative;
 
-z-index:5;
+    z-index:5;
+
+}
 
 .btn-principal:hover{
 
