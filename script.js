@@ -211,6 +211,17 @@ cantidadTotal + " productos";
 
 document.getElementById("barra-total").innerText =
 "$" + total.toLocaleString("es-CO");
+   const barra = document.getElementById("barra-compra");
+
+if(cantidadTotal > 0){
+
+    barra.classList.add("visible");
+
+}else{
+
+    barra.classList.remove("visible");
+
+}
 
   document.getElementById("total").innerText =
       "$" + total.toLocaleString("es-CO");
@@ -458,17 +469,7 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
-const barra = document.getElementById("barra-compra");
 
-if(cantidadTotal > 0){
-
-    barra.classList.add("visible");
-
-}else{
-
-    barra.classList.remove("visible");
-
-}
 function mostrarMensajeCard(id){
 
     const card=document.getElementById(id).closest(".card");
