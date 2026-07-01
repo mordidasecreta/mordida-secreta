@@ -1517,4 +1517,35 @@ body{
     }
 
 }
+/* ===========================
+   REBOTE DE TARJETA
+=========================== */
+
+.card.pop{
+
+    animation:popCard .35s ease;
+
+}
+
+@keyframes popCard{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    40%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
 
