@@ -153,9 +153,14 @@ const cantidadTotal =
 
 document.getElementById("cantidad-total").innerText =
     cantidadTotal + " seleccionados";
-
-
+   
 const total = calcularTotal(cantidades);
+   
+document.getElementById("barra-cantidad").innerText =
+cantidadTotal + " productos";
+
+document.getElementById("barra-total").innerText =
+"$" + total.toLocaleString("es-CO");
 
   document.getElementById("total").innerText =
       "$" + total.toLocaleString("es-CO");
@@ -393,3 +398,14 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
+const barra = document.getElementById("barra-compra");
+
+if(cantidadTotal > 0){
+
+    barra.classList.add("visible");
+
+}else{
+
+    barra.classList.remove("visible");
+
+}
