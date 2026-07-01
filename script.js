@@ -374,10 +374,10 @@ window.onload = function(){
     if(!callejeraDisponible){
 
         document.getElementById("estado-callejera").innerHTML =
-        '<div class="agotado">❌ AGOTADA</div>';
+        '<div class="agotado">NO DISPONIBLE</div>';
 
         document.getElementById("estado-combo-callejera").innerHTML =
-        '<div class="agotado">❌ AGOTADO</div>';
+        '<div class="agotado">NO DISPONIBLE</div>';
 
         document.querySelector("#card-callejera .cantidad").style.display = "none";
 
