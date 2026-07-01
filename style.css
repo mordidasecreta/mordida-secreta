@@ -763,6 +763,14 @@ body{
 
     cursor:pointer;
 
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+        transform .25s,
+        box-shadow .25s;
+
 }
 
 .cantidad span{
@@ -1584,6 +1592,8 @@ body{
 
     transition:.25s;
 
+    animation:respirar 2.8s infinite;
+
 }
 
 .btn-continuar:hover{
@@ -1847,18 +1857,6 @@ body{
    BOTONES PREMIUM
 =========================== */
 
-.cantidad button{
-
-    position:relative;
-
-    overflow:hidden;
-
-    transition:
-        transform .25s,
-        box-shadow .25s;
-
-}
-
 .cantidad button:hover{
 
     transform:scale(1.12);
@@ -1877,12 +1875,6 @@ body{
 /* ===========================
    BOTÓN VIVO
 =========================== */
-
-.btn-continuar{
-
-    animation:respirar 2.8s infinite;
-
-}
 
 @keyframes respirar{
 
@@ -1908,13 +1900,6 @@ body{
    LUZ CINEMATOGRÁFICA
 =========================== */
 
-.card{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
 
 .card::before{
 
