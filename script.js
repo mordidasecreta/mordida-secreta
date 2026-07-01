@@ -454,3 +454,35 @@ if(cantidadTotal > 0){
     barra.classList.remove("visible");
 
 }
+function mostrarMensajeCard(id){
+
+    const card=document.getElementById(id).closest(".card");
+
+    let mensaje=card.querySelector(".mensaje-card");
+
+    if(!mensaje){
+
+        mensaje=document.createElement("div");
+
+        mensaje.className="mensaje-card";
+
+        card.appendChild(mensaje);
+
+    }
+
+    const lista=MENSAJES[id];
+
+    mensaje.innerHTML=
+    lista[Math.floor(Math.random()*lista.length)];
+
+    mensaje.classList.add("mostrar");
+
+    clearTimeout(mensaje.timer);
+
+    mensaje.timer=setTimeout(()=>{
+
+        mensaje.classList.remove("mostrar");
+
+    },2500);
+
+}
