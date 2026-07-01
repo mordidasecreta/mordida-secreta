@@ -90,7 +90,9 @@ body{
 
 .hero{
 
-    min-height:85vh;
+    position:relative;
+
+    min-height:100vh;
 
     display:flex;
 
@@ -104,23 +106,23 @@ body{
 
     padding:40px 20px;
 
+    overflow:hidden;
+
     background:
-        radial-gradient(circle,
-        rgba(245,197,66,.18),
-        transparent 45%),
+    radial-gradient(circle at top,
+    rgba(245,197,66,.18),
+    transparent 40%),
 
-        linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.88)
-        ),
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.88)
+    ),
 
-        url("images/hero.jpg");
+    url("images/hero.jpg");
 
     background-size:cover;
 
     background-position:center;
-
-    background-attachment:fixed;
 
 }
 
@@ -136,21 +138,21 @@ body{
 
     color:white;
 
-    letter-spacing:-1px;
+    letter-spacing:1px;
 
     text-shadow:
 
-        0 0 15px rgba(255,255,255,.25),
+    0 0 15px rgba(255,255,255,.25),
 
-        0 0 35px rgba(245,197,66,.25);
+    0 0 35px rgba(245,197,66,.30);
 
 }
 
 .btn-principal{
 
-    margin-top:35px;
+    margin-top:45px;
 
-    padding:18px 42px;
+    padding:18px 48px;
 
     border:none;
 
@@ -159,12 +161,12 @@ body{
     background:linear-gradient(
         90deg,
         #F5C542,
-        #FFD95C
+        #ffd95a
     );
 
     color:#111;
 
-    font-size:19px;
+    font-size:18px;
 
     font-weight:900;
 
@@ -174,7 +176,7 @@ body{
 
     box-shadow:
 
-        0 0 25px rgba(245,197,66,.35);
+    0 10px 35px rgba(245,197,66,.45);
 
 }
 
@@ -184,7 +186,7 @@ body{
 
     box-shadow:
 
-        0 0 45px rgba(245,197,66,.6);
+    0 20px 45px rgba(245,197,66,.55);
 
 }
 .card{
