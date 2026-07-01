@@ -260,8 +260,44 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
   );
 }
 /* ===========================
+   ANIMACIÓN SCROLL
+=========================== */
+
+function iniciarAnimaciones(){
+
+    const elementos =
+    document.querySelectorAll(".animar");
+
+    const observer =
+    new IntersectionObserver((entradas)=>{
+
+        entradas.forEach((entrada)=>{
+
+            if(entrada.isIntersecting){
+
+                entrada.target.classList.add("visible");
+
+            }
+
+        });
+
+    },{
+        threshold:.15
+    });
+
+    elementos.forEach((elemento)=>{
+
+        elemento.classList.add("oculto");
+
+        observer.observe(elemento);
+
+    });
+
+}
+/* ===========================
    INICIO DE LA PÁGINA
 =========================== */
+
 
 window.onload = function(){
 
@@ -280,6 +316,7 @@ window.onload = function(){
     }
 
     actualizarTotal();
+   iniciarAnimaciones();
 
 };
 
