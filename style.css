@@ -623,34 +623,11 @@ body{
 =========================== */
 
 .cinta-combo{
-
-    position:absolute;
-
-    top:18px;
-
-    left:-38px;
-
-    width:160px;
-
-    padding:8px 0;
-
-    background:#F5C542;
-
-    color:#111;
-
-    font-size:.8rem;
-
-    font-weight:900;
-
-    text-align:center;
-
-    transform:rotate(-35deg);
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.35);
-
-    z-index:20;
-
+    position: absolute;
+    top: 18px;
+    left: -38px;
+    width: 160px;
+    transform: rotate(-35deg);
 }
 /* ===========================
    COCA COLA
@@ -1033,11 +1010,10 @@ body{
 }
 @media (max-width:768px){
 
-    .card{
-
-        width:100%;
-
-    }
+.card{
+    position: relative;
+    overflow: hidden;
+}
 
     .slogan{
 
@@ -1150,34 +1126,11 @@ body{
 =========================== */
 
 .cinta-coca{
-
-    position:absolute;
-
-    top:20px;
-
-    left:-45px;
-
-    width:170px;
-
-    padding:8px 0;
-
-    background:#F5C542;
-
-    color:#111;
-
-    font-size:.85rem;
-
-    font-weight:900;
-
-    text-align:center;
-
-    transform:rotate(-35deg);
-
-    box-shadow:
-        0 8px 18px rgba(0,0,0,.35);
-
-    z-index:30;
-
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    width: 170px;
+    transform: rotate(-35deg);
 }
 /* ===========================
    ANIMACIÓN +1
