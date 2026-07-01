@@ -125,6 +125,51 @@ body{
     background-position:center;
 
 }
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 20% 80%,
+    rgba(255,120,0,.15),
+    transparent 30%),
+
+    radial-gradient(circle at 80% 20%,
+    rgba(245,197,66,.12),
+    transparent 30%),
+
+    radial-gradient(circle at 50% 50%,
+    rgba(255,255,255,.05),
+    transparent 45%);
+
+    animation:humoHero 10s ease-in-out infinite alternate;
+
+    pointer-events:none;
+
+}
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    transparent,
+    rgba(0,0,0,.25)
+    );
+
+    pointer-events:none;
+
+}
 
 .slogan{
 
@@ -147,6 +192,9 @@ body{
     0 0 35px rgba(245,197,66,.30);
 
 }
+position:relative;
+
+z-index:5;
 
 .btn-principal{
 
@@ -179,6 +227,9 @@ body{
     0 10px 35px rgba(245,197,66,.45);
 
 }
+position:relative;
+
+z-index:5;
 
 .btn-principal:hover{
 
@@ -1104,5 +1155,24 @@ box-shadow:
     opacity:1;
 
     transform:translateY(0);
+
+}
+@keyframes humoHero{
+
+    0%{
+
+        transform:scale(1) translateY(0);
+
+        opacity:.6;
+
+    }
+
+    100%{
+
+        transform:scale(1.12) translateY(-20px);
+
+        opacity:1;
+
+    }
 
 }
