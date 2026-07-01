@@ -313,6 +313,42 @@ body{
     pointer-events:none;
 
 }
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-50%;
+
+    width:70%;
+
+    height:300%;
+
+    background:
+
+        linear-gradient(
+
+            rgba(255,255,255,0),
+
+            rgba(255,255,255,.18),
+
+            rgba(255,255,255,0)
+
+        );
+
+    transform:rotate(25deg);
+
+    transition:.7s;
+
+}
+.card:hover::after{
+
+    left:140%;
+
+}
 
 .card:hover{
 
@@ -461,9 +497,23 @@ body{
 .callejera,
 .combo-callejera{
 
-    background-size:cover;
+    background-size:110%;
 
     background-position:center;
+
+    transition:
+        background-size .45s ease,
+        filter .45s ease;
+
+}
+.card:hover.explosiva,
+.card:hover.combo-explosiva,
+.card:hover.callejera,
+.card:hover.combo-callejera{
+
+    background-size:120%;
+
+    filter:brightness(1.08);
 
 }
 /* ===========================
