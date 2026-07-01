@@ -130,6 +130,11 @@ function cambiarCantidad(id, cambio, e) {
     }
 
     elemento.innerText = valor;
+   if(cambio>0){
+
+    mostrarMensajeCard(id);
+
+}
    const tarjeta = elemento.closest(".card");
    
    if(tarjeta){
