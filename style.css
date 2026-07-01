@@ -1290,3 +1290,40 @@ body{
     transform:translateY(0);
 
 }
+/* ===========================
+   MOSTRAR FORMULARIO
+=========================== */
+
+.oculto{
+
+    display:none;
+
+}
+
+.pedido.visible{
+
+    display:block;
+
+    animation:aparecer .5s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
