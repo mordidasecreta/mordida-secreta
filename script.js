@@ -383,6 +383,16 @@ window.onload = function(){
 
         document.querySelector("#card-combo-callejera .cantidad").style.display = "none";
 
+       document
+.getElementById("card-callejera")
+.classList
+.add("no-disponible");
+
+document
+.getElementById("card-combo-callejera")
+.classList
+.add("no-disponible");
+
     }
 
     actualizarTotal();
