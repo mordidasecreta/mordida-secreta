@@ -744,7 +744,9 @@ box-shadow:
 
     font-weight:800;
 
-}}
+}
+
+
 /* ===========================
    FORMULARIO
 =========================== */
@@ -981,5 +983,59 @@ box-shadow:
         0 8px 18px rgba(0,0,0,.35);
 
     z-index:30;
+
+}
+/* ===========================
+   ANIMACIÓN +1
+=========================== */
+
+.plus-one{
+
+    position:fixed;
+
+    color:#F5C542;
+
+    font-size:28px;
+
+    font-weight:900;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    animation:subir .9s ease forwards;
+
+    text-shadow:
+        0 0 15px rgba(245,197,66,.6);
+
+}
+
+@keyframes subir{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateY(20px)
+            scale(.6);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-80px)
+            scale(1.3);
+
+    }
 
 }
