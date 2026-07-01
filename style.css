@@ -1074,22 +1074,42 @@ body{
 
 }
 /* ===========================
-   AGOTADOS
+   ETIQUETA AGOTADO PREMIUM
 =========================== */
 
 .agotado{
 
-    background:#555;
+    display:inline-block;
 
-    color:white;
+    padding:10px 24px;
 
-    padding:10px;
+    margin-bottom:18px;
 
-    border-radius:12px;
+    border-radius:999px;
 
-    font-weight:bold;
+    background:rgba(120,0,0,.82);
 
-    margin-bottom:15px;
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,80,80,.45);
+
+    color:#ffffff;
+
+    font-size:.9rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    box-shadow:
+        0 0 18px rgba(255,0,0,.28),
+        inset 0 0 10px rgba(255,255,255,.05);
+
+    animation:agotadoGlow 2.8s ease-in-out infinite;
 
 }
 /* ===========================
