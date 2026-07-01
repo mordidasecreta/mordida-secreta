@@ -1834,11 +1834,4 @@ body{
     opacity:1;
 
 }
-.card:hover{
 
-    transform:translateY(-6px);
-
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.40);
-
-}
