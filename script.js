@@ -96,6 +96,21 @@ function cambiarCantidad(id, cambio) {
   }
 
   elemento.innerText = valor;
+   if(cambio > 0){
+
+    const boton = event.target;
+
+    const rect = boton.getBoundingClientRect();
+
+    mostrarPlusUno(
+
+        rect.left + rect.width/2,
+
+        rect.top
+
+    );
+
+}
 
   actualizarTotal();
 }
@@ -251,6 +266,30 @@ window.onload = function(){
     actualizarTotal();
 
 };
+
+
 /* ===========================
-   OBTENER CANTIDAD
+   EFECTO +1
 =========================== */
+
+function mostrarPlusUno(x, y){
+
+    const aviso = document.createElement("div");
+
+    aviso.className = "plus-one";
+
+    aviso.innerHTML = "+1 🥪";
+
+    aviso.style.left = x + "px";
+
+    aviso.style.top = y + "px";
+
+    document.body.appendChild(aviso);
+
+    setTimeout(()=>{
+
+        aviso.remove();
+
+    },900);
+
+}
