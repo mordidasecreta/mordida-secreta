@@ -77,6 +77,40 @@ const NOMBRES = {
   coca: "🥤 Coca-Cola 400 ml"
 
 };
+const MENSAJES={
+
+explosiva:[
+"🔥 Nuestra receta secreta",
+"🤤 Imposible comer solo uno",
+"💥 La favorita de la casa"
+],
+
+comboExplosiva:[
+"🥤 La combinación perfecta",
+"🍟 Todo sabe mejor en combo",
+"😋 Excelente elección"
+],
+
+callejera:[
+"🥩 Sabor auténtico",
+"🔥 Mucho carácter",
+"😎 Puro estilo callejero"
+],
+
+comboCallejera:[
+"🥤 Combo completo",
+"🍟 No le falta nada",
+"🤩 Una gran elección"
+],
+
+coca:[
+"🧊 ¡Bien fría!",
+"❄️ Refrescante",
+"🥶 Salida del hielo",
+"🥤 El complemento perfecto"
+]
+
+};
 
 
 /* ===========================
