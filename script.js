@@ -480,7 +480,11 @@ function mostrarMensajeCard(id){
     mensaje.innerHTML=
     lista[Math.floor(Math.random()*lista.length)];
 
-    mensaje.classList.add("mostrar");
+    mensaje.classList.remove("mostrar");
+
+void mensaje.offsetWidth;
+
+mensaje.classList.add("mostrar");
 
     clearTimeout(mensaje.timer);
 
