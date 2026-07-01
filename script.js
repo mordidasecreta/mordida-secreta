@@ -83,36 +83,32 @@ const NOMBRES = {
    CAMBIAR CANTIDAD
 =========================== */
 
-function cambiarCantidad(id, cambio) {
+function cambiarCantidad(id, cambio, e) {
 
-  let elemento = document.getElementById(id);
+    let elemento = document.getElementById(id);
 
-  let valor = parseInt(elemento.innerText);
+    let valor = parseInt(elemento.innerText);
 
-  valor += cambio;
+    valor += cambio;
 
-  if(valor < 0){
-    valor = 0;
-  }
+    if(valor < 0){
+        valor = 0;
+    }
 
-  elemento.innerText = valor;
-   if(cambio > 0){
+    elemento.innerText = valor;
 
-    const boton = event.target;
+    if(cambio > 0 && e){
 
-    const rect = boton.getBoundingClientRect();
+        const rect = e.target.getBoundingClientRect();
 
-    mostrarPlusUno(
+        mostrarPlusUno(
+            rect.left + rect.width/2,
+            rect.top
+        );
+    }
 
-        rect.left + rect.width/2,
+    actualizarTotal();
 
-        rect.top
-
-    );
-
-}
-
-  actualizarTotal();
 }
 /* ===========================
    ACTUALIZAR TOTAL
@@ -267,18 +263,15 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 
 function mostrarFormulario(){
 
-    document
-        .getElementById("pedido")
-        .classList
-        .add("visible");
+    const formulario = document.getElementById("pedido");
 
-    document
-        .getElementById("pedido")
-        .scrollIntoView({
+    formulario.classList.remove("oculto");
 
-            behavior:"smooth"
+    formulario.classList.add("visible");
 
-        });
+    formulario.scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 /* ===========================
