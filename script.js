@@ -377,3 +377,30 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
+/* ===========================
+   ANIMACIONES AL HACER SCROLL
+=========================== */
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+document.querySelectorAll(".animar").forEach((el,index)=>{
+
+    el.style.transitionDelay = (index * 0.15) + "s";
+
+    observer.observe(el);
+
+});
