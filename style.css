@@ -303,9 +303,9 @@ body{
 }
 
 
-/* ==========================================================
-   TARJETAS
-========================================================== */
+/* ===========================
+   TARJETAS DEL MENÚ
+=========================== */
 
 .card{
 
@@ -1344,40 +1344,6 @@ body{
 
 }
 /* ===========================
-   TARJETA NO DISPONIBLE
-=========================== */
-
-.card.no-disponible{
-
-    filter:
-        grayscale(.55)
-        brightness(.75);
-
-}
-
-.card.no-disponible::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.18);
-
-    z-index:1;
-
-}
-
-.card.no-disponible h2,
-.card.no-disponible p,
-.card.no-disponible h3{
-
-    opacity:.75;
-
-}
-
-/* ===========================
    CINTA COCA-COLA
 =========================== */
 
@@ -1680,17 +1646,6 @@ body{
     }
 
 }
-/* ===========================
-   REBOTE DE TARJETA
-=========================== */
-
-.card.pop{
-
-    animation:popCard .35s ease;
-
-}
-
-
 
 /* ===========================
    MENSAJE PREMIUM
@@ -1835,6 +1790,39 @@ body{
     opacity:1;
 
 }
+.card.pop{
+
+    animation:popCard .35s ease;
+
+}
+.card.no-disponible{
+
+    filter:
+        grayscale(.55)
+        brightness(.75);
+
+}
+.card.no-disponible::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.18);
+
+    z-index:1;
+
+}
+.card.no-disponible h2,
+.card.no-disponible p,
+.card.no-disponible h3{
+
+    opacity:.75;
+
+}
+
 /* ===========================
    ANIMACIONES
 =========================== */
