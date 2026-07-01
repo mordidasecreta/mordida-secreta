@@ -698,32 +698,26 @@ body{
    CINTAS
 ========================================================== */
 
-.cinta-combo{
+/* ===========================
+   CINTAS
+=========================== */
 
+.cinta-combo,
+.cinta-coca{
     position:absolute;
-
-    top:18px;
-
-    left:-38px;
-
-    width:160px;
-
     transform:rotate(-35deg);
+}
 
+.cinta-combo{
+    top:18px;
+    left:-38px;
+    width:160px;
 }
 
 .cinta-coca{
-
-    position:absolute;
-
     top:20px;
-
     left:-45px;
-
     width:170px;
-
-    transform:rotate(-35deg);
-
 }
 /* ===========================
    CANTIDAD
