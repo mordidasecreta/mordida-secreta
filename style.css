@@ -1472,12 +1472,6 @@ body{
 
 }
 
-.btn-continuar:hover{
-
-    transform:scale(1.05);
-
-}
-
 @media(max-width:768px){
 
 .resumen-pedido{
@@ -1621,12 +1615,6 @@ body{
 
 }
 
-.barra-boton:hover{
-
-    transform:scale(1.05);
-
-}
-
 @media(min-width:900px){
 
     .barra-compra{
@@ -1698,16 +1686,6 @@ body{
 /* ===========================
    BOTONES PREMIUM
 =========================== */
-
-.cantidad button:hover{
-
-    transform:scale(1.12);
-
-    box-shadow:
-        0 0 15px rgba(245,197,66,.7),
-        0 0 35px rgba(245,197,66,.3);
-
-}
 
 .cantidad button:active{
 
@@ -1812,6 +1790,26 @@ body{
     opacity:.75;
 
 }
+.cantidad button:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:
+        0 0 15px rgba(245,197,66,.7),
+        0 0 35px rgba(245,197,66,.3);
+
+}
+.btn-continuar:hover{
+
+    transform:scale(1.05);
+
+}
+.barra-boton:hover{
+
+    transform:scale(1.05);
+
+}
+
 
 /* ===========================
    ANIMACIONES
