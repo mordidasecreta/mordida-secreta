@@ -1,11 +1,11 @@
-/* ===========================
+/* ==========================================================
    RESET
-=========================== */
+========================================================== */
 
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box; 
+    box-sizing:border-box;
 }
 
 html{
@@ -13,57 +13,50 @@ html{
 }
 
 body{
-
-    font-family:'Montserrat', sans-serif;
-
+    font-family:'Montserrat',sans-serif;
     color:#fff;
-
     overflow-x:hidden;
 
     background:
         radial-gradient(circle at top,
-        rgba(245,197,66,.08),
-        transparent 40%),
+            rgba(245,197,66,.08),
+            transparent 40%),
 
         radial-gradient(circle at bottom right,
-        rgba(255,120,0,.05),
-        transparent 35%),
+            rgba(255,120,0,.05),
+            transparent 35%),
 
         linear-gradient(
-        180deg,
-        #0b0b0b 0%,
-        #141414 35%,
-        #101010 70%,
-        #080808 100%);
-
+            180deg,
+            #0b0b0b 0%,
+            #141414 35%,
+            #101010 70%,
+            #080808 100%);
 }
-/* ===========================
+
+
+/* ==========================================================
    LOGO
-=========================== */
+========================================================== */
 
 .logo{
-
     text-align:center;
-
     padding:15px;
-
 }
 
 .logo img{
-
     width:90%;
-
     max-width:420px;
-
     height:auto;
 
     filter:
-    drop-shadow(0 0 18px rgba(245,197,66,.45));
-
+        drop-shadow(0 0 18px rgba(245,197,66,.45));
 }
-/* ===========================
+
+
+/* ==========================================================
    ESTADO
-=========================== */
+========================================================== */
 
 .estado-semanal{
 
@@ -81,12 +74,15 @@ body{
 
     border-radius:999px;
 
-    box-shadow:0 0 18px rgba(245,197,66,.35);
+    box-shadow:
+        0 0 18px rgba(245,197,66,.35);
 
 }
-/* ===========================
+
+
+/* ==========================================================
    HERO
-=========================== */
+========================================================== */
 
 .hero{
 
@@ -109,22 +105,26 @@ body{
     overflow:hidden;
 
     background:
-    radial-gradient(circle at top,
-    rgba(245,197,66,.18),
-    transparent 40%),
 
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.88)
-    ),
+        radial-gradient(
+            circle at top,
+            rgba(245,197,66,.18),
+            transparent 40%
+        ),
 
-    url("images/hero.jpg");
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.88)
+        ),
+
+        url("images/hero.jpg");
 
     background-size:cover;
 
     background-position:center;
 
 }
+
 .hero::before{
 
     content:"";
@@ -135,23 +135,30 @@ body{
 
     background:
 
-    radial-gradient(circle at 20% 80%,
-    rgba(255,120,0,.15),
-    transparent 30%),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(255,120,0,.15),
+            transparent 30%
+        ),
 
-    radial-gradient(circle at 80% 20%,
-    rgba(245,197,66,.12),
-    transparent 30%),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(245,197,66,.12),
+            transparent 30%
+        ),
 
-    radial-gradient(circle at 50% 50%,
-    rgba(255,255,255,.05),
-    transparent 45%);
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(255,255,255,.05),
+            transparent 45%
+        );
 
     animation:humoHero 10s ease-in-out infinite alternate;
 
     pointer-events:none;
 
 }
+
 .hero::after{
 
     content:"";
@@ -162,16 +169,20 @@ body{
 
     background:
 
-    linear-gradient(
-    transparent,
-    rgba(0,0,0,.25)
-    );
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.25)
+        );
 
     pointer-events:none;
 
 }
 
 .slogan{
+
+    position:relative;
+
+    z-index:5;
 
     max-width:900px;
 
@@ -181,21 +192,18 @@ body{
 
     line-height:1.2;
 
-    color:white;
+    color:#fff;
 
     letter-spacing:1px;
 
     text-shadow:
 
-    0 0 15px rgba(255,255,255,.25),
+        0 0 15px rgba(255,255,255,.25),
 
-    0 0 35px rgba(245,197,66,.30);
-
-    position:relative;
-
-    z-index:5;
+        0 0 35px rgba(245,197,66,.30);
 
 }
+
 .hero-subtitulo{
 
     max-width:700px;
@@ -206,18 +214,27 @@ body{
 
     line-height:1.8;
 
-    color:rgba(255,255,255,.88);
-
     font-weight:300;
 
     letter-spacing:.4px;
+
+    color:rgba(255,255,255,.88);
 
     text-shadow:
         0 0 10px rgba(0,0,0,.6);
 
 }
 
+
+/* ==========================================================
+   BOTÓN PRINCIPAL
+========================================================== */
+
 .btn-principal{
+
+    position:relative;
+
+    z-index:5;
 
     margin-top:45px;
 
@@ -227,11 +244,13 @@ body{
 
     border-radius:50px;
 
-    background:linear-gradient(
-        90deg,
-        #F5C542,
-        #ffd95a
-    );
+    background:
+
+        linear-gradient(
+            90deg,
+            #F5C542,
+            #ffd95a
+        );
 
     color:#111;
 
@@ -245,27 +264,25 @@ body{
 
     box-shadow:
 
-    0 10px 35px rgba(245,197,66,.45);
-
-    position:relative;
-
-    z-index:5;
+        0 10px 35px rgba(245,197,66,.45);
 
 }
 
 .btn-principal:hover{
 
-    transform:translateY(-6px) scale(1.05);
+    transform:
+        translateY(-6px)
+        scale(1.05);
 
     box-shadow:
 
-    0 20px 45px rgba(245,197,66,.55);
+        0 20px 45px rgba(245,197,66,.55);
 
 }
 
-/* ===========================
-   MENU
-=========================== */
+/* ==========================================================
+   MENÚ
+========================================================== */
 
 .menu{
 
@@ -284,21 +301,21 @@ body{
     gap:20px;
 
 }
-/* ===========================
-   TARJETAS
-=========================== */
 
-/* ===========================
-   TARJETAS DEL MENÚ
-=========================== */
+
+/* ==========================================================
+   TARJETAS
+========================================================== */
 
 .card{
 
-    width:340px;
-
     position:relative;
 
-    overflow:hidden;
+    width:340px;
+
+    min-height:380px;
+
+    padding:30px;
 
     display:flex;
 
@@ -310,13 +327,16 @@ body{
 
     text-align:center;
 
-    min-height:380px;
+    overflow:hidden;
 
-    padding:30px;
+    isolation:isolate;
+
+    cursor:pointer;
 
     border-radius:24px;
 
     background:
+
         linear-gradient(
             rgba(255,255,255,.05),
             rgba(255,255,255,.02)
@@ -326,18 +346,65 @@ body{
 
     border:1px solid rgba(255,255,255,.08);
 
-   transition:
-    transform .35s ease,
-    box-shadow .35s ease;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.25);
 
-
-   box-shadow:
-    0 10px 30px rgba(0,0,0,.25);
-   cursor:pointer;
-   
-   isolation:isolate;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
 
 }
+
+
+/* ---------- Luz superior ---------- */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+
+            circle at 50% 10%,
+
+            rgba(255,180,70,.20),
+
+            transparent 55%
+
+        ),
+
+        linear-gradient(
+
+            130deg,
+
+            rgba(255,255,255,.18),
+
+            transparent 35%,
+
+            transparent 70%,
+
+            rgba(255,255,255,.05)
+
+        );
+
+    opacity:.9;
+
+    transition:.4s;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+
+/* ---------- Destello ---------- */
+
 .card::after{
 
     content:"";
@@ -369,6 +436,10 @@ body{
     transition:.7s;
 
 }
+
+
+/* ---------- Luz del mouse ---------- */
+
 .card .mouse-light{
 
     position:absolute;
@@ -381,26 +452,41 @@ body{
 
     pointer-events:none;
 
-    background:radial-gradient(
-        circle,
-        rgba(255,255,255,.18),
-        transparent 70%
-    );
+    opacity:0;
 
     transform:translate(-50%,-50%);
 
-    opacity:0;
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255,255,255,.18),
+
+            transparent 70%
+
+        );
 
     transition:opacity .25s;
 
     z-index:1;
 
 }
-.card:hover::after{
 
-    left:140%;
+
+/* ---------- Contenido ---------- */
+
+.card>*{
+
+    position:relative;
+
+    z-index:2;
 
 }
+
+
+/* ---------- Hover ---------- */
 
 .card:hover{
 
@@ -416,34 +502,52 @@ body{
 
 }
 
+.card:hover::after{
+
+    left:140%;
+
+}
+
+.card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* ---------- Textos ---------- */
+
 .card h2{
+
+    margin-bottom:15px;
 
     font-size:2rem;
 
     font-weight:900;
 
-    margin-bottom:15px;
+    letter-spacing:-.5px;
 
     color:#FFD54F;
-
-    letter-spacing:-.5px;
 
 }
 
 .card p{
-    line-height:1.6;
+
     margin-bottom:12px;
+
+    line-height:1.6;
+
 }
 
 .card h3{
+
+    margin-top:12px;
 
     font-size:2.4rem;
 
     font-weight:900;
 
     color:#25D366;
-
-    margin-top:12px;
 
     text-shadow:
 
@@ -454,12 +558,172 @@ body{
 .card h2,
 .card p,
 .card h3{
-    position:relative;
-    z-index:2;
 
     text-shadow:
+
         0 0 8px rgba(0,0,0,.9),
+
         0 0 20px rgba(0,0,0,.8);
+
+}
+
+
+/* ==========================================================
+   FONDOS
+========================================================== */
+
+.explosiva{
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.25),
+
+            rgba(0,0,0,.45),
+
+            rgba(0,0,0,.80)
+
+        ),
+
+        url("images/explosiva.jpg");
+
+}
+
+.combo-explosiva{
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.25),
+
+            rgba(0,0,0,.45),
+
+            rgba(0,0,0,.80)
+
+        ),
+
+        url("images/explosiva-combo.jpg");
+
+}
+
+.callejera{
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.25),
+
+            rgba(0,0,0,.45),
+
+            rgba(0,0,0,.80)
+
+        ),
+
+        url("images/callejera.jpg");
+
+}
+
+.combo-callejera{
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,.25),
+
+            rgba(0,0,0,.45),
+
+            rgba(0,0,0,.80)
+
+        ),
+
+        url("images/callejera-combo.jpg");
+
+}
+
+.explosiva,
+.combo-explosiva,
+.callejera,
+.combo-callejera{
+
+    background-size:110%;
+
+    background-position:center;
+
+    transition:
+
+        background-size .45s,
+
+        filter .45s;
+
+}
+
+.card:hover.explosiva,
+.card:hover.combo-explosiva,
+.card:hover.callejera,
+.card:hover.combo-callejera{
+
+    background-size:120%;
+
+    filter:brightness(1.08);
+
+}
+
+
+/* ==========================================================
+   COMBOS
+========================================================== */
+
+.combo{
+
+    border:2px solid #25D366;
+
+    box-shadow:
+
+        0 0 20px rgba(37,211,102,.25);
+
+}
+
+.combo h2{
+
+    color:#25D366;
+
+}
+
+
+/* ==========================================================
+   CINTAS
+========================================================== */
+
+.cinta-combo{
+
+    position:absolute;
+
+    top:18px;
+
+    left:-38px;
+
+    width:160px;
+
+    transform:rotate(-35deg);
+
+}
+
+.cinta-coca{
+
+    position:absolute;
+
+    top:20px;
+
+    left:-45px;
+
+    width:170px;
+
+    transform:rotate(-35deg);
+
 }
 /* ===========================
    CANTIDAD
