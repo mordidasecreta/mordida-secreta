@@ -1386,3 +1386,42 @@ body{
 }
 
 }
+/* ===========================
+   LISTA DEL PEDIDO
+=========================== */
+
+.info-pedido{
+
+    flex:1;
+
+}
+
+#lista-productos{
+
+    margin:12px 0;
+
+}
+
+.producto-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:6px 0;
+
+    color:#ddd;
+
+    font-size:15px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.producto-item:last-child{
+
+    border-bottom:none;
+
+}
