@@ -346,3 +346,34 @@ function mostrarPlusUno(x, y){
     },900);
 
 }
+/* ===========================
+   EFECTO LUZ PREMIUM
+=========================== */
+
+document.querySelectorAll(".card").forEach(card=>{
+
+    const luz = document.createElement("div");
+
+    luz.className = "mouse-light";
+
+    card.appendChild(luz);
+
+    card.addEventListener("mousemove",(e)=>{
+
+        const rect = card.getBoundingClientRect();
+
+        luz.style.left = (e.clientX - rect.left) + "px";
+
+        luz.style.top = (e.clientY - rect.top) + "px";
+
+        luz.style.opacity = "1";
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        luz.style.opacity = "0";
+
+    });
+
+});
