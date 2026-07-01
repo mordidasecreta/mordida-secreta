@@ -1282,10 +1282,6 @@ body{
 }
 @media (max-width:768px){
 
-.card{
-    position: relative;
-    overflow: hidden;
-}
 
     .slogan{
 
