@@ -260,6 +260,26 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
   );
 }
 /* ===========================
+   MOSTRAR FORMULARIO
+=========================== */
+
+function mostrarFormulario(){
+
+    document
+        .getElementById("pedido")
+        .classList
+        .add("visible");
+
+    document
+        .getElementById("pedido")
+        .scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
+}
+/* ===========================
    ANIMACIÓN SCROLL
 =========================== */
 
