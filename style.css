@@ -1327,3 +1327,62 @@ body{
     }
 
 }
+/* ===========================
+   BARRA TIPO APP
+=========================== */
+
+.resumen-pedido{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.btn-continuar{
+
+    background:#25D366;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 22px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-continuar:hover{
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:768px){
+
+.resumen-pedido{
+
+    flex-direction:row;
+
+}
+
+.btn-continuar{
+
+    min-width:140px;
+
+}
+
+}
