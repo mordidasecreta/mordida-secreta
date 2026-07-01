@@ -1413,3 +1413,108 @@ body{
     border-bottom:none;
 
 }
+/* ===========================
+   BARRA FIJA DE COMPRA
+=========================== */
+
+.barra-compra{
+
+    position:fixed;
+
+    left:0;
+
+    right:0;
+
+    bottom:-120px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 18px;
+
+    background:rgba(20,20,20,.95);
+
+    backdrop-filter:blur(18px);
+
+    border-top:2px solid #F5C542;
+
+    z-index:9999;
+
+    transition:.35s;
+
+    box-shadow:
+    0 -10px 30px rgba(0,0,0,.45);
+
+}
+
+.barra-compra.visible{
+
+    bottom:0;
+
+}
+
+.barra-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+#barra-cantidad{
+
+    color:#ccc;
+
+    font-size:.9rem;
+
+}
+
+#barra-total{
+
+    color:#25D366;
+
+    font-size:1.5rem;
+
+    font-weight:900;
+
+}
+
+.barra-boton{
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:14px;
+
+    background:#25D366;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.barra-boton:hover{
+
+    transform:scale(1.05);
+
+}
+
+@media(min-width:900px){
+
+    .barra-compra{
+
+        display:none;
+
+    }
+
+}
+
