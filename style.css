@@ -1376,23 +1376,7 @@ body{
     opacity:.75;
 
 }
-@keyframes agotadoGlow{
 
-    0%,100%{
-
-        box-shadow:
-            0 0 10px rgba(255,0,0,.18);
-
-    }
-
-    50%{
-
-        box-shadow:
-            0 0 22px rgba(255,40,40,.45);
-
-    }
-
-}
 /* ===========================
    CINTA COCA-COLA
 =========================== */
@@ -1429,35 +1413,7 @@ body{
 
 }
 
-@keyframes subir{
 
-    0%{
-
-        opacity:0;
-
-        transform:
-            translateY(20px)
-            scale(.6);
-
-    }
-
-    20%{
-
-        opacity:1;
-
-    }
-
-    100%{
-
-        opacity:0;
-
-        transform:
-            translateY(-80px)
-            scale(1.3);
-
-    }
-
-}
 /* ===========================
    LISTA DEL PEDIDO
 =========================== */
@@ -1482,25 +1438,7 @@ body{
 
 }
 
-@keyframes humoHero{
 
-    0%{
-
-        transform:scale(1) translateY(0);
-
-        opacity:.6;
-
-    }
-
-    100%{
-
-        transform:scale(1.12) translateY(-20px);
-
-        opacity:1;
-
-    }
-
-}
 /* ===========================
    ANIMACIÓN DE ENTRADA
 =========================== */
@@ -1537,25 +1475,7 @@ body{
 
 }
 
-@keyframes aparecer{
 
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
 /* ===========================
    BARRA TIPO APP
 =========================== */
@@ -1770,30 +1690,7 @@ body{
 
 }
 
-@keyframes popCard{
 
-    0%{
-
-        transform:scale(1);
-
-    }
-
-    40%{
-
-        transform:scale(1.04);
-
-    }
-
-    100%{
-
-        transform:scale(1);
-
-    }
-
-}
-/* ===========================
-   MENSAJE DE PRODUCTO
-=========================== */
 
 /* ===========================
    MENSAJE PREMIUM
@@ -1876,26 +1773,7 @@ body{
    BOTÓN VIVO
 =========================== */
 
-@keyframes respirar{
 
-    0%,100%{
-
-        transform:scale(1);
-
-        box-shadow:0 0 0 rgba(37,211,102,0);
-
-    }
-
-    50%{
-
-        transform:scale(1.03);
-
-        box-shadow:
-        0 0 25px rgba(37,211,102,.45);
-
-    }
-
-}
 /* ===========================
    LUZ CINEMATOGRÁFICA
 =========================== */
@@ -1957,4 +1835,133 @@ body{
     opacity:1;
 
 }
+/* ===========================
+   ANIMACIONES
+=========================== */
+@keyframes subir{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateY(20px)
+            scale(.6);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-80px)
+            scale(1.3);
+
+    }
+
+}
+@keyframes humoHero{
+
+    0%{
+
+        transform:scale(1) translateY(0);
+
+        opacity:.6;
+
+    }
+
+    100%{
+
+        transform:scale(1.12) translateY(-20px);
+
+        opacity:1;
+
+    }
+
+}
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes respirar{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(37,211,102,0);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+        box-shadow:
+        0 0 25px rgba(37,211,102,.45);
+
+    }
+
+}
+@keyframes popCard{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    40%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+@keyframes agotadoGlow{
+
+    0%,100%{
+
+        box-shadow:
+            0 0 10px rgba(255,0,0,.18);
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 0 22px rgba(255,40,40,.45);
+
+    }
+
+}
+
 
