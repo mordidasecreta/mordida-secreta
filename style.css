@@ -1241,13 +1241,6 @@ body{
 
 }
 
-.visible{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
 @keyframes humoHero{
 
     0%{
@@ -1294,11 +1287,6 @@ body{
    MOSTRAR FORMULARIO
 =========================== */
 
-.oculto{
-
-    display:none;
-
-}
 
 .pedido.visible{
 
