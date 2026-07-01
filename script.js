@@ -331,7 +331,8 @@ window.onload = function(){
     }
 
     actualizarTotal();
-   iniciarAnimaciones();
+
+    iniciarAnimaciones();
 
 };
 
