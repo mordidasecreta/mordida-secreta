@@ -208,34 +208,39 @@ queso, tomate fresco, lechuga y la inconfundible salsa de la casa. 🔥
 </div>
    <div class="total-box">
 
-   <div class="resumen-pedido">
+  <div class="total-box">
 
-    <div class="info-pedido">
+    <div class="resumen-pedido">
 
-        <div id="cantidad-total">
-            0 productos
+        <div class="info-pedido">
+
+            <div id="cantidad-total">
+                0 productos
+            </div>
+
+            <div id="lista-productos"></div>
+
+            <div id="total">
+                $0
+            </div>
+
         </div>
 
-        <div id="lista-productos">
+        <button
+            class="btn-continuar"
+            onclick="mostrarFormulario()">
 
-        </div>
+            🟢 FINALIZAR PEDIDO
 
-        <div id="total">
-            $0
-        </div>
+        </button>
 
     </div>
 
-    <button
-        class="btn-continuar"
-        onclick="mostrarFormulario()">
+    <p id="mensaje-ahorro"></p>
 
-        🟢 FINALIZAR PEDIDO
+</div>   <!-- ESTA ETIQUETA FALTABA -->
 
-    </button>
-
-</div>
-
+</section>
 <p id="mensaje-ahorro"></p>
 
 </section>
