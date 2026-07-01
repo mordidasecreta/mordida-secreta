@@ -121,6 +121,22 @@ function cambiarCantidad(id, cambio) {
 function actualizarTotal(){
 
 const cantidades = obtenerCantidades();
+   let listaHTML = "";
+
+for(const id in cantidades){
+
+    if(cantidades[id] > 0){
+
+        listaHTML += `
+        <div class="producto-item">
+            <span>${NOMBRES[id]}</span>
+            <span>x${cantidades[id]}</span>
+        </div>`;
+    }
+
+}
+
+document.getElementById("lista-productos").innerHTML = listaHTML;
 
    const {
     explosiva,
