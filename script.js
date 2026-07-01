@@ -96,6 +96,17 @@ function cambiarCantidad(id, cambio, e) {
     }
 
     elemento.innerText = valor;
+   const tarjeta = elemento.closest(".card");
+   
+   if(tarjeta){
+
+    tarjeta.classList.remove("pop");
+
+    void tarjeta.offsetWidth;
+
+    tarjeta.classList.add("pop");
+
+}
 
     if(cambio > 0 && e){
 
