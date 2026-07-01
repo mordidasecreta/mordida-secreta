@@ -1039,3 +1039,48 @@ box-shadow:
     }
 
 }
+/* ===========================
+   LISTA DEL PEDIDO
+=========================== */
+
+#lista-productos{
+
+    margin:20px 0;
+
+    text-align:left;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.producto-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 15px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    font-weight:600;
+
+}
+
+.producto-item span:last-child{
+
+    color:#F5C542;
+
+    font-weight:800;
+
+}
