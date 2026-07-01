@@ -189,40 +189,7 @@ body{
     0 20px 45px rgba(245,197,66,.55);
 
 }
-.card{
 
-    width:340px;
-
-    position:relative;
-
-    overflow:hidden;
-
-    min-height:360px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    border-radius:20px;
-
-    padding:25px;
-
-    transition:.3s;
-
-    background-size:cover;
-
-    background-position:center;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.35);
-
-}
 /* ===========================
    MENU
 =========================== */
