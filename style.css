@@ -1616,3 +1616,34 @@ body{
     transform:translateX(-50%) scale(1);
 
 }
+/* ===========================
+   BOTONES PREMIUM
+=========================== */
+
+.cantidad button{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+        transform .25s,
+        box-shadow .25s;
+
+}
+
+.cantidad button:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:
+        0 0 15px rgba(245,197,66,.7),
+        0 0 35px rgba(245,197,66,.3);
+
+}
+
+.cantidad button:active{
+
+    transform:scale(.92);
+
+}
