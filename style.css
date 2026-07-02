@@ -693,30 +693,37 @@ body{
 }
 
 
-/* ==========================================================
-   CINTAS
-========================================================== */
-
 /* ===========================
-   CINTAS
+   CINTAS PREMIUM
 =========================== */
 
 .cinta-combo,
 .cinta-coca{
+
     position:absolute;
-    transform:rotate(-35deg);
-}
 
-.cinta-combo{
     top:18px;
-    left:-38px;
-    width:160px;
+    left:-52px;
+
+    width:190px;
+
+    transform:rotate(-35deg);
+
+    z-index:100;
+
+    pointer-events:none;
+
+    filter:
+        drop-shadow(0 8px 18px rgba(0,0,0,.45));
+
 }
 
-.cinta-coca{
-    top:20px;
-    left:-45px;
-    width:170px;
+.cinta-combo img,
+.cinta-coca img{
+
+    width:100%;
+    display:block;
+
 }
 /* ===========================
    CANTIDAD
