@@ -1610,19 +1610,6 @@ box-shadow:
     pointer-events:none;
     z-index:1;
 }
-.card>*{
-
-    position:relative; 
-
-    z-index:2;
-
-}
-
-.card:hover::before{
-
-    opacity:1;
-
-}
 .card.pop{
 
     animation:popCard .35s ease;
