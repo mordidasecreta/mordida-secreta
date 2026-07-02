@@ -696,35 +696,37 @@ body{
 /* ===========================
    CINTAS PREMIUM
 =========================== */
+.cinta-combo{
 
-.cinta-combo,
+    position:absolute;
+
+    top:12px;
+
+    left:-55px;
+
+    width:170px;
+
+    transform:rotate(-45deg);
+
+    z-index:30;
+
+}
 .cinta-coca{
 
     position:absolute;
 
-    top:18px;
-    left:-52px;
+    top:12px;
 
-    width:190px;
+    left:-55px;
 
-    transform:rotate(-35deg);
+    width:170px;
 
-    z-index:100;
+    transform:rotate(-45deg);
 
-    pointer-events:none;
-
-    filter:
-        drop-shadow(0 8px 18px rgba(0,0,0,.45));
+    z-index:30;
 
 }
 
-.cinta-combo img,
-.cinta-coca img{
-
-    width:100%;
-    display:block;
-
-}
 /* ===========================
    CANTIDAD
 =========================== */
@@ -920,25 +922,27 @@ box-shadow:
 }
 
 .coca::before{
-
     content:"";
-
     position:absolute;
-
     inset:0;
 
     background:url("images/coca400.png") center center no-repeat;
+    background-size:65%;
 
-    background-size:75%;
-
-    opacity:.95;
+    opacity:1;
 
     filter:
-        drop-shadow(0 0 10px rgba(255,0,0,.6))
-        drop-shadow(0 0 25px rgba(255,0,0,.4));
+        drop-shadow(0 0 12px red)
+        drop-shadow(0 0 25px red);
 
-    z-index:0;
-
+    z-index:2;
+}
+.coca h2,
+.coca p,
+.coca h3,
+.coca .cantidad{
+    position:relative;
+    z-index:5;
 }
 .coca::after{
 
@@ -1193,39 +1197,15 @@ box-shadow:
 
     position:absolute;
 
-    top:22px;
+    top:12px;
 
     right:-55px;
 
-    width:220px;
+    width:180px;
 
-    text-align:center;
+    transform:rotate(45deg);
 
-    padding:10px 0;
-
-    background:linear-gradient(
-        90deg,
-        #5a0000,
-        #b30000,
-        #5a0000
-    );
-
-    color:white;
-
-    font-size:.85rem;
-
-    font-weight:900;
-
-    letter-spacing:2px;
-
-    transform:rotate(35deg);
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,.45);
-
-    z-index:50;
-
-    text-transform:uppercase;
+    z-index:30;
 
 }
 /* ===========================
@@ -1607,7 +1587,7 @@ box-shadow:
     opacity:.9;
     transition:.4s;
     pointer-events:none;
-    z-index:1;
+    z-index:0;
 }
 .card.pop{
 
