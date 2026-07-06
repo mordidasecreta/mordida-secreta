@@ -975,75 +975,46 @@ body{
 
 }
 /* ===========================
-   COCA COLA
+   TARJETA COCA-COLA
 =========================== */
 
 .coca{
 
     position:relative;
+    overflow:hidden;
 
-   border:2px solid #ff3b3b;
+    border:2px solid #ff3b3b;
 
-box-shadow:
-    0 0 15px rgba(255,0,0,.35),
-    0 0 35px rgba(255,0,0,.20);
+    border-radius:24px;
 
-    background:#111;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.30),
+            rgba(0,0,0,.70)
+        ),
+        url("images/coca400.png") no-repeat center 35%;
+
+    background-size:160px;
+
+    box-shadow:
+        0 0 18px rgba(255,0,0,.45),
+        0 0 40px rgba(255,0,0,.18);
 
 }
 
-.coca::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:url("images/coca400.png") center center no-repeat;
-    background-position:center 25px;
-
-    opacity:1;
-
-    filter:
-        drop-shadow(0 0 12px red)
-        drop-shadow(0 0 25px red);
-
-    z-index:2;
-}
 .coca h2,
 .coca p,
 .coca h3,
 .coca .cantidad{
+
     position:relative;
-    z-index:5;
-}
-.coca::after{
+    z-index:2;
 
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(255,0,0,.30) 0%,
-            rgba(255,0,0,.12) 35%,
-            transparent 75%
-        );
-
-    z-index:0;
-
-}
-
-.coca>*{
-    position:relative;
-    z-index:5;
-}
 }
 
 .coca h2{
 
-    color:white;
+    color:#fff;
 
 }
 
