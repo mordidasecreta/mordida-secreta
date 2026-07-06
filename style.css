@@ -696,34 +696,32 @@ body{
 /* ===========================
    CINTAS PREMIUM
 =========================== */
-.cinta-combo{
+.cinta-combo,
+.cinta-coca,
+.agotado{
 
     position:absolute;
 
-    top:12px;
+    top:18px;
 
-    left:-55px;
+    left:-52px;
 
-    width:170px;
+    width:180px;
 
-    transform:rotate(-45deg);
+    text-align:center;
 
-    z-index:30;
+    padding:10px 0;
 
-}
-.cinta-coca{
+    font-weight:900;
 
-    position:absolute;
+    font-size:13px;
 
-    top:12px;
+    transform:rotate(-35deg);
 
-    left:-55px;
+    letter-spacing:1px;
 
-    width:170px;
-
-    transform:rotate(-45deg);
-
-    z-index:30;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.45);
 
 }
 
@@ -1248,36 +1246,7 @@ body{
 
 }
 
-/* ===========================
-   PRODUCTO NO DISPONIBLE
-=========================== */
 
-.agotado{
-
-    position:absolute;
-
-    top:12px;
-
-    right:-55px;
-
-    width:180px;
-
-    transform:rotate(45deg);
-
-    z-index:30;
-
-}
-/* ===========================
-   CINTA COCA-COLA
-=========================== */
-
-.cinta-coca{
-    position: absolute;
-    top: 20px;
-    left: -45px;
-    width: 170px;
-    transform: rotate(-35deg);
-}
 /* ===========================
    ANIMACIÓN +1
 =========================== */
