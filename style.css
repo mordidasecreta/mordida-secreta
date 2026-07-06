@@ -1022,6 +1022,26 @@ body{
     color:#25D366;
 
 }
+.coca-img{
+
+    width:170px;
+
+    display:block;
+
+    margin:10px auto 20px;
+
+    filter:
+        drop-shadow(0 0 18px rgba(255,0,0,.6));
+
+    transition:.35s;
+
+}
+
+.card:hover .coca-img{
+
+    transform:scale(1.08);
+
+}
 /* ===========================
    TOTAL DEL PEDIDO
 =========================== */
