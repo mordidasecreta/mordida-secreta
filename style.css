@@ -818,31 +818,26 @@ body{
 /* Imagen */
 .coca-img{
 
-    width: 170px;
+    width: 135px;
+    height:auto;
 
-    height: auto;
+    display:block;
 
-    margin-top: 5px;
+    margin:10px auto 15px auto;
 
-    margin-bottom: 12px;
+    object-fit:contain;
 
-    display: block;
-
-    margin-left: auto;
-
-    margin-right: auto;
+    transition:.35s;
 
     filter:
-        drop-shadow(0 0 12px rgba(255,0,0,.6))
-        drop-shadow(0 0 25px rgba(255,0,0,.4));
-
-    transition: .35s;
+        drop-shadow(0 8px 12px rgba(0,0,0,.35))
+        drop-shadow(0 0 18px rgba(255,0,0,.35));
 
 }
 
 .coca:hover .coca-img{
 
-    transform: scale(1.08);
+    transform:scale(1.08);
 
 }
 .coca h2,
