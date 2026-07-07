@@ -1822,15 +1822,18 @@ body{
 }
 .producto-img{
 
-    width:170px;
+    width:200px;
+
+    max-width:90%;
 
     height:auto;
 
     display:block;
 
-    margin:20px auto;
+    margin:10px auto 5px;
 
-    transition:.35s;
+    transition:
+        transform .35s;
 
     filter:
         drop-shadow(0 12px 18px rgba(0,0,0,.35));
@@ -1839,8 +1842,6 @@ body{
 
 .card:hover .producto-img{
 
-    transform:
-        scale(1.08)
-        rotate(-2deg);
+    transform:scale(1.08);
 
 }
