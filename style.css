@@ -18,22 +18,21 @@ body{
     overflow-x:hidden;
 
     background:
-        radial-gradient(circle at top,
-            rgba(245,197,66,.08),
-            transparent 40%),
+    radial-gradient(circle at top,
+        rgba(245,197,66,.08),
+        transparent 40%),
 
-        radial-gradient(circle at bottom right,
-            rgba(255,120,0,.05),
-            transparent 35%),
+    radial-gradient(circle at bottom right,
+        rgba(255,120,0,.05),
+        transparent 35%),
 
-        linear-gradient(
-            180deg,
-            #0b0b0b 0%,
-            #141414 35%,
-            #101010 70%,
-            #080808 100%);
+    linear-gradient(
+        180deg,
+        #0b0b0b 0%,
+        #141414 35%,
+        #101010 70%,
+        #080808 100%);
 }
-
 
 /* ==========================================================
    LOGO
@@ -50,9 +49,8 @@ body{
     height:auto;
 
     filter:
-        drop-shadow(0 0 18px rgba(245,197,66,.45));
+    drop-shadow(0 0 18px rgba(245,197,66,.45));
 }
-
 
 /* ==========================================================
    ESTADO
@@ -61,13 +59,10 @@ body{
 .estado-semanal{
 
     width:max-content;
-
     margin:15px auto;
-
     padding:12px 20px;
 
     background:#F5C542;
-
     color:#111;
 
     font-weight:bold;
@@ -75,10 +70,9 @@ body{
     border-radius:999px;
 
     box-shadow:
-        0 0 18px rgba(245,197,66,.35);
+    0 0 18px rgba(245,197,66,.35);
 
 }
-
 
 /* ==========================================================
    HERO
@@ -91,11 +85,9 @@ body{
     min-height:100vh;
 
     display:flex;
-
     flex-direction:column;
 
     justify-content:center;
-
     align-items:center;
 
     text-align:center;
@@ -106,21 +98,18 @@ body{
 
     background:
 
-        radial-gradient(
-            circle at top,
-            rgba(245,197,66,.18),
-            transparent 40%
-        ),
+    radial-gradient(circle at top,
+        rgba(245,197,66,.18),
+        transparent 40%),
 
-        linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.88)
-        ),
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.88)
+    ),
 
-        url("images/hero.jpg");
+    url("images/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
 
 }
@@ -130,28 +119,21 @@ body{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     background:
 
-        radial-gradient(
-            circle at 20% 80%,
-            rgba(255,120,0,.15),
-            transparent 30%
-        ),
+    radial-gradient(circle at 20% 80%,
+        rgba(255,120,0,.15),
+        transparent 30%),
 
-        radial-gradient(
-            circle at 80% 20%,
-            rgba(245,197,66,.12),
-            transparent 30%
-        ),
+    radial-gradient(circle at 80% 20%,
+        rgba(245,197,66,.12),
+        transparent 30%),
 
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(255,255,255,.05),
-            transparent 45%
-        );
+    radial-gradient(circle at 50% 50%,
+        rgba(255,255,255,.05),
+        transparent 45%);
 
     animation:humoHero 10s ease-in-out infinite alternate;
 
@@ -164,43 +146,33 @@ body{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     background:
-
-        linear-gradient(
-            transparent,
-            rgba(0,0,0,.25)
-        );
-
-    pointer-events:none;
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.25)
+    );
 
 }
 
 .slogan{
 
     position:relative;
-
     z-index:5;
 
     max-width:900px;
 
     font-size:3rem;
-
     font-weight:900;
 
     line-height:1.2;
 
-    color:#fff;
-
     letter-spacing:1px;
 
     text-shadow:
-
-        0 0 15px rgba(255,255,255,.25),
-
-        0 0 35px rgba(245,197,66,.30);
+    0 0 15px rgba(255,255,255,.25),
+    0 0 35px rgba(245,197,66,.30);
 
 }
 
@@ -214,26 +186,20 @@ body{
 
     line-height:1.8;
 
+    color:rgba(255,255,255,.88);
+
     font-weight:300;
 
     letter-spacing:.4px;
 
-    color:rgba(255,255,255,.88);
-
     text-shadow:
-        0 0 10px rgba(0,0,0,.6);
+    0 0 10px rgba(0,0,0,.6);
 
 }
-
-
-/* ==========================================================
-   BOTÓN PRINCIPAL
-========================================================== */
 
 .btn-principal{
 
     position:relative;
-
     z-index:5;
 
     margin-top:45px;
@@ -245,17 +211,15 @@ body{
     border-radius:50px;
 
     background:
-
-        linear-gradient(
-            90deg,
-            #F5C542,
-            #ffd95a
-        );
+    linear-gradient(
+        90deg,
+        #F5C542,
+        #ffd95a
+    );
 
     color:#111;
 
     font-size:18px;
-
     font-weight:900;
 
     cursor:pointer;
@@ -263,20 +227,18 @@ body{
     transition:.35s;
 
     box-shadow:
-
-        0 10px 35px rgba(245,197,66,.45);
+    0 10px 35px rgba(245,197,66,.45);
 
 }
 
 .btn-principal:hover{
 
     transform:
-        translateY(-6px)
-        scale(1.05);
+    translateY(-6px)
+    scale(1.05);
 
     box-shadow:
-
-        0 20px 45px rgba(245,197,66,.55);
+    0 20px 45px rgba(245,197,66,.55);
 
 }
 
