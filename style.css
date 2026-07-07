@@ -1730,23 +1730,7 @@ body{
     }
 
 }
-@keyframes agotadoGlow{
 
-    0%,100%{
-
-        box-shadow:
-            0 0 10px rgba(255,0,0,.18);
-
-    }
-
-    50%{
-
-        box-shadow:
-            0 0 22px rgba(255,40,40,.45);
-
-    }
-
-}
 @keyframes subir{
 
     0%{
