@@ -251,7 +251,7 @@ body{
     max-width:1200px;
     margin:auto;
 
-    padding:25px;
+    padding-top:40px;
 
     display:flex;
     flex-wrap:wrap;
@@ -270,7 +270,7 @@ body{
 
     position:relative;
 
-    overflow:hidden;
+    overflow:visible;
 
     isolation:isolate;
 
@@ -1570,7 +1570,7 @@ RESPONSIVE
 
     .menu{
 
-        padding:15px;
+        padding-top:40px;
 
     }
 
@@ -1819,18 +1819,30 @@ body{
 }
 .producto-img{
 
-    width:190px;
+    width:270px;
 
-    max-width:90%;
+    max-width:none;
+
+    height:auto;
 
     display:block;
 
-    margin:8px auto 12px;
+    margin-top:-35px;
+
+    margin-bottom:-35px;
+
+    margin-left:auto;
+
+    margin-right:auto;
 
     filter:
-        drop-shadow(0 12px 18px rgba(0,0,0,.35));
+        drop-shadow(0 18px 25px rgba(0,0,0,.45));
 
     transition:.35s;
+
+    z-index:5;
+
+    position:relative;
 
 }
 
