@@ -760,13 +760,23 @@ body{
 
 .agotado{
 
-    background:
-    linear-gradient(
-        90deg,
-        #6b0000,
-        #d00000,
-        #6b0000
-    );
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:140px;
+
+    background:red;
+
+    color:white;
+
+    padding:8px;
+
+    z-index:9999;
+
+    transform:none;
 
 }
 
