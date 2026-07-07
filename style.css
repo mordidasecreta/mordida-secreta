@@ -249,33 +249,36 @@ body{
 .menu{
 
     max-width:1200px;
-
     margin:auto;
 
     padding:25px;
 
     display:flex;
-
     flex-wrap:wrap;
 
     justify-content:center;
 
-    gap:20px;
+    gap:22px;
 
 }
 
-
-/* ===========================
-   TARJETAS DEL MENÚ
-=========================== */
+/* ==========================================================
+   TARJETAS
+========================================================== */
 
 .card{
 
-    width:340px;
-
     position:relative;
 
+    width:340px;
+
+    min-height:390px;
+
+    padding:30px;
+
     overflow:hidden;
+
+    isolation:isolate;
 
     display:flex;
 
@@ -287,37 +290,31 @@ body{
 
     text-align:center;
 
-    min-height:380px;
-
-    padding:30px;
-
     border-radius:24px;
 
     background:
-        linear-gradient(
-            rgba(255,255,255,.05),
-            rgba(255,255,255,.02)
-        );
+    linear-gradient(
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.02)
+    );
 
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(10px);
 
     border:1px solid rgba(255,255,255,.08);
 
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.25);
-
     cursor:pointer;
 
-    isolation:isolate;
+    transition:
+    transform .35s,
+    box-shadow .35s,
+    background-size .45s;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
 
 }
 
-
-/* ---------- Luz superior ---------- */
+/* Luz superior */
 
 .card::before{
 
@@ -329,42 +326,19 @@ body{
 
     background:
 
-        radial-gradient(
-
-            circle at 50% 10%,
-
-            rgba(255,180,70,.20),
-
-            transparent 55%
-
-        ),
-
-        linear-gradient(
-
-            130deg,
-
-            rgba(255,255,255,.18),
-
-            transparent 35%,
-
-            transparent 70%,
-
-            rgba(255,255,255,.05)
-
-        );
-
-    opacity:.9;
-
-    transition:.4s;
-
-    pointer-events:none;
+    radial-gradient(
+        circle at top,
+        rgba(255,210,90,.18),
+        transparent 55%
+    );
 
     z-index:1;
 
+    pointer-events:none;
+
 }
 
-
-/* ---------- Destello ---------- */
+/* Destello */
 
 .card::after{
 
@@ -374,121 +348,77 @@ body{
 
     top:-150%;
 
-    left:-50%;
+    left:-60%;
 
     width:70%;
 
     height:300%;
 
-    background:
-
-        linear-gradient(
-
-            rgba(255,255,255,0),
-
-            rgba(255,255,255,.18),
-
-            rgba(255,255,255,0)
-
-        );
-
     transform:rotate(25deg);
 
-    transition:.7s;
-
-}
-
-
-/* ---------- Luz del mouse ---------- */
-
-.card .mouse-light{
-
-    position:absolute;
-
-    width:220px;
-
-    height:220px;
-
-    border-radius:50%;
-
-    pointer-events:none;
-
-    opacity:0;
-
-    transform:translate(-50%,-50%);
-
     background:
 
-        radial-gradient(
+    linear-gradient(
 
-            circle,
+        transparent,
 
-            rgba(255,255,255,.18),
+        rgba(255,255,255,.18),
 
-            transparent 70%
+        transparent
 
-        );
+    );
 
-    transition:opacity .25s;
-
-    z-index:1;
-
-}
-
-
-/* ---------- Contenido ---------- */
-
-.card>*{
-
-    position:relative;
+    transition:.8s;
 
     z-index:2;
 
 }
 
+.card:hover::after{
 
-/* ---------- Hover ---------- */
+    left:150%;
+
+}
 
 .card:hover{
 
     transform:
-        translateY(-12px)
-        scale(1.03);
+    translateY(-12px)
+    scale(1.03);
 
     box-shadow:
 
-        0 30px 60px rgba(0,0,0,.65),
+    0 35px 70px rgba(0,0,0,.60),
 
-        0 0 35px rgba(245,197,66,.28);
-
-}
-
-.card:hover::after{
-
-    left:140%;
+    0 0 28px rgba(245,197,66,.18);
 
 }
 
-.card:hover::before{
+.card>*{
 
-    opacity:1;
+    position:relative;
+
+    z-index:5;
 
 }
 
-
-/* ---------- Textos ---------- */
+/* ==========================================================
+   TEXTOS
+========================================================== */
 
 .card h2{
-
-    margin-bottom:15px;
 
     font-size:2rem;
 
     font-weight:900;
 
-    letter-spacing:-.5px;
-
     color:#FFD54F;
+
+    margin-bottom:15px;
+
+    text-shadow:
+
+    0 0 10px rgba(0,0,0,.9);
 
 }
 
@@ -498,13 +428,17 @@ body{
 
     line-height:1.6;
 
+    text-shadow:
+
+    0 0 10px rgba(0,0,0,.9);
+
 }
 
 .card h3{
 
-    margin-top:12px;
+    margin-top:10px;
 
-     font-size:3rem;
+    font-size:2.4rem;
 
     font-weight:900;
 
@@ -512,22 +446,9 @@ body{
 
     text-shadow:
 
-        0 0 15px rgba(37,211,102,.35);
+    0 0 18px rgba(37,211,102,.35);
 
 }
-
-.card h2,
-.card p,
-.card h3{
-
-    text-shadow:
-
-        0 0 8px rgba(0,0,0,.9),
-
-        0 0 20px rgba(0,0,0,.8);
-
-}
-
 
 /* ==========================================================
    FONDOS
@@ -536,72 +457,48 @@ body{
 .explosiva{
 
     background:
-
-        linear-gradient(
-
-            rgba(0,0,0,.25),
-
-            rgba(0,0,0,.45),
-
-            rgba(0,0,0,.80)
-
-        ),
-
-        url("images/explosiva.jpg");
+    linear-gradient(
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.80)
+    ),
+    url("images/explosiva.jpg");
 
 }
 
 .combo-explosiva{
 
     background:
-
-        linear-gradient(
-
-            rgba(0,0,0,.25),
-
-            rgba(0,0,0,.45),
-
-            rgba(0,0,0,.80)
-
-        ),
-
-        url("images/explosiva-combo.jpg");
+    linear-gradient(
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.80)
+    ),
+    url("images/explosiva-combo.jpg");
 
 }
 
 .callejera{
 
     background:
-
-        linear-gradient(
-
-            rgba(0,0,0,.25),
-
-            rgba(0,0,0,.45),
-
-            rgba(0,0,0,.80)
-
-        ),
-
-        url("images/callejera.jpg");
+    linear-gradient(
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.80)
+    ),
+    url("images/callejera.jpg");
 
 }
 
 .combo-callejera{
 
     background:
-
-        linear-gradient(
-
-            rgba(0,0,0,.25),
-
-            rgba(0,0,0,.45),
-
-            rgba(0,0,0,.80)
-
-        ),
-
-        url("images/callejera-combo.jpg");
+    linear-gradient(
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.80)
+    ),
+    url("images/callejera-combo.jpg");
 
 }
 
@@ -610,9 +507,9 @@ body{
 .callejera,
 .combo-callejera{
 
-    background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
+
+    background-size:110%;
 
 }
 
@@ -621,63 +518,7 @@ body{
 .card:hover.callejera,
 .card:hover.combo-callejera{
 
-     background-size:108%;
-
-    filter:brightness(1.08);
-
-}
-
-
-/* ==========================================================
-   COMBOS
-========================================================== */
-
-.combo{
-
-    border:2px solid #25D366;
-
-    box-shadow:
-
-        0 0 20px rgba(37,211,102,.25);
-
-}
-
-.combo h2{
-
-    color:#25D366;
-
-}
-
-
-/* ===========================
-   CINTAS PREMIUM
-=========================== */
-.cinta-combo,
-.cinta-coca,
-.agotado{
-
-    position:absolute;
-
-    top:18px;
-
-    left:-52px;
-
-    width:180px;
-
-    text-align:center;
-
-    padding:10px 0;
-
-    font-weight:900;
-
-    font-size:13px;
-
-    transform:rotate(-35deg);
-
-    letter-spacing:1px;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.45);
+    background-size:118%;
 
 }
 
