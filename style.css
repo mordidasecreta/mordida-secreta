@@ -272,9 +272,9 @@ body{
 
     width:340px;
 
-    min-height:390px;
-
-    padding:30px;
+    min-height:320px;
+   
+    padding:22px;
 
     overflow:hidden;
 
@@ -830,7 +830,7 @@ body{
     center 58%
     no-repeat;
 
-    background-size:38%;
+    background-size:32%;
 
     opacity:.95;
 
@@ -1743,5 +1743,29 @@ body{
     }
 
 }
+@media (max-width:768px){
 
+    .card{
+
+        width:100%;
+
+        min-height:290px;
+
+        padding:20px;
+
+    }
+
+    .card h2{
+
+        font-size:1.6rem;
+
+    }
+
+    .card h3{
+
+        font-size:2rem;
+
+    }
+
+}
 
