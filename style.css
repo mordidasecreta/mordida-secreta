@@ -648,15 +648,9 @@ body{
 .callejera,
 .combo-callejera{
 
-    background-size:110%;
-
+    background-size:cover;
     background-position:center;
-
-    transition:
-
-        background-size .45s,
-
-        filter .45s;
+    background-repeat:no-repeat;
 
 }
 
@@ -665,7 +659,7 @@ body{
 .card:hover.callejera,
 .card:hover.combo-callejera{
 
-    background-size:120%;
+     background-size:108%;
 
     filter:brightness(1.08);
 
