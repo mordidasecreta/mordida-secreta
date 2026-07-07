@@ -501,11 +501,4 @@ mensaje.classList.add("mostrar");
     },2500);
 
 }
-function toggleIngredientes(id){
 
-    document
-        .getElementById(id)
-        .classList
-        .toggle("abierto");
-
-}
