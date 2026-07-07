@@ -1822,21 +1822,18 @@ body{
 }
 .producto-img{
 
-    width:200px;
+    width:190px;
 
     max-width:90%;
 
-    height:auto;
-
     display:block;
 
-    margin:10px auto 5px;
-
-    transition:
-        transform .35s;
+    margin:8px auto 12px;
 
     filter:
         drop-shadow(0 12px 18px rgba(0,0,0,.35));
+
+    transition:.35s;
 
 }
 
