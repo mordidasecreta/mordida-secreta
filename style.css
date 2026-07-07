@@ -276,7 +276,7 @@ body{
 
     width:340px;
 
-    min-height:320px;
+    min-height:420px;
    
     padding:22px;
 
@@ -285,6 +285,7 @@ body{
     flex-direction:column;
 
     justify-content:center;
+   justify-content:space-between;
 
     align-items:center;
 
