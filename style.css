@@ -818,29 +818,31 @@ body{
 /* Imagen */
 .coca-img{
 
-    width:120px;
+    width: 145px;
 
-    height:auto;
+    height: auto;
 
-    margin-bottom:18px;
+    margin-top: 5px;
+
+    margin-bottom: 12px;
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
 
     filter:
-        drop-shadow(0 0 10px rgba(255,0,0,.6))
-        drop-shadow(0 0 20px rgba(255,0,0,.35));
+        drop-shadow(0 0 12px rgba(255,0,0,.6))
+        drop-shadow(0 0 25px rgba(255,0,0,.4));
 
-    transition:
-        transform .35s ease,
-        filter .35s ease;
+    transition: .35s;
 
 }
 
 .coca:hover .coca-img{
 
-    transform:scale(1.08) rotate(-3deg);
-
-    filter:
-        drop-shadow(0 0 18px rgba(255,0,0,.9))
-        drop-shadow(0 0 35px rgba(255,0,0,.6));
+    transform: scale(1.08);
 
 }
 .coca h2,
