@@ -460,16 +460,14 @@ body{
 ========================================================== */
 
 .explosiva{
-
     background:
     linear-gradient(
-        180deg,
-        #1a1a1a 0%,
-        #111111 100%
-    );
-
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.85)
+    ),
+    url("images/explosiva-web.jpg");
 }
-
 .combo-explosiva{
 
     background:
