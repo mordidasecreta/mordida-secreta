@@ -529,3 +529,98 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
+const pasos = [
+
+    {
+
+        titulo:"¿Cómo te llamas?",
+
+        placeholder:"Tu nombre"
+
+    },
+
+    {
+
+        titulo:"¿Cuál es tu celular?",
+
+        placeholder:"300..."
+
+    },
+
+    {
+
+        titulo:"¿Dónde entregamos?",
+
+        placeholder:"Dirección"
+
+    },
+
+    {
+
+        titulo:"¿Cómo deseas pagar?",
+
+        placeholder:"Nequi / Transferencia / Contra entrega"
+
+    }
+
+];
+
+let paso = 0;
+
+function abrirCheckout(){
+
+    document
+
+        .getElementById("checkout")
+
+        .classList.add("abierto");
+
+    document
+
+        .getElementById("overlay")
+
+        .classList.add("activo");
+
+}
+
+document
+
+.getElementById("btnPaso")
+
+.onclick=function(){
+
+    paso++;
+
+    if(paso>=pasos.length){
+
+        alert("Aquí irá WhatsApp.");
+
+        return;
+
+    }
+
+    document
+
+    .getElementById("numeroPaso")
+
+    .innerHTML=paso+1;
+
+    document
+
+    .getElementById("tituloPaso")
+
+    .innerHTML=pasos[paso].titulo;
+
+    document
+
+    .getElementById("campo")
+
+    .placeholder=pasos[paso].placeholder;
+
+    document
+
+    .getElementById("campo")
+
+    .value="";
+
+}
