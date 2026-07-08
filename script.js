@@ -501,4 +501,31 @@ mensaje.classList.add("mostrar");
     },2500);
 
 }
+/* ===========================
+   tarjeta se abra
+=========================== */
 
+document.querySelectorAll(".card").forEach(card=>{
+
+    card.addEventListener("click",(e)=>{
+
+        // No abrir si se tocaron los botones + o -
+        if(e.target.closest(".cantidad")){
+            return;
+        }
+
+        // Cerrar las demás tarjetas
+        document.querySelectorAll(".card").forEach(c=>{
+
+            if(c!==card){
+                c.classList.remove("abierta");
+            }
+
+        });
+
+        // Abrir o cerrar la actual
+        card.classList.toggle("abierta");
+
+    });
+
+});
