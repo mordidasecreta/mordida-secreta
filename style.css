@@ -69,7 +69,8 @@ body{
 
     border-radius:999px;
 
-    box-shadow:
+
+   box-shadow:
     0 0 18px rgba(245,197,66,.35);
 
 }
@@ -274,7 +275,7 @@ body{
 
     isolation:isolate;
 
-   background-size:110%;
+   background-size:85%;
 
     width:340px;
 
@@ -511,9 +512,9 @@ body{
 .callejera,
 .combo-callejera{
 
-    background-position:center;
+    background-position:center top;
 
-    background-size:110%;
+    background-size:85%;
 
 }
 
@@ -656,7 +657,7 @@ body{
 
     background-size:110%;
 
-    background-position:center;
+    background-position:center top;
 
     transition:
         background-size .45s ease,
