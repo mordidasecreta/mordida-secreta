@@ -361,11 +361,15 @@ body{
 }
 .precio{
 
-    font-size:2rem;
+    font-size:2.3rem;
 
     font-weight:900;
 
-    color:#FFD54F;
+    color:#F5C542;
+
+    text-shadow:
+
+        0 4px 18px rgba(245,197,66,.25);
 
 }
 .ingredientes{
@@ -2003,6 +2007,10 @@ TARJETA V2 NUEVA
 
     overflow:hidden;
 
+    border-radius:28px 28px 0 0;
+
+    background:#111;
+
 }
 
 .producto-img{
@@ -2015,13 +2023,13 @@ TARJETA V2 NUEVA
 
     display:block;
 
-    transition:transform .45s ease;
+    transition:.55s;
 
 }
 
 .card:hover .producto-img{
 
-    transform:scale(1.06);
+    transform:scale(1.08);
 
 }
 
@@ -2041,48 +2049,45 @@ TARJETA V2 NUEVA
 
         transparent,
 
-        rgba(12,12,12,.98)
+        rgba(15,15,15,.98)
 
     );
 
 }
-
 .card-content{
-
-    padding:22px;
-
-    margin-top:-55px;
 
     position:relative;
 
     z-index:5;
 
-}
+    margin-top:-55px;
 
+    padding:22px;
+
+}
 .badge{
 
     display:inline-flex;
 
     align-items:center;
 
-    gap:6px;
+    justify-content:center;
 
-    padding:8px 16px;
+    padding:8px 18px;
 
     border-radius:999px;
 
-    background:#f5c542;
+    background:#F5C542;
 
     color:#111;
 
+    font-size:.82rem;
+
     font-weight:800;
 
-    font-size:.85rem;
-
-    margin-bottom:18px;
+    margin-bottom:15px;
 
 }
-
 .card-content h2{
 
     margin-bottom:12px;
