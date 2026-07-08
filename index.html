@@ -57,52 +57,60 @@
     <section class="menu">
 
 
-        <div class="card explosiva animar">
+<div class="card explosiva animar" id="card-explosiva">
 
-    <img src="images/explosiva.png"
-     class="producto-img"
-     alt="La Explosiva">
+    <div class="card-image">
 
-    <h2>💥 La Explosiva</h2>
+        <img src="images/explosiva.webp"
+             alt="La Explosiva">
 
-<div class="ingredientes">
+    </div>
 
-    <ul>
+    <div class="card-info">
 
-        <li>🥩 Pollo desmechado</li>
+        <h2>💥 La Explosiva</h2>
 
-        <li>🌽 Maicitos</li>
+        <div class="precio">
+            $18.000
+        </div>
 
-        <li>🥓 Tocineta</li>
+        <div class="cantidad">
 
-        <li>🧀 Queso</li>
+            <button onclick="cambiarCantidad('explosiva',-1,event)">
+                −
+            </button>
 
-        <li>🍅 Tomate</li>
+            <span id="explosiva">0</span>
 
-        <li>🥬 Lechuga crespa</li>
+            <button onclick="cambiarCantidad('explosiva',1,event)">
+                +
+            </button>
 
-        <li>🥣 Salsa secreta</li>
+        </div>
 
-    </ul>
+        <div class="ingredientes">
 
-</div>
+            <ul>
 
-<p class="papas">
-🍟 Incluye papas artesanales
-</p>
+                <li>🥩 Pollo desmechado</li>
 
-<h3>$18.000</h3>
-    <div class="cantidad">
+                <li>🌽 Maicitos</li>
 
-        <button onclick="cambiarCantidad('explosiva',-1)">
-            −
-        </button>
+                <li>🥓 Tocineta</li>
 
-        <span id="explosiva">0</span>
+                <li>🧀 Queso</li>
 
-        <button onclick="cambiarCantidad('explosiva',1)">
-            +
-        </button>
+                <li>🍅 Tomate</li>
+
+                <li>🥬 Lechuga crespa</li>
+
+                <li>🥣 Salsa secreta</li>
+
+                <li>🍟 Papas artesanales</li>
+
+            </ul>
+
+        </div>
 
     </div>
 
