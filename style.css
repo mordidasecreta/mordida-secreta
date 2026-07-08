@@ -462,11 +462,15 @@ body{
 
     background:
     linear-gradient(
-    rgba(0,0,0,.20),
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.80)
+        rgba(0,0,0,.20),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.80)
     ),
     url("images/explosiva.webp");
+
+    background-position:center;
+
+    background-size:cover;
 
 }
 .combo-explosiva{
@@ -520,7 +524,7 @@ body{
 .card:hover.callejera,
 .card:hover.combo-callejera{
 
-    background-size:118%;
+    background-size:110%;
 
 }
 
