@@ -1861,9 +1861,11 @@ TARJETA V2 NUEVA
 
     position:relative;
 
-    width:100%;
+    width:calc(100% + 44px);
 
-    height:240px;
+    margin:-22px -22px 0;
+
+    height:235px;
 
     overflow:hidden;
 
@@ -1883,16 +1885,19 @@ TARJETA V2 NUEVA
 
     display:block;
 
-    transition:.55s;
+    transition:
+        transform .55s ease,
+        filter .35s ease;
 
 }
 
 .card:hover .producto-img{
 
-    transform:scale(1.08);
+    transform:scale(1.05);
+
+    filter:brightness(1.05);
 
 }
-
 .card-overlay{
 
     position:absolute;
