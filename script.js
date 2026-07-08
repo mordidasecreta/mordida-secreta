@@ -527,59 +527,19 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
-const pasos = [
+let pasoActual = 1;
 
-    {
+const titulos = {
 
-        titulo:"¿Cómo te llamas?",
+    1:"¿Cómo te llamas?",
 
-        placeholder:"Tu nombre"
+    2:"¿En qué barrio estás?",
 
-    },
+    3:"¿Cuál es la dirección?",
 
-    {
+    4:"¿Cómo deseas pagar?"
 
-        titulo:"¿Cuál es tu celular?",
-
-        placeholder:"300..."
-
-    },
-
-    {
-
-        titulo:"¿Dónde entregamos?",
-
-        placeholder:"Dirección"
-
-    },
-
-    {
-
-        titulo:"¿Cómo deseas pagar?",
-
-        placeholder:"Nequi / Transferencia / Contra entrega"
-
-    }
-
-];
-
-let paso = 0;
-
-function abrirCheckout(){
-
-    document
-
-        .getElementById("checkout")
-
-        .classList.add("abierto");
-
-    document
-
-        .getElementById("overlay")
-
-        .classList.add("activo");
-
-}
+};
 
 document
 
@@ -587,38 +547,40 @@ document
 
 .onclick=function(){
 
-    paso++;
+    if(pasoActual<4){
 
-    if(paso>=pasos.length){
+        document
 
-        alert("Aquí irá WhatsApp.");
+        .getElementById("paso"+pasoActual)
 
-        return;
+        .classList.remove("activo");
+
+        pasoActual++;
+
+        document
+
+        .getElementById("paso"+pasoActual)
+
+        .classList.add("activo");
+
+        document
+
+        .getElementById("numeroPaso")
+
+        .innerHTML=pasoActual;
+
+        document
+
+        .getElementById("tituloPaso")
+
+        .innerHTML=titulos[pasoActual];
 
     }
 
-    document
+    else{
 
-    .getElementById("numeroPaso")
+        pedirWhatsapp();
 
-    .innerHTML=paso+1;
-
-    document
-
-    .getElementById("tituloPaso")
-
-    .innerHTML=pasos[paso].titulo;
-
-    document
-
-    .getElementById("campo")
-
-    .placeholder=pasos[paso].placeholder;
-
-    document
-
-    .getElementById("campo")
-
-    .value="";
+    }
 
 }
