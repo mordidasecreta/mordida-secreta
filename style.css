@@ -270,7 +270,7 @@ body{
 
     position:relative;
 
-    overflow:visible;
+    overflow:hidden;
 
     isolation:isolate;
 
@@ -1819,7 +1819,7 @@ body{
 
 }
 }
-.producto-img{
+/*.producto-img{
 
     width:220px;
 
@@ -1834,4 +1834,4 @@ body{
 
     transform:scale(1.08);
 
-}
+}*/
