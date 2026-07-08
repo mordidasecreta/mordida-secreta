@@ -1968,11 +1968,15 @@ body{
 
     font-weight:700;
 
+}
+
+.flecha{
+
     transition:.35s;
 
 }
 
-.card.abierta .ver-ingredientes{
+.card.abierta .flecha{
 
     transform:rotate(180deg);
 
