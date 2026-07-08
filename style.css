@@ -1972,23 +1972,7 @@ body{
 
 }
 
-.flecha{
 
-    font-size:1.1rem;
-
-    color:#F5C542;
-
-    margin:10px 0;
-
-    transition:.35s;
-
-}
-
-.card.abierta .flecha{
-
-    transform:rotate(180deg);
-
-}
 /*==============================
 TARJETA V2 NUEVA
 ==============================*/
@@ -2115,12 +2099,4 @@ TARJETA V2 NUEVA
 
 }
 
-.card.abierta{
 
-    transform:translateY(-8px);
-
-    box-shadow:
-
-        0 28px 65px rgba(0,0,0,.60);
-
-}
