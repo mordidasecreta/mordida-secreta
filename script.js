@@ -529,3 +529,8 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
+function toggleCard(card){
+
+    card.classList.toggle("abierta");
+
+}
