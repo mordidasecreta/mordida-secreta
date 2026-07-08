@@ -278,14 +278,14 @@ body{
     width:340px;
 
     min-height:480px;
-   
+
     padding:22px;
 
     display:flex;
 
     flex-direction:column;
 
-   justify-content:space-between;
+    justify-content:space-between;
 
     align-items:center;
 
@@ -295,24 +295,50 @@ body{
 
     background:
     linear-gradient(
-        rgba(255,255,255,.05),
-        rgba(255,255,255,.02)
+        180deg,
+        #232323 0%,
+        #181818 55%,
+        #101010 100%
     );
 
     backdrop-filter:blur(10px);
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.06);
 
     cursor:pointer;
 
-   transition:
-    transform .35s,
-    box-shadow .35s,
-    height .45s ease,
-    background-size .45s;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.35);
+        0 18px 40px rgba(0,0,0,.45);
+
+}
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:
+
+    radial-gradient(
+
+        circle at top,
+
+        rgba(245,197,66,.08),
+
+        transparent 65%
+
+    );
+
+    pointer-events:none;
 
 }
 .card-image{
@@ -1933,14 +1959,6 @@ TARJETA V2 NUEVA
     margin-bottom:18px;
 
 }
-.card{
 
-    transition:
-
-        transform .35s ease,
-
-        box-shadow .35s ease;
-
-}
 
 
