@@ -326,17 +326,15 @@ body{
 
 }
 
-.card-image img{
+.card-header img{
 
     width:100%;
+
     height:100%;
 
-    object-fit:cover;
+    object-fit:contain;
 
-    display:block;
-
-   transition:
-    transform .45s ease;
+    padding:12px;
 
 }
 .card-info{
@@ -963,7 +961,7 @@ body{
 
     width:220px;
 
-    height:220px;
+    height:150px;
 
     border-radius:50%;
 
