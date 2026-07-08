@@ -1901,32 +1901,4 @@ body{
 
 }
 }
-.ingredientes{
 
-    max-height:0;
-
-    opacity:0;
-
-    overflow:hidden;
-
-    transition:
-
-        max-height .45s ease,
-
-        opacity .35s ease,
-
-        margin .35s ease;
-
-    margin:0;
-
-}
-
-.card.abierta .ingredientes{
-
-    max-height:300px;
-
-    opacity:1;
-
-    margin:15px 0;
-
-}
