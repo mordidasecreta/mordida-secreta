@@ -1837,3 +1837,16 @@ body{
     transform:scale(1.08);
 
 }*/
+.ingredientes{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transition:
+        max-height .35s ease,
+        opacity .35s ease;
+
+}
