@@ -2131,6 +2131,144 @@ TARJETA V2 NUEVA
     margin-bottom:18px;
 
 }
+/*=========================
+CHECKOUT V2
+==========================*/
 
+#overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:998;
+
+}
+
+#overlay.activo{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.checkout{
+
+    position:fixed;
+
+    left:0;
+
+    bottom:-100%;
+
+    width:100%;
+
+    height:72vh;
+
+    background:#151515;
+
+    border-radius:30px 30px 0 0;
+
+    transition:.45s ease;
+
+    z-index:999;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:25px;
+
+}
+
+.checkout.abierto{
+
+    bottom:0;
+
+}
+
+.checkout-header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.checkout-header h2{
+
+    color:white;
+
+    margin-top:12px;
+
+}
+
+.paso{
+
+    color:#F5C542;
+
+    font-weight:bold;
+
+}
+
+.checkout-body{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.checkout-body input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#252525;
+
+    color:white;
+
+    font-size:1.1rem;
+
+    outline:none;
+
+}
+
+.checkout-footer button{
+
+    width:100%;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#F5C542;
+
+    color:#111;
+
+    font-size:1.1rem;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+}
 
 
