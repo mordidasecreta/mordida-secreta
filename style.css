@@ -275,8 +275,6 @@ body{
 
     isolation:isolate;
 
-   background-size:85%;
-
     width:340px;
 
     min-height:420px;
@@ -514,7 +512,6 @@ body{
 
     background-position:center top;
 
-    background-size:85%;
 
 }
 
