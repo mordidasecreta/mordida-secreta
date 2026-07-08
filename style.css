@@ -334,7 +334,8 @@ body{
 
     display:block;
 
-    transition:.45s;
+   transition:
+    transform .45s ease;
 
 }
 .card-info{
@@ -384,6 +385,11 @@ body{
     opacity:1;
 
     margin:15px 0;
+
+}
+.card.abierta .card-image img{
+
+    transform:scale(.92);
 
 }
 .ingredientes ul{
