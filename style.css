@@ -277,7 +277,7 @@ body{
 
     width:340px;
 
-    min-height:420px;
+    min-height:480px;
    
     padding:22px;
 
@@ -291,7 +291,7 @@ body{
 
     text-align:center;
 
-    border-radius:24px;
+    border-radius:28px;
 
     background:
     linear-gradient(
@@ -305,9 +305,10 @@ body{
 
     cursor:pointer;
 
-    transition:
+   transition:
     transform .35s,
     box-shadow .35s,
+    height .45s ease,
     background-size .45s;
 
     box-shadow:
@@ -346,7 +347,7 @@ body{
 
     flex-direction:column;
 
-    gap:15px;
+    gap:12px;
 
 }
 .card-info h2{
@@ -366,7 +367,7 @@ body{
 
     font-weight:900;
 
-    color:#F5C542;
+    color:#FFD54F;
 
 }
 .ingredientes{
@@ -428,17 +429,6 @@ body{
     border-bottom:none;
 
 }
-.card{
-
-    transition:
-
-        transform .35s,
-
-        box-shadow .35s,
-
-        height .45s ease;
-
-}
 
 .card.abierta{
 
@@ -446,7 +436,7 @@ body{
 
     box-shadow:
 
-        0 25px 60px rgba(0,0,0,.55);
+        0 20px 45px rgba(0,0,0,.55);
 
 }
 
