@@ -590,8 +590,7 @@ body{
 /* ==========================================================
    FONDOS
 ========================================================== */
-
-.explosiva{
+/*.explosiva{
 
     background:
     linear-gradient(
@@ -605,7 +604,7 @@ body{
 
     background-size:cover;
 
-}
+}*/
 .combo-explosiva{
 
     background:
