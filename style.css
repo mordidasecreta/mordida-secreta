@@ -378,11 +378,15 @@ body{
 
     overflow:hidden;
 
+    transform:translateY(-15px);
+
     transition:
 
         max-height .45s ease,
 
         opacity .35s ease,
+
+        transform .35s ease,
 
         margin .35s ease;
 
@@ -392,16 +396,18 @@ body{
 
 .card.abierta .ingredientes{
 
-    max-height:300px;
+    max-height:350px;
 
     opacity:1;
 
-    margin:15px 0;
+    transform:translateY(0);
+
+    margin-top:18px;
 
 }
 .card.abierta .card-image img{
 
-    transform:scale(.92);
+    transform:scale(1.08);
 
 }
 .ingredientes ul{
