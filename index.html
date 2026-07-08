@@ -276,30 +276,78 @@ CHECKOUT V2
     <div class="checkout-header">
 
         <div class="paso">
-
             Paso <span id="numeroPaso">1</span> de 4
-
         </div>
 
         <h2 id="tituloPaso">
-
             ¿Cómo te llamas?
-
         </h2>
 
     </div>
 
     <div class="checkout-body">
 
-        <input
+        <!-- PASO 1 -->
+        <div class="paso-checkout activo" id="paso1">
 
-            id="campo"
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Tu nombre">
 
-            type="text"
+        </div>
 
-            placeholder="Escribe aquí..."
+        <!-- PASO 2 -->
+        <div class="paso-checkout" id="paso2">
 
-        >
+            <input
+                type="text"
+                id="barrio"
+                placeholder="Barrio">
+
+        </div>
+
+        <!-- PASO 3 -->
+        <div class="paso-checkout" id="paso3">
+
+            <input
+                type="text"
+                id="direccion"
+                placeholder="Dirección">
+
+        </div>
+
+        <!-- PASO 4 -->
+        <div class="paso-checkout" id="paso4">
+
+            <h3>Método de pago</h3>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Efectivo"
+                    checked>
+
+                💵 Efectivo
+
+            </label>
+
+            <br><br>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Transferencia">
+
+                📲 Transferencia
+
+            </label>
+
+        </div>
 
     </div>
 
@@ -314,8 +362,6 @@ CHECKOUT V2
     </div>
 
 </div>
-
-<div id="overlay"></div>
 
     <p id="mensaje-ahorro"></p>
 
