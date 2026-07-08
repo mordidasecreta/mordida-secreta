@@ -1974,6 +1974,12 @@ body{
 
 .flecha{
 
+    font-size:1.1rem;
+
+    color:#F5C542;
+
+    margin:10px 0;
+
     transition:.35s;
 
 }
