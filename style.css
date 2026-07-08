@@ -383,7 +383,7 @@ body{
 
 .card:hover{
 
-   background-size:118%;
+   background-size:105%;
     transform:
     translateY(-12px)
     scale(1.03);
