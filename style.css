@@ -1946,4 +1946,28 @@ body{
 
 }
 }
+.ver-ingredientes{
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:8px;
+
+    color:#FFD54F;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.card.abierta .ver-ingredientes{
+
+    transform:rotate(180deg);
+
+}
