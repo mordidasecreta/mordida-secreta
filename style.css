@@ -614,7 +614,94 @@ pointer-events:none;
 /* ==========================================================
    FONDOS
 ========================================================== */
+.explosiva{
 
+    background:
+    linear-gradient(
+
+    rgba(0,0,0,.25),
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.80)
+
+),
+    url("images/explosiva.jpg");
+
+}
+
+.combo-explosiva{
+
+    background:
+   linear-gradient(
+
+    rgba(0,0,0,.25),
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.80)
+
+),
+    url("images/explosiva-combo.jpg");
+
+}
+
+.callejera{
+
+    background:
+    linear-gradient(
+
+    rgba(0,0,0,.25),
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.80)
+
+),
+    url("images/callejera.jpg");
+
+}
+
+.combo-callejera{
+
+    background:
+    linear-gradient(
+
+    rgba(0,0,0,.25),
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.80)
+
+),
+    url("images/callejera-combo.jpg");
+
+}
+
+.explosiva,
+.combo-explosiva,
+.callejera,
+.combo-callejera{
+
+    background-size:110%;
+
+    background-position:center top;
+
+    transition:
+        background-size .45s ease,
+        filter .45s ease;
+
+}
+.card:hover.explosiva,
+.card:hover.combo-explosiva,
+.card:hover.callejera,
+.card:hover.combo-callejera{
+
+    background-size:120%;
+
+    filter:brightness(1.08);
+
+}
 
 /* ===========================
    CANTIDAD
