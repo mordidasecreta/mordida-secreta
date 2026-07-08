@@ -329,15 +329,17 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 
 function mostrarFormulario(){
 
-    const formulario = document.getElementById("pedido");
+    document
 
-    formulario.classList.remove("oculto");
+    .querySelector(".checkout")
 
-    formulario.classList.add("visible");
+    .classList.add("abierto");
 
-    formulario.scrollIntoView({
-        behavior:"smooth"
-    });
+    document
+
+    .querySelector("#overlay")
+
+    .classList.add("activo");
 
 }
 /* ===========================
