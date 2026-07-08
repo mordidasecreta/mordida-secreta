@@ -349,6 +349,17 @@ body{
     gap:15px;
 
 }
+.card-info h2{
+
+    transition:.35s;
+
+}
+
+.card.abierta h2{
+
+    transform:translateY(-5px);
+
+}
 .precio{
 
     font-size:2rem;
@@ -415,6 +426,27 @@ body{
 .ingredientes li:last-child{
 
     border-bottom:none;
+
+}
+.card{
+
+    transition:
+
+        transform .35s,
+
+        box-shadow .35s,
+
+        height .45s ease;
+
+}
+
+.card.abierta{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+        0 25px 60px rgba(0,0,0,.55);
 
 }
 
