@@ -27,172 +27,203 @@
 </head>
 
 <body>
-
-<!--==================================
-LOGO
-===================================-->
-
-<header class="header">
-
     <div class="logo">
-
-        <img
-            src="images/logo.png"
-            alt="Mordida Secreta">
-
-    </div>
-
-</header>
-
-<!--==================================
-ESTADO
-===================================-->
-
-<div class="estado-semanal">
-
-    🔥 Pedidos abiertos para este fin de semana
-
+    <img src="images/logo.png" alt="Mordida Secreta">
 </div>
 
-<!--==================================
-HERO
-===================================-->
+<div class="estado-semanal">
+    🔥 Pedidos abiertos para este fin de semana
+</div>
 
 <section class="hero">
 
-    <h1>
+   <h1 class="slogan">
+    Hay sabores que no se olvidan.<br>
+    Este es uno de ellos.
+</h1>
 
-        Hay sabores que no se olvidan.
+<p class="hero-subtitulo">
+    Sándwiches artesanales preparados al momento, con ingredientes seleccionados y una receta que convierte cada mordida en una experiencia.
+</p>
+    <button
+        class="btn-principal"
+        onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
 
-        <br>
-
-        Este es uno de ellos.
-
-    </h1>
-
-    <p>
-
-        Sándwiches artesanales preparados al momento,
-
-        con ingredientes frescos y una receta que convierte
-
-        cada mordida en una experiencia.
-
-    </p>
-
-    <button class="btn-menu">
-
-        🍞 DESCUBRIR EL MENÚ
+       🍞 DESCUBRIR EL MENÚ
 
     </button>
 
 </section>
+    <section class="menu">
 
-<!--==================================
-MENU
-===================================-->
 
-<section class="menu">
-<div class="card">
+        <div class="card explosiva animar">
 
-    <div class="card-media">
+    <h2>💥 La Explosiva</h2>
 
-        <img
-            src="images/explosiva.webp"
-            alt="La Explosiva"
-            class="producto-img">
+    <p>
+        Jugoso pollo desmechado en nuestra cremosa 
+        salsa especial, con maicitos, tocineta, 
+queso, tomate fresco, lechuga y la inconfundible salsa de la casa. 🔥
+    </p>
 
-        <span class="badge">
-            ⭐ Más pedida
-        </span>
+    <p>🍟 Incluye papas artesanales</p>
 
-    </div>
+    <h3>$18.000</h3>
 
-    <div class="card-content">
+    <div class="cantidad">
 
-        <h2>La Explosiva</h2>
-
-        <p class="descripcion">
-
-            Pollo desmechado, maicitos,
-            tocineta, queso, tomate,
-            lechuga crespa y salsa secreta.
-
-        </p>
-
-        <div class="precio">
-
-            $18.000
-
-        </div>
-
-        <div class="cantidad">
-
-            <button>-</button>
-
-            <span>0</span>
-
-            <button>+</button>
-
-        </div>
-
-        <button class="btn-ingredientes">
-
-            Ver ingredientes ▼
-
+        <button onclick="cambiarCantidad('explosiva',-1)">
+            −
         </button>
 
-        <div class="ingredientes">
+        <span id="explosiva">0</span>
 
-            <ul>
-
-                <li>🍗 Pollo desmechado</li>
-                <li>🌽 Maicitos</li>
-                <li>🥓 Tocineta</li>
-                <li>🧀 Queso</li>
-                <li>🍅 Tomate</li>
-                <li>🥬 Lechuga crespa</li>
-                <li>🥣 Salsa secreta</li>
-                <li>🍟 Papas artesanales</li>
-
-            </ul>
-
-        </div>
+        <button onclick="cambiarCantidad('explosiva',1)">
+            +
+        </button>
 
     </div>
 
 </div>
-</section>
-    <!--==========================
-TOTAL PEDIDO
-===========================-->
 
-<section class="pedido-resumen">
+        <div class="card combo-explosiva combo animar">
 
-    <div class="total-box">
+    <div class="cinta-combo">
+        ⭐ MÁS PEDIDO
+    </div>
+
+    <h2>🥤 Combo Explosiva</h2>
+
+    <p>
+        💥 La Explosiva + 🍟 Papas artesanales +
+        🥤 Coca-Cola 400 ml
+    </p>
+
+    <h3>$21.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('comboExplosiva',-1)">
+            −
+        </button>
+
+        <span id="comboExplosiva">0</span>
+
+        <button onclick="cambiarCantidad('comboExplosiva',1)">
+            +
+        </button>
+
+    </div>
+
+</div>
+    <div class="card callejera animar" id="card-callejera">
+
+    <div id="estado-callejera"></div>
+
+    <h2>🥩 La Callejera</h2>
+
+    <p>
+        Carne desmechada jugosa,
+        cebolla caramelizada,
+        queso cheddar derretido,
+        madurito dulce y nuestro toque secreto.
+    </p>
+
+    <p>🍟 Incluye papas artesanales</p>
+
+    <h3>$20.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('callejera',-1)">
+            −
+        </button>
+
+        <span id="callejera">0</span>
+
+        <button onclick="cambiarCantidad('callejera',1)">
+            +
+        </button>
+
+    </div>
+
+</div>
+
+    <div class="card combo-callejera combo animar" id="card-combo-callejera">
+
+    <div id="estado-combo-callejera"></div>
+
+    <h2>🥤 Combo Callejera</h2>
+
+    <p>
+        🥩 La Callejera + 🍟 Papas artesanales +
+        🥤 Coca-Cola 400 ml
+    </p>
+
+    <h3>$23.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('comboCallejera',-1)">
+            −
+        </button>
+
+        <span id="comboCallejera">0</span>
+
+        <button onclick="cambiarCantidad('comboCallejera',1)">
+            +
+        </button>
+
+    </div>
+
+</div>
+<div class="card coca">
+
+    <div class="cinta-coca">
+        ❄️ HELADA
+    </div>
+
+    <img src="images/coca400.png" class="coca-img">
+
+    <h2>Coca-Cola 400 ml</h2>
+
+    <p>La compañera perfecta para tu sándwich.</p>
+
+    <h3>$4.000</h3>
+
+    <div class="cantidad">
+
+        <button onclick="cambiarCantidad('coca',-1)">−</button>
+
+        <span id="coca">0</span>
+
+        <button onclick="cambiarCantidad('coca',1)">+</button>
+
+    </div>
+
+</div>
+  <div class="total-box">
+
+    <div class="resumen-pedido">
 
         <div class="info-pedido">
 
             <div id="cantidad-total">
-
                 0 productos
-
             </div>
 
-            <div id="lista-productos">
-
-            </div>
+            <div id="lista-productos"></div>
 
             <div id="total">
-
                 $0
-
             </div>
 
         </div>
 
         <button
-            class="btn-continuar">
+            class="btn-continuar"
+            onclick="mostrarFormulario()">
 
             🛒 Continuar →
 
@@ -200,93 +231,110 @@ TOTAL PEDIDO
 
     </div>
 
-</section>
-    <!--==========================
-CHECKOUT
-===========================-->
+    <p id="mensaje-ahorro"></p>
 
-<section
-    id="checkout"
-    class="checkout">
-
-</section>
-    <!--==========================
-INFO
-===========================-->
-
-<section class="info">
-
-    <h2>
-
-        📍 Cali
-
-    </h2>
-
-    <p>
-
-        🕛 Sábados y domingos
-
-    </p>
-
-    <p>
-
-        12:00 PM - 10:00 PM
-
-    </p>
-
-    <p>
-
-        🚚 Domicilios
-
-    </p>
+</div>   <!-- ESTA ETIQUETA FALTABA -->
 
 </section>
 
-<!--==================================
-CHECKOUT
-===================================-->
+   <section class="pedido oculto" id="pedido">
 
-<div id="checkout"></div>
+    <h2>Haz tu pedido</h2>
 
-<!--==================================
-BARRA INFERIOR
-===================================-->
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre">
 
-<div id="barra-compra"></div>
+    <input
+        type="text"
+        id="barrio"
+        placeholder="Barrio">
 
-<script src="script.js"></script>
+    <input
+        type="text"
+        id="direccion"
+        placeholder="Dirección">
 
-</body>
-    <!--==========================
-BARRA FIJA
-===========================-->
+    <h3>Método de pago</h3>
 
-<div
-    id="barra-compra"
-    class="barra-compra">
+    <div class="metodo-pago">
+
+        <label class="opcion-pago">
+
+            <input
+                type="radio"
+                name="pago"
+                value="Efectivo"
+                checked>
+
+            <span>💵 Efectivo</span>
+
+        </label>
+
+        <label class="opcion-pago">
+
+            <input
+                type="radio"
+                name="pago"
+                value="Transferencia">
+
+            <span>📲 Transferencia</span>
+
+        </label>
+
+    </div>
+
+    <button
+        class="btn-whatsapp"
+        onclick="pedirWhatsapp()">
+
+        🟢 PEDIR POR WHATSAPP
+
+    </button>
+
+</section>
+    <section class="info animar">
+
+    <h2>📍 Cali</h2>
+
+    <p>🕛 Sábado 4 de julio</p>
+
+    <p>12:00 PM - 10:00 PM</p>
+
+    <p>🚚 Domicilios según ubicación</p>
+
+    <p>⚠️ Producción limitada cada fin de semana</p>
+
+</section>
+
+    <div class="barra-compra" id="barra-compra">
 
     <div class="barra-info">
 
         <div id="barra-cantidad">
-
             0 productos
-
         </div>
 
         <div id="barra-total">
-
             $0
-
         </div>
 
     </div>
 
-    <button class="barra-boton">
+    <button
+        class="barra-boton"
+        onclick="mostrarFormulario()">
 
         Continuar →
 
     </button>
 
 </div>
-</html>
 
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
