@@ -322,4 +322,51 @@ transform:translateY(12px);
     background:rgba(212,175,55,.35);
 
 }
+/*==================================
+TÍTULO DEL MENÚ
+==================================*/
+
+.menu-title{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin:70px 0 45px;
+
+}
+
+.menu-title span{
+
+    flex:1;
+
+    height:1px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(212,175,55,.45),
+        transparent
+    );
+
+}
+
+.menu-title h2{
+
+    color:#d4af37;
+
+    font-size:22px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    white-space:nowrap;
+
+}
+
 
