@@ -13,30 +13,30 @@ html{
 }
 
 body{
+
     font-family:'Montserrat',sans-serif;
+
     color:#fff;
+
     overflow-x:hidden;
 
-   body{
+    background:
 
-background:
+    radial-gradient(circle at top,
+        rgba(212,175,55,.10),
+        transparent 35%),
 
-radial-gradient(circle at top,
-rgba(212,175,55,.08),
-transparent 30%),
+    radial-gradient(circle at bottom left,
+        rgba(255,255,255,.02),
+        transparent 45%),
 
-radial-gradient(circle at bottom left,
-rgba(255,255,255,.02),
-transparent 45%),
-
-linear-gradient(
-180deg,
-#090909,
-#111,
-#090909);
+    linear-gradient(
+        180deg,
+        #090909 0%,
+        #111111 40%,
+        #0c0c0c 100%);
 
 }
-
 /*=========================
 HERO V3
 =========================*/
