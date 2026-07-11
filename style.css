@@ -578,4 +578,39 @@ CANTIDAD
     color:white;
 
 }
+/*==========================================================
+BOTÓN INGREDIENTES
+==========================================================*/
+
+.btn-ingredientes{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(212,175,55,.10);
+
+    color:#d4af37;
+
+    font-size:16px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+/*======BONTON HOVER============*/
+.btn-ingredientes:hover{
+
+    background:rgba(212,175,55,.18);
+
+}
 
