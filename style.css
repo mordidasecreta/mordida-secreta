@@ -484,3 +484,98 @@ tarjeta V3
     gap:28px;
 
 }
+/*==========================================================
+BADGE PRODUCTO
+==========================================================*/
+
+.producto-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(212,175,55,.12);
+
+    border:1px solid rgba(212,175,55,.35);
+
+    color:#d4af37;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+/*==========================================================
+CANTIDAD
+==========================================================*/
+
+.cantidad{
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:220px;
+
+    height:58px;
+
+    padding:0 12px;
+
+    border-radius:60px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+/*===========BOTONES=====================*/
+.cantidad button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-size:24px;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+/*========LOS NUMEROS==============*/
+
+.cantidad span{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:white;
+
+}
+
