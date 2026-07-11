@@ -368,5 +368,78 @@ TÍTULO DEL MENÚ
     white-space:nowrap;
 
 }
+/*==================================
+         TARJETAS 
+==================================*/
 
+.card{
 
+    position:relative;
+
+    width:100%;
+
+    max-width:380px;
+
+    margin:25px auto;
+
+    padding:30px 25px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.015)
+    );
+
+    border:1px solid rgba(212,175,55,.18);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45);
+
+    text-align:center;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+/*=========TARJETA HOVER=================*/
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+        0 22px 55px rgba(0,0,0,.60);
+
+}
+/*=========NOMBRE DEL PRODUCTO===========*/
+.card h2{
+
+    margin-top:18px;
+
+    font-size:30px;
+
+    font-weight:900;
+
+    color:#fff;
+
+}
+/*=========PRECIO===========*/
+.precio{
+
+    margin:18px 0;
+
+    font-size:34px;
+
+    font-weight:900;
+
+    color:#d4af37;
+
+}
