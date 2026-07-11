@@ -385,9 +385,9 @@ TÍTULO DEL MENÚ
     white-space:nowrap;
 
 }
-/*==================================
-         TARJETAS 
-==================================*/
+/*==========================================================
+tarjeta V3
+==========================================================*/
 
 .card{
 
@@ -395,18 +395,17 @@ TÍTULO DEL MENÚ
 
     width:100%;
 
-    max-width:380px;
+    max-width:420px;
 
-    margin:25px auto;
+    margin:30px auto;
 
-    padding:30px 25px;
+    padding:28px;
 
     border-radius:28px;
 
     overflow:hidden;
 
-    background:
-    linear-gradient(
+    background:linear-gradient(
         180deg,
         rgba(255,255,255,.04),
         rgba(255,255,255,.015)
@@ -414,12 +413,10 @@ TÍTULO DEL MENÚ
 
     border:1px solid rgba(212,175,55,.18);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(14px);
 
     box-shadow:
-        0 12px 35px rgba(0,0,0,.45);
-
-    text-align:center;
+        0 18px 40px rgba(0,0,0,.45);
 
     transition:
         transform .35s ease,
@@ -429,35 +426,52 @@ TÍTULO DEL MENÚ
 /*=========TARJETA HOVER=================*/
 .card:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-8px);
 
     box-shadow:
 
-        0 22px 55px rgba(0,0,0,.60);
+        0 30px 60px rgba(0,0,0,.55);
 
 }
 /*=========NOMBRE DEL PRODUCTO===========*/
 .card h2{
 
-    margin-top:18px;
+    margin-top:10px;
 
-    font-size:30px;
+    font-size:32px;
 
     font-weight:900;
 
-    color:#fff;
+    text-align:center;
+
+    color:white;
+
+}
+.card p{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+    font-size:17px;
 
 }
 /*=========PRECIO===========*/
-.precio{
+.card h3{
 
-    margin:18px 0;
+    margin-top:22px;
 
-    font-size:34px;
-
-    font-weight:900;
+    text-align:center;
 
     color:#d4af37;
+
+    font-size:38px;
+
+    font-weight:900;
 
 }
 /*======ESPACIO ELEGANTE=========*/
