@@ -322,6 +322,21 @@ transform:translateY(12px);
     background:rgba(212,175,55,.35);
 
 }
+/*==========================================================
+MENU
+==========================================================*/
+
+.menu{
+
+    width:100%;
+
+    max-width:480px;
+
+    margin:0 auto;
+
+    padding:70px 20px;
+
+}
 /*==================================
 TÍTULO DEL MENÚ
 ==================================*/
@@ -336,7 +351,7 @@ TÍTULO DEL MENÚ
 
     gap:18px;
 
-    margin:70px 0 45px;
+    margin-bottom:50px;
 
 }
 
@@ -346,7 +361,9 @@ TÍTULO DEL MENÚ
 
     height:1px;
 
-    background:linear-gradient(
+    background:
+
+    linear-gradient(
         to right,
         transparent,
         rgba(212,175,55,.45),
@@ -357,11 +374,11 @@ TÍTULO DEL MENÚ
 
 .menu-title h2{
 
+    font-size:26px;
+
     color:#d4af37;
 
-    font-size:22px;
-
-    font-weight:800;
+    font-weight:900;
 
     letter-spacing:2px;
 
@@ -441,5 +458,15 @@ TÍTULO DEL MENÚ
     font-weight:900;
 
     color:#d4af37;
+
+}
+/*======ESPACIO ELEGANTE=========*/
+.productos{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
 
 }
