@@ -195,7 +195,7 @@ PRODUCTO V3 - LA EXPLOSIVA
 
         <div class="cantidad">
 
-           <button onclick="event.stopPropagation(); cambiarCantidad('explosiva',-1)">
+          <button onclick="cambiarCantidad('explosiva',-1); return false;">
                 −
             </button>
 
@@ -203,7 +203,7 @@ PRODUCTO V3 - LA EXPLOSIVA
                 0
             </span>
 
-            <button onclick="event.stopPropagation(); cambiarCantidad('explosiva',1)">
+            <button onclick="cambiarCantidad('explosiva',1); return false;">
                 +
             </button>
 
