@@ -588,10 +588,14 @@ document
 SECRETO AUTOMÁTICO V3
 ==================================*/
 
-function mostrarSecreto(card){
+function mostrarSecreto(event, card){
+
+    // Si el clic fue dentro del contador, no abrir el secreto
+    if(event.target.closest(".cantidad")){
+        return;
+    }
 
     const secreto = card.querySelector(".ingredientes");
-
     const hint = card.querySelector(".hint-secreto");
 
     if(secreto.classList.contains("mostrar")) return;
@@ -604,7 +608,7 @@ function mostrarSecreto(card){
 
     clearTimeout(secreto.timer);
 
-    secreto.timer=setTimeout(()=>{
+    secreto.timer = setTimeout(()=>{
 
         secreto.classList.remove("mostrar");
 
