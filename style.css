@@ -389,7 +389,7 @@ TÍTULO DEL MENÚ
 tarjeta V3
 ==========================================================*/
 
-.card{
+/*.card{
 
     position:relative;
 
@@ -449,7 +449,7 @@ transparent 35%);
 pointer-events:none;
 
 }
-/*=========TARJETA HOVER=================*/
+/*=========TARJETA HOVER=================*
 .card:hover{
 
     transform:translateY(-8px);
@@ -465,7 +465,7 @@ pointer-events:none;
 
 /*==========================================================
 NOMBRE DEL PRODUCTO
-==========================================================*/
+==========================================================*
 
 .card h2{
 
@@ -499,7 +499,7 @@ NOMBRE DEL PRODUCTO
     font-size:17px;
 
 }
-/*=========PRECIO===========*/
+/*=========PRECIO===========*
 .card h3{
 
     margin:26px 0;
@@ -517,7 +517,7 @@ NOMBRE DEL PRODUCTO
         0 0 15px rgba(212,175,55,.18);
 
 }
-/*======ESPACIO ELEGANTE=========*/
+/*======ESPACIO ELEGANTE=========*
 .productos{
 
     display:flex;
@@ -529,7 +529,7 @@ NOMBRE DEL PRODUCTO
 }
 /*==========================================================
 BADGE PRODUCTO
-==========================================================*/
+==========================================================*
 
 .producto-badge{
 
@@ -560,7 +560,7 @@ BADGE PRODUCTO
 }
 /*==========================================================
 CANTIDAD
-==========================================================*/
+==========================================================*
 
 .cantidad{
 
@@ -585,7 +585,7 @@ CANTIDAD
     border:1px solid rgba(255,255,255,.08);
 
 }
-/*===========BOTONES=====================*/
+/*===========BOTONES=====================*
 .cantidad button{
 
     width:42px;
@@ -610,7 +610,7 @@ CANTIDAD
 
 }
 
-/*========LOS NUMEROS==============*/
+/*========LOS NUMEROS==============*
 
 .cantidad span{
 
@@ -623,7 +623,7 @@ CANTIDAD
 }
 /*==========================================================
 BOTÓN INGREDIENTES
-==========================================================*/
+==========================================================*
 
 .btn-ingredientes{
 
@@ -650,7 +650,7 @@ BOTÓN INGREDIENTES
     transition:.3s;
 
 }
-/*======BONTON HOVER============*/
+/*======BONTON HOVER============*
 .btn-ingredientes:hover{
 
     background:rgba(212,175,55,.18);
@@ -679,7 +679,7 @@ BOTÓN INGREDIENTES
 }
 /*==========================================================
 ESTADO PRODUCTO
-==========================================================*/
+==========================================================*
 
 .estado-producto{
 
@@ -728,7 +728,7 @@ ESTADO PRODUCTO
 
     letter-spacing:3px;
 
-}
+}*/
 /*==========================================================
 PRODUCTO V3
 ==========================================================*/
@@ -925,6 +925,10 @@ PRODUCTO V3
 
 }
 
+/*==============================
+SECRETO DEL PRODUCTO
+==============================*/
+
 .ingredientes{
 
     max-height:0;
@@ -933,16 +937,38 @@ PRODUCTO V3
 
     overflow:hidden;
 
-    transition:.35s;
+    transition:.45s ease;
+
+    color:#d9d9d9;
+
+}
+
+.ingredientes h4{
+
+    color:#d4af37;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+}
+
+.ingredientes p{
+
+    line-height:1.8;
+
+    font-size:15px;
 
 }
 
 .ingredientes.mostrar{
 
-    max-height:250px;
+    max-height:220px;
 
     opacity:1;
 
-    margin-top:20px;
+    margin-top:22px;
 
 }
