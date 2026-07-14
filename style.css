@@ -745,12 +745,17 @@ PRODUCTO V3
 
     overflow:hidden;
 
-    background:#181818;
+    background:linear-gradient(
+        180deg,
+        #1b1b1b 0%,
+        #131313 100%
+    );
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(212,175,55,.18);
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.45);
+        0 18px 45px rgba(0,0,0,.55),
+        inset 0 1px 0 rgba(255,255,255,.03);
 
     transition:.35s;
 
