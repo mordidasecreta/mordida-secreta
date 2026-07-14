@@ -1130,3 +1130,30 @@ ANIMACIÓN PRODUCTO V3
     }
 
 }
+.numero-pop{
+
+    animation:popNumero .25s;
+
+}
+
+@keyframes popNumero{
+
+    0%{
+
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
