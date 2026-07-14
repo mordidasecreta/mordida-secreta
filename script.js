@@ -592,9 +592,13 @@ function mostrarSecreto(card){
 
     const secreto = card.querySelector(".ingredientes");
 
+    const hint = card.querySelector(".hint-secreto");
+
     if(secreto.classList.contains("mostrar")) return;
 
     secreto.classList.add("mostrar");
+
+    hint.style.display="none";
 
     card.style.transform="scale(1.02)";
 
@@ -603,6 +607,8 @@ function mostrarSecreto(card){
     secreto.timer=setTimeout(()=>{
 
         secreto.classList.remove("mostrar");
+
+        hint.style.display="block";
 
         card.style.transform="scale(1)";
 
