@@ -584,17 +584,27 @@ document
     }
 
 }
+/*==================================
+SECRETO AUTOMÁTICO V3
+==================================*/
+
 function mostrarSecreto(card){
 
     const secreto = card.querySelector(".ingredientes");
 
+    if(secreto.classList.contains("mostrar")) return;
+
     secreto.classList.add("mostrar");
+
+    card.style.transform="scale(1.02)";
 
     clearTimeout(secreto.timer);
 
-    secreto.timer = setTimeout(()=>{
+    secreto.timer=setTimeout(()=>{
 
         secreto.classList.remove("mostrar");
+
+        card.style.transform="scale(1)";
 
     },3000);
 
