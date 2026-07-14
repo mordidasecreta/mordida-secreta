@@ -543,45 +543,39 @@ const titulos = {
 
 };
 
-document
+const btnPaso = document.getElementById("btnPaso");
 
-.getElementById("btnPaso")
+if(btnPaso){
 
-.onclick=function(){
+    btnPaso.onclick=function(){
 
-    if(pasoActual<4){
+        if(pasoActual<4){
 
-        document
+            document
+            .getElementById("paso"+pasoActual)
+            .classList.remove("activo");
 
-        .getElementById("paso"+pasoActual)
+            pasoActual++;
 
-        .classList.remove("activo");
+            document
+            .getElementById("paso"+pasoActual)
+            .classList.add("activo");
 
-        pasoActual++;
+            document
+            .getElementById("numeroPaso")
+            .innerHTML=pasoActual;
 
-        document
+            document
+            .getElementById("tituloPaso")
+            .innerHTML=titulos[pasoActual];
 
-        .getElementById("paso"+pasoActual)
+        }
 
-        .classList.add("activo");
+        else{
 
-        document
+            pedirWhatsapp();
 
-        .getElementById("numeroPaso")
-
-        .innerHTML=pasoActual;
-
-        document
-
-        .getElementById("tituloPaso")
-
-        .innerHTML=titulos[pasoActual];
-
-    }
-
-    else{
-
-        pedirWhatsapp();
+        }
 
     }
 
