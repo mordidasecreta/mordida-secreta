@@ -135,7 +135,9 @@ function cambiarCantidad(id, cambio, e) {
     mostrarMensajeCard(id);
 
 }
-   const tarjeta = elemento.closest(".card");
+   const tarjeta =
+    elemento.closest(".producto-v3") ||
+    elemento.closest(".card");
    
    if(tarjeta){
 
