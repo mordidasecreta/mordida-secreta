@@ -800,6 +800,8 @@ PRODUCTO V3
     display:block;
 
     transition:transform .45s ease;
+	
+	cursor:pointer;
 
 }
 .producto-v3:hover .producto-imagen img{
