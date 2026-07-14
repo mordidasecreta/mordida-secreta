@@ -904,25 +904,35 @@ PRODUCTO V3
 }
 .producto-contenido{
 
-    padding:28px;
+    padding:24px 24px 28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
 
 }
-
 .producto-contenido h2{
 
-    font-size:32px;
+    font-size:34px;
 
-    margin-bottom:10px;
+    font-weight:800;
 
-    text-align:center;
+    line-height:1.1;
+
+    text-align:left;
+
+    margin:0;
 
 }
-
 .producto-descripcion{
 
-    color:#d0d0d0;
+    text-align:left;
 
-    text-align:center;
+    color:#bdbdbd;
+
+    font-size:15px;
 
     line-height:1.7;
 
@@ -942,18 +952,15 @@ PRODUCTO V3
 
 .texto-desde{
 
-    display:block;
-
     text-align:center;
-
-    color:#888;
-
-    font-size:12px;
-
-    letter-spacing:3px;
 
 }
 
+.producto-contenido h3{
+
+    text-align:center;
+
+}
 .producto-contenido h3{
 
     font-size:42px;
