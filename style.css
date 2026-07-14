@@ -389,7 +389,7 @@ TÍTULO DEL MENÚ
 tarjeta V3
 ==========================================================*/
 
-/*.card{
+.card{
 
     position:relative;
 
@@ -449,7 +449,7 @@ transparent 35%);
 pointer-events:none;
 
 }
-/*=========TARJETA HOVER=================*
+/*=========TARJETA HOVER=================*/
 .card:hover{
 
     transform:translateY(-8px);
@@ -517,7 +517,7 @@ NOMBRE DEL PRODUCTO
         0 0 15px rgba(212,175,55,.18);
 
 }
-/*======ESPACIO ELEGANTE=========*
+/*======ESPACIO ELEGANTE=========*/
 .productos{
 
     display:flex;
