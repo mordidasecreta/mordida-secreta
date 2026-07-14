@@ -617,3 +617,18 @@ function mostrarSecreto(card){
     },3000);
 
 }
+/*=====================================
+EVENTO TARJETA V3
+=====================================*/
+
+document.querySelectorAll(".producto-v3").forEach(card=>{
+
+    card.addEventListener("click",(e)=>{
+
+        if(e.target.closest(".cantidad")) return;
+
+        mostrarSecreto(card);
+
+    });
+
+});
