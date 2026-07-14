@@ -1006,3 +1006,36 @@ SECRETO DEL PRODUCTO
     transition:.35s;
 
 }
+/*==========================================================
+ANIMACIÓN PRODUCTO V3
+==========================================================*/
+
+.producto-v3{
+
+    opacity:0;
+
+    transform:translateY(45px);
+
+    animation:subirProducto .8s ease forwards;
+
+}
+
+@keyframes subirProducto{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(45px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
