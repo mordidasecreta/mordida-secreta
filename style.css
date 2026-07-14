@@ -774,9 +774,18 @@ PRODUCTO V3
 
     position:relative;
 
-    height:230px;
+    height:240px;
+
+    margin:14px;
+
+    margin-bottom:0;
 
     overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35);
 
 }
 
@@ -789,6 +798,13 @@ PRODUCTO V3
     object-fit:cover;
 
     display:block;
+
+    transition:transform .45s ease;
+
+}
+.producto-v3:hover .producto-imagen img{
+
+    transform:scale(1.05);
 
 }
 
