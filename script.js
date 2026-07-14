@@ -592,7 +592,6 @@ SECRETO AUTOMÁTICO V3
 
 function mostrarSecreto(card){
 
-    // Si el usuario seleccionó texto, no hacer nada
     const secreto = card.querySelector(".ingredientes");
     const hint = card.querySelector(".hint-secreto");
 
