@@ -130,6 +130,11 @@ function cambiarCantidad(id, cambio, e) {
     }
 
     elemento.innerText = valor;
+   elemento.classList.remove("numero-pop");
+
+void elemento.offsetWidth;
+
+elemento.classList.add("numero-pop");
    if(cambio>0){
 
     mostrarMensajeCard(id);
