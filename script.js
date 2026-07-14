@@ -584,3 +584,18 @@ document
     }
 
 }
+function mostrarSecreto(card){
+
+    const secreto = card.querySelector(".ingredientes");
+
+    secreto.classList.add("mostrar");
+
+    clearTimeout(secreto.timer);
+
+    secreto.timer = setTimeout(()=>{
+
+        secreto.classList.remove("mostrar");
+
+    },3000);
+
+}
