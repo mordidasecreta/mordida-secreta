@@ -972,3 +972,16 @@ SECRETO DEL PRODUCTO
     margin-top:22px;
 
 }
+.hint-secreto{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#9c9c9c;
+
+    transition:.35s;
+
+}
