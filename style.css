@@ -927,16 +927,22 @@ PRODUCTO V3
 
 .ingredientes{
 
-    display:none;
+    max-height:0;
 
-    margin-top:18px;
+    opacity:0;
+
+    overflow:hidden;
+
+    transition:.35s;
 
 }
 
-.ingredientes p{
+.ingredientes.mostrar{
 
-    color:#d5d5d5;
+    max-height:250px;
 
-    line-height:1.8;
+    opacity:1;
+
+    margin-top:20px;
 
 }
