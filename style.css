@@ -849,7 +849,59 @@ PRODUCTO V3
     font-weight:800;
 
 }
+.badge-producto::after{
 
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.7),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    animation:brilloBadge 3.5s infinite;
+
+}
+
+@keyframes brilloBadge{
+
+    0%{
+
+        left:-120%;
+
+    }
+
+    30%{
+
+        left:160%;
+
+    }
+
+    100%{
+
+        left:160%;
+
+    }
+
+}
 .producto-contenido{
 
     padding:28px;
@@ -904,16 +956,30 @@ PRODUCTO V3
 
 .producto-contenido h3{
 
-    text-align:center;
-
-    color:#d4af37;
-
     font-size:42px;
 
-    margin:10px 0 25px;
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    color:#f5c542;
+
+    text-shadow:
+
+        0 0 8px rgba(245,197,66,.25),
+
+        0 0 18px rgba(245,197,66,.15);
+
+    transition:.35s;
 
 }
+.producto-v3:hover h3{
 
+    transform:scale(1.06);
+
+    color:#ffd95e;
+
+}
 .btn-secreto{
 
     width:100%;
