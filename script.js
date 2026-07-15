@@ -461,34 +461,40 @@ document.querySelectorAll(".card").forEach(card=>{
 
 function mostrarMensajeCard(id){
 
-    const card=document.getElementById(id).closest(".card");
+    const elemento = document.getElementById(id);
 
-    let mensaje=card.querySelector(".mensaje-card");
+    const card =
+        elemento.closest(".producto-v3") ||
+        elemento.closest(".card");
+
+    if(!card) return;
+
+    let mensaje = card.querySelector(".mensaje-card");
 
     if(!mensaje){
 
-        mensaje=document.createElement("div");
+        mensaje = document.createElement("div");
 
-        mensaje.className="mensaje-card";
+        mensaje.className = "mensaje-card";
 
         card.appendChild(mensaje);
 
     }
 
-    const lista=MENSAJES[id];
+    const lista = MENSAJES[id];
 
-    mensaje.innerHTML=
-    lista[Math.floor(Math.random()*lista.length)];
+    mensaje.innerHTML =
+        lista[Math.floor(Math.random()*lista.length)];
 
     mensaje.classList.remove("mostrar");
 
-void mensaje.offsetWidth;
+    void mensaje.offsetWidth;
 
-mensaje.classList.add("mostrar");
+    mensaje.classList.add("mostrar");
 
     clearTimeout(mensaje.timer);
 
-    mensaje.timer=setTimeout(()=>{
+    mensaje.timer = setTimeout(()=>{
 
         mensaje.classList.remove("mostrar");
 
