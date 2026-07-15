@@ -885,18 +885,17 @@ PRODUCTO V3
 
     inset:0;
 
-    background:linear-gradient(
+    background:
 
-        180deg,
-
-        rgba(0,0,0,0) 20%,
-
-        rgba(0,0,0,.75) 100%
-
-    );
+        linear-gradient(
+            to top,
+            rgba(19,19,19,1) 0%,
+            rgba(19,19,19,.75) 20%,
+            rgba(19,19,19,.15) 45%,
+            rgba(0,0,0,0) 70%
+        );
 
 }
-
 .badge-producto{
 
     position:absolute;
@@ -916,6 +915,14 @@ PRODUCTO V3
     font-size:13px;
 
     font-weight:800;
+	
+	backdrop-filter:blur(10px);
+	
+	-webkit-backdrop-filter:blur(10px);
+	
+	border:1px solid rgba(255,255,255,.15);
+	
+	box-shadow:0 8px 18px rgba(0,0,0,.30);
 
 }
 .badge-producto::after{
