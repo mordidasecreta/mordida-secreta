@@ -394,8 +394,6 @@ document
 .add("no-disponible");
 
     }
-   
-   console.log("Explosiva:", obtenerCantidad("explosiva"));
 
     actualizarTotal();
 
