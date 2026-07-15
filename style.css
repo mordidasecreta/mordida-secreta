@@ -1405,3 +1405,48 @@ font-size:34px;
 font-weight:800;
 
 }
+.producto-secreto{
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.producto-secreto:hover{
+
+transform:translateY(-6px);
+
+}
+
+.producto-secreto.abierta{
+
+border:1px solid rgba(212,175,55,.45);
+
+box-shadow:
+0 0 30px rgba(212,175,55,.25),
+0 20px 50px rgba(0,0,0,.45);
+
+}
+
+.producto-secreto .ingredientes{
+
+max-height:0;
+
+overflow:hidden;
+
+opacity:0;
+
+transition:.45s;
+
+}
+
+.producto-secreto.abierta .ingredientes{
+
+max-height:300px;
+
+opacity:1;
+
+margin-top:20px;
+
+}
