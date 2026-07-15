@@ -163,6 +163,9 @@ elemento.classList.add("numero-pop");
             rect.top
         );
     }
+   actualizarTotal();
+
+}
 /* ===========================
    ACTUALIZAR TOTAL
 =========================== */
