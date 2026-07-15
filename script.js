@@ -212,23 +212,16 @@ document.getElementById("cantidad-total").innerText =
     cantidadTotal + " seleccionados";
    
 const total = calcularTotal(cantidades);
-   
+
 document.getElementById("barra-cantidad").innerText =
-cantidadTotal + " productos";
+cantidadTotal + (cantidadTotal===1 ? " producto" : " productos");
 
 document.getElementById("barra-total").innerText =
 "$" + total.toLocaleString("es-CO");
-   const barra = document.getElementById("barra-compra");
 
-if(cantidadTotal > 0){
+const barra = document.getElementById("barra-compra");
 
-    barra.classList.add("visible");
-
-}else{
-
-    barra.classList.remove("visible");
-
-}
+barra.classList.toggle("visible", cantidadTotal > 0);
 
   document.getElementById("total").innerText =
       "$" + total.toLocaleString("es-CO");
