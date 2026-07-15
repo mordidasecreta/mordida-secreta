@@ -748,8 +748,28 @@ ESTADO PRODUCTO
 /*==========================================================
 PRODUCTO V3
 ==========================================================*/
-
 .producto-v3{
+
+    position:relative;
+
+    max-width:420px;
+
+    margin:40px auto;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:#1b1b1b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/*.producto-v3{
 
     width:100%;
 
@@ -775,7 +795,7 @@ PRODUCTO V3
 
     transition:.35s;
 
-}
+}*//
 .producto-v3::before{
 
     content:"";
