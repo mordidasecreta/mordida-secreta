@@ -163,10 +163,6 @@ elemento.classList.add("numero-pop");
             rect.top
         );
     }
-
-    actualizarTotal();
-
-}
 /* ===========================
    ACTUALIZAR TOTAL
 =========================== */
@@ -398,6 +394,8 @@ document
 .add("no-disponible");
 
     }
+   
+   console.log("Explosiva:", obtenerCantidad("explosiva"));
 
     actualizarTotal();
 
