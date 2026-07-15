@@ -1364,9 +1364,37 @@ LÍNEA PREMIUM
 }
 .combo-v3 .badge-producto{
 
+position:absolute;
+
+top:20px;
+
+right:-48px;
+
+left:auto;
+
+width:190px;
+
+padding:10px 0;
+
 background:linear-gradient(90deg,#16a34a,#22c55e);
 
-color:white;
+color:#fff;
+
+font-size:13px;
+
+font-weight:800;
+
+text-align:center;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+transform:rotate(45deg);
+
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+z-index:20;
 
 }
 
