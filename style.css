@@ -900,31 +900,35 @@ PRODUCTO V3
 }
 .badge-producto{
 
-    position:absolute;
+position:absolute;
 
-    top:18px;
+top:22px;
 
-    left:18px;
+right:-48px;
 
-    background:#d4af37;
+width:190px;
 
-    color:#111;
+padding:10px 0;
 
-    padding:8px 16px;
+background:linear-gradient(90deg,#d4af37,#f5d77a);
 
-    border-radius:50px;
+color:#111;
 
-    font-size:13px;
+font-size:13px;
 
-    font-weight:800;
-	
-	backdrop-filter:blur(10px);
-	
-	-webkit-backdrop-filter:blur(10px);
-	
-	border:1px solid rgba(255,255,255,.15);
-	
-	box-shadow:0 8px 18px rgba(0,0,0,.30);
+font-weight:800;
+
+text-align:center;
+
+letter-spacing:1px;
+
+transform:rotate(45deg);
+
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+z-index:20;
+
+text-transform:uppercase;
 
 }
 .badge-producto::after{
@@ -1360,11 +1364,9 @@ LÍNEA PREMIUM
 }
 .combo-v3 .badge-producto{
 
-background:#d4af37;
+background:linear-gradient(90deg,#16a34a,#22c55e);
 
-color:#111;
-
-font-weight:700;
+color:white;
 
 }
 
