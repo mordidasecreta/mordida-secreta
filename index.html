@@ -229,32 +229,61 @@ PRODUCTO V3 - LA EXPLOSIVA
 
 </div> <!-- producto-v3 -->
     
-        <div class="card combo-explosiva combo animar">
+       <!--==================================================
+COMBO EXPLOSIVA V3
+===================================================-->
 
-    <div class="cinta-combo">
-        ⭐ MÁS PEDIDO
+<div class="producto-v3 combo-v3">
+
+    <div class="producto-imagen">
+
+        <img
+            src="images/combo-explosiva.jpg"
+            alt="Combo Explosiva">
+
+        <div class="imagen-overlay"></div>
+
+        <div class="badge-producto">
+
+            ⭐ MÁS PEDIDO
+
+        </div>
+
     </div>
 
-    <h2>🥤 Combo Explosiva</h2>
+    <div class="producto-contenido">
 
-    <p>
-        💥 La Explosiva + 🍟 Papas artesanales +
-        🥤 Coca-Cola 400 ml
-    </p>
+        <h2>🥤 Combo Explosiva</h2>
 
-    <h3>$21.000</h3>
+        <p class="producto-descripcion">
 
-    <div class="cantidad">
+            💥 La Explosiva + 🍟 Papas artesanales + 🥤 Coca-Cola 400 ml
 
-        <button onclick="cambiarCantidad('comboExplosiva',-1)">
-            −
-        </button>
+        </p>
 
-        <span id="comboExplosiva">0</span>
+        <div class="linea-precio"></div>
 
-        <button onclick="cambiarCantidad('comboExplosiva',1)">
-            +
-        </button>
+        <span class="texto-desde">
+
+            COMBO
+
+        </span>
+
+        <h3>$21.000</h3>
+
+        <div class="cantidad">
+
+            <button onclick="cambiarCantidad('comboExplosiva',-1); return false;">
+                −
+            </button>
+
+            <span id="comboExplosiva">0</span>
+
+            <button onclick="cambiarCantidad('comboExplosiva',1); return false;">
+                +
+            </button>
+
+        </div>
 
     </div>
 
