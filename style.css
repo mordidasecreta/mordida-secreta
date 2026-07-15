@@ -1333,3 +1333,28 @@ BARRA COMPRA V3
     transform:scale(.95);
 
 }
+/*==========================================
+LÍNEA PREMIUM
+==========================================*/
+
+.premium-line{
+
+    width:70px;
+
+    height:4px;
+
+    margin:0 auto 20px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #8a6b14,
+        #f5c542,
+        #8a6b14
+    );
+
+    box-shadow:
+        0 0 12px rgba(245,197,66,.35);
+
+}
