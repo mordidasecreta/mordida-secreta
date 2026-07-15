@@ -1157,3 +1157,109 @@ ANIMACIÓN PRODUCTO V3
     }
 
 }
+/*==========================================================
+BARRA COMPRA V3
+==========================================================*/
+
+.barra-compra{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:18px;
+
+    transform:translate(-50%,120px);
+
+    width:92%;
+
+    max-width:430px;
+
+    background:#171717;
+
+    border:1px solid rgba(245,197,66,.15);
+
+    border-radius:20px;
+
+    padding:14px 18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45);
+
+    transition:.35s ease;
+
+    z-index:9999;
+
+}
+
+.barra-compra.visible{
+
+    transform:translate(-50%,0);
+
+}
+
+.barra-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+#barra-cantidad{
+
+    font-size:14px;
+
+    color:#cfcfcf;
+
+}
+
+#barra-total{
+
+    font-size:26px;
+
+    font-weight:900;
+
+    color:#f5c542;
+
+}
+
+.barra-boton{
+
+    background:#f5c542;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 22px;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.barra-boton:hover{
+
+    transform:scale(1.05);
+
+}
+
+.barra-boton:active{
+
+    transform:scale(.95);
+
+}
