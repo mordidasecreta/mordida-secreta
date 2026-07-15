@@ -1358,3 +1358,30 @@ LÍNEA PREMIUM
         0 0 12px rgba(245,197,66,.35);
 
 }
+.combo-v3 .badge-producto{
+
+background:#d4af37;
+
+color:#111;
+
+font-weight:700;
+
+}
+
+.combo-v3 .texto-desde{
+
+color:#d4af37;
+
+letter-spacing:2px;
+
+}
+
+.combo-v3 h3{
+
+color:#fff;
+
+font-size:34px;
+
+font-weight:800;
+
+}
