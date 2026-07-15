@@ -1176,6 +1176,10 @@ BARRA COMPRA V3
     max-width:430px;
 
     background:#171717;
+	
+	backdrop-filter:blur(14px);
+	
+	-webkit-backdrop-filter:blur(14px);
 
     border:1px solid rgba(245,197,66,.15);
 
@@ -1250,11 +1254,15 @@ BARRA COMPRA V3
 
     transition:.2s;
 
+	box-shadow:0 6px 18px rgba(245,197,66,.25);
+
 }
 
 .barra-boton:hover{
 
     transform:scale(1.05);
+
+	box-shadow:0 10px 22px rgba(245,197,66,.35);
 
 }
 
