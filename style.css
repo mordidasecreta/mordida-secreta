@@ -118,7 +118,7 @@ HERO V3
 
     color:#d4af37;
 
-    font-size:13px;
+    font-size:15px;
 
     font-weight:700;
 
@@ -151,19 +151,25 @@ TÍTULOS HERO
 
 .hero h2{
 
-    margin-top:18px;
+margin-top:10px;
 
-    margin-bottom:22px;
+margin-bottom:22px;
 
-    font-size:34px;
+font-size:38px;
 
-    font-weight:800;
+font-weight:900;
+
+letter-spacing:1px;
 
 }
 
 .hero h2 span{
 
-    color:#d4af37;
+color:#d4af37;
+
+text-shadow:
+
+0 0 10px rgba(212,175,55,.35);
 
 }
 
