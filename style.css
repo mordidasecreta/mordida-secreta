@@ -1227,31 +1227,33 @@ ANIMACIÓN PRODUCTO V3
     }
 
 }
-.numero-pop{
+@keyframes numeroPop{
 
-    animation:popNumero .25s;
+0%{
+
+transform:scale(.80);
 
 }
 
-@keyframes popNumero{
+50%{
 
-    0%{
+transform:scale(1.18);
 
-        transform:scale(.8);
+color:#d4af37;
 
-    }
+}
 
-    50%{
+100%{
 
-        transform:scale(1.35);
+transform:scale(1);
 
-    }
+}
 
-    100%{
+}
 
-        transform:scale(1);
+.numero-pop{
 
-    }
+animation:numeroPop .28s ease;
 
 }
 /*==========================================================
@@ -1557,5 +1559,30 @@ z-index:20;
 .coca-img{
 
 animation:flotar 3.5s ease-in-out infinite;
+
+}
+@keyframes imagenPop{
+
+0%{
+transform:scale(1);
+}
+
+35%{
+transform:scale(1.12) rotate(-2deg);
+}
+
+70%{
+transform:scale(1.06) rotate(2deg);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.imagen-pop{
+
+animation:imagenPop .45s ease;
 
 }
