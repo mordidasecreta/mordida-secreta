@@ -1299,7 +1299,7 @@ BARRA COMPRA V3
 
     left:50%;
 
-    bottom:85px;
+    bottom:15px;
 
     transform:translate(-50%,120px);
 
@@ -1650,6 +1650,30 @@ pointer-events:none;
 opacity:1;
 
 transform:translateY(0) scale(1);
+
+}
+.card.coca h2{
+	margin-top:8px;
+
+margin-bottom:12px;
+}
+.card.coca p{
+
+font-size:17px;
+
+line-height:1.45;
+
+margin-bottom:18px;
+
+}
+.card.coca h3{
+
+margin:8px 0 18px;
+
+}
+.card.coca .cantidad{
+
+margin-top:10px;
 
 }
 
