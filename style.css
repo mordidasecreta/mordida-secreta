@@ -1297,27 +1297,11 @@ BARRA COMPRA V3
 
     position:fixed;
 
-    left:50%;
+    left:12px;
 
-    bottom:15px;
+    right:12px;
 
-    transform:translate(-50%,150px);
-
-    width:92%;
-
-    max-width:430px;
-
-    background:#171717;
-	
-	backdrop-filter:blur(14px);
-	
-	-webkit-backdrop-filter:blur(14px);
-
-    border:1px solid rgba(245,197,66,.15);
-
-    border-radius:20px;
-
-    padding:14px 18px;
+    bottom:-120px;
 
     display:flex;
 
@@ -1325,10 +1309,22 @@ BARRA COMPRA V3
 
     align-items:center;
 
+    padding:15px 18px;
+
+    background:rgba(23,23,23,.92);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
+
+    border:1px solid rgba(245,197,66,.15);
+
+    border-radius:20px;
+
     box-shadow:
         0 12px 35px rgba(0,0,0,.45);
 
-    transition:.35s ease;
+    transition:bottom .35s ease;
 
     z-index:9999;
 
@@ -1336,7 +1332,7 @@ BARRA COMPRA V3
 
 .barra-compra.visible{
 
-transform:translate(-50%,0);
+    bottom:15px;
 
 }
 
