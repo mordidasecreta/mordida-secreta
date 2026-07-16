@@ -1295,7 +1295,7 @@ BARRA COMPRA V3
 
 .barra-compra{
 
-    position:sticky;
+    position:fixed;
 
     left:50%;
 
