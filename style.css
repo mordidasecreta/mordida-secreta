@@ -1528,13 +1528,13 @@ margin-top:20px;
 }
 .coca-img{
 
-width:240px;
+width:180px;
 
 max-width:90%;
 
 display:block;
 
-margin:10px auto -10px;
+margin:-15px auto 5px;
 
 filter:
 drop-shadow(0 0 18px rgba(255,255,255,.18))
