@@ -1301,7 +1301,7 @@ BARRA COMPRA V3
 
     bottom:15px;
 
-    transform:translate(-50%,120px);
+    transform:translate(-50%,150px);
 
     width:92%;
 
@@ -1336,7 +1336,7 @@ BARRA COMPRA V3
 
 .barra-compra.visible{
 
-    transform:translate(-50%,0);
+transform:translate(-50%,0);
 
 }
 
