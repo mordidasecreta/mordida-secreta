@@ -7,7 +7,7 @@ const callejeraDisponible = false;
 /* ===========================
    FUNCIONES AUXILIARES
 =========================== */
-
+ 
 function obtenerCantidad(id){
 
     return parseInt(
