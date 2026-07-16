@@ -628,3 +628,32 @@ document.querySelectorAll(".producto-v3").forEach(card=>{
     });
 
 });
+@keyframes numeroPop{
+
+0%{
+
+transform:scale(.80);
+
+}
+
+50%{
+
+transform:scale(1.18);
+
+color:#d4af37;
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.numero-pop{
+
+animation:numeroPop .28s ease;
+
+}
