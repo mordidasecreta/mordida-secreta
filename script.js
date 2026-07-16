@@ -82,13 +82,20 @@ const MENSAJES={
 explosiva:[
 "🔥 Nuestra receta secreta",
 "🤤 Imposible comer solo uno",
+"🤤 Esa nunca falla",
+"🔥 Buena elección",
+"😮‍💨 Vas a querer otra",
 "💥 La favorita de la casa"
 ],
 
 comboExplosiva:[
 "🥤 La combinación perfecta",
 "🍟 Todo sabe mejor en combo",
-"😋 Excelente elección"
+"😋 Excelente elección",
+ "🥤 Así sabe mejor",
+"😎 El combo ganador",
+"🔥 Buena decisión",
+"🤤 No le falta nada"
 ],
 
 callejera:[
@@ -107,7 +114,10 @@ coca:[
 "🧊 ¡Bien fría!",
 "❄️ Refrescante",
 "🥶 Salida del hielo",
-"🥤 El complemento perfecto"
+"🥤 El complemento perfecto",
+"❤️ La pareja perfecta",
+"😮‍💨 Ahora sí",
+"🥤 No puede faltar"
 ]
 
 };
