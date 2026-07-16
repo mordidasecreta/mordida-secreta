@@ -1450,3 +1450,50 @@ opacity:1;
 margin-top:20px;
 
 }
+.coca-img{
+
+width:180px;
+
+display:block;
+
+margin:20px auto;
+
+filter:
+drop-shadow(0 0 18px rgba(255,255,255,.15))
+drop-shadow(0 0 35px rgba(255,0,0,.35));
+
+transition:.35s;
+
+}
+.coca:hover .coca-img{
+
+transform:scale(1.08) rotate(-3deg);
+
+}
+.cinta-coca{
+
+position:absolute;
+
+top:18px;
+
+right:-45px;
+
+transform:rotate(35deg);
+
+background:linear-gradient(90deg,#8b0000,#e10600);
+
+color:white;
+
+font-weight:800;
+
+padding:10px 55px;
+
+font-size:.75rem;
+
+letter-spacing:1px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+z-index:20;
+
+}
