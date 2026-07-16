@@ -286,7 +286,7 @@ COMBO EXPLOSIVA V3
 
 </div>
 
-   <div class="producto-v3">
+   <div class="producto-v3" id="card-callejera">
 
     <div class="producto-imagen">
 
@@ -328,13 +328,17 @@ COMBO EXPLOSIVA V3
 
         </div>
 
-       <div class="cantidad deshabilitada">
+       <div class="cantidad">
 
-    <button disabled>−</button>
+    <button onclick="cambiarCantidad('callejera',-1); return false;">
+        −
+    </button>
 
-    <span>Próximamente</span>
+    <span id="callejera">0</span>
 
-    <button disabled>+</button>
+    <button onclick="cambiarCantidad('callejera',1); return false;">
+        +
+    </button>
 
 </div>
 
@@ -362,7 +366,7 @@ COMBO EXPLOSIVA V3
 
 </div>
 
-    <div class="producto-v3 combo-v3">
+    <div class="producto-v3 combo-v3" id="card-combo-callejera">
 
     <div class="producto-imagen">
 
@@ -404,13 +408,17 @@ COMBO EXPLOSIVA V3
 
         </div>
 
-        <div class="cantidad deshabilitada">
+        <div class="cantidad">
 
-    <button disabled>−</button>
+    <button onclick="cambiarCantidad('comboCallejera',-1); return false;">
+        −
+    </button>
 
-    <span>Próximamente</span>
+    <span id="comboCallejera">0</span>
 
-    <button disabled>+</button>
+    <button onclick="cambiarCantidad('comboCallejera',1); return false;">
+        +
+    </button>
 
 </div>
 
