@@ -1672,4 +1672,14 @@ margin:8px 0 18px;
 margin-top:10px;
 
 }
+html{
 
+    overscroll-behavior:none;
+
+}
+
+body{
+
+    overscroll-behavior:none;
+
+}
