@@ -475,44 +475,41 @@ document.querySelectorAll(".card").forEach(card=>{
 
 function mostrarMensajeCard(id){
 
-    const elemento = document.getElementById(id);
-
-    const card =
-        elemento.closest(".producto-v3") ||
-        elemento.closest(".card");
-
-    if(!card) return;
-
-    let mensaje = card.querySelector(".mensaje-card");
-
-    if(!mensaje){
-
-        mensaje = document.createElement("div");
-
-        mensaje.className = "mensaje-card";
-
-        card.appendChild(mensaje);
-
-    }
-
     const lista = MENSAJES[id];
+
+    const boton = document
+        .getElementById(id)
+        .parentElement
+        .querySelector("button:last-child");
+
+    const mensaje = document.createElement("div");
+
+    mensaje.className = "mensaje-flotante";
 
     mensaje.innerHTML =
         lista[Math.floor(Math.random()*lista.length)];
 
-    mensaje.classList.remove("mostrar");
-
-    void mensaje.offsetWidth;
-
-    mensaje.classList.add("mostrar");
+    boton.parentElement.appendChild(mensaje);
 
     clearTimeout(mensaje.timer);
 
-    mensaje.timer = setTimeout(()=>{
+    setTimeout(()=>{
+
+        mensaje.classList.add("mostrar");
+
+    },10);
+
+    setTimeout(()=>{
 
         mensaje.classList.remove("mostrar");
 
-    },2500);
+        setTimeout(()=>{
+
+            mensaje.remove();
+
+        },300);
+
+    },1800);
 
 }
 /* ===========================
