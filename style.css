@@ -564,6 +564,8 @@ CONTADOR V3
 
 .cantidad{
 
+	position:relative;
+
     width:170px;
 
     margin:25px auto;
@@ -1584,5 +1586,51 @@ transform:scale(1);
 .imagen-pop{
 
 animation:imagenPop .45s ease;
+
+}
+.mensaje-flotante{
+
+position:absolute;
+
+bottom:58px;
+
+right:0;
+
+background:linear-gradient(180deg,#2a2a2a,#111);
+
+color:#fff;
+
+padding:8px 14px;
+
+border-radius:12px;
+
+border:1px solid rgba(212,175,55,.35);
+
+font-size:.85rem;
+
+font-weight:600;
+
+white-space:nowrap;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.35);
+
+opacity:0;
+
+transform:translateY(10px) scale(.95);
+
+transition:.25s;
+
+pointer-events:none;
+
+z-index:100;
+
+}
+
+.mensaje-flotante.mostrar{
+
+opacity:1;
+
+transform:translateY(0) scale(1);
 
 }
