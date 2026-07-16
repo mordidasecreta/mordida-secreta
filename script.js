@@ -153,6 +153,17 @@ elemento.classList.add("numero-pop");
     tarjeta.classList.add("pop");
 
 }
+   const imagen = tarjeta.querySelector("img");
+
+if(imagen){
+
+    imagen.classList.remove("imagen-pop");
+
+    void imagen.offsetWidth;
+
+    imagen.classList.add("imagen-pop");
+
+}
 
     if(cambio > 0 && e){
 
