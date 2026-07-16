@@ -1683,3 +1683,29 @@ body{
     overscroll-behavior:none;
 
 }
+html{
+
+    background:#0c0c0c;
+
+}
+
+body{
+
+    background:#0c0c0c;
+
+    overscroll-behavior-y:none;
+
+}
+html,
+body{
+
+    min-height:100%;
+
+    background:#0c0c0c;
+
+}
+.info{
+
+    margin-bottom:110px;
+
+}
