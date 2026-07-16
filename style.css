@@ -1592,41 +1592,28 @@ animation:imagenPop .45s ease;
 
 position:absolute;
 
-bottom:58px;
+bottom:55px;
 
-right:0;
+right:5px;
 
-background:linear-gradient(180deg,#2a2a2a,#111);
+font-size:.95rem;
 
-color:#fff;
+font-weight:700;
 
-padding:8px 14px;
+color:#f5d76e;
 
-border-radius:12px;
-
-border:1px solid rgba(212,175,55,.35);
-
-font-size:.85rem;
-
-font-weight:600;
-
-white-space:nowrap;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.35);
+text-shadow:
+0 2px 8px rgba(0,0,0,.55);
 
 opacity:0;
 
-transform:translateY(10px) scale(.95);
+transform:translateY(10px);
 
 transition:.25s;
 
 pointer-events:none;
 
-z-index:100;
-
 }
-
 .mensaje-flotante.mostrar{
 
 opacity:1;
