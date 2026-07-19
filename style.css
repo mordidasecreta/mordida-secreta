@@ -1866,18 +1866,15 @@ ASISTENTE DE PEDIDO
 
 .asistente-pedido{
 
-    position:fixed;
-    left:0;
-    right:0;
-    bottom:0;
+    transition:.35s ease;
 
-    display:none;
-    justify-content:center;
+}
+
+.asistente-pedido.minimizado{
+
+    justify-content:flex-end;
     align-items:flex-end;
-
-    padding:18px;
-
-    z-index:99999;
+    padding:15px;
 
     pointer-events:none;
 
@@ -1887,12 +1884,6 @@ ASISTENTE DE PEDIDO
 
     display:flex;
     pointer-events:auto;
-
-}
-.asistente-pedido.minimizado{
-
-    justify-content:flex-end;
-    padding:12px;
 
 }
 .asistente-card{
@@ -2466,20 +2457,40 @@ transform:scale(1.2);
 }
 .asistente-pedido.minimizado .asistente-card{
 
-    max-height:65px;
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    padding:0;
+
     overflow:hidden;
 
+    cursor:pointer;
+
+    pointer-events:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
-.asistente-pedido.minimizado #asistenteIcono,
+.asistente-pedido.minimizado .btn-volver,
 .asistente-pedido.minimizado #asistenteTitulo,
 .asistente-pedido.minimizado #asistenteSubtitulo,
 .asistente-pedido.minimizado #asistenteInput,
 .asistente-pedido.minimizado #contenedorPago,
 .asistente-pedido.minimizado #resumenPedido,
 .asistente-pedido.minimizado #btnContinuarAsistente,
-.asistente-pedido.minimizado .mensaje-error{
+.asistente-pedido.minimizado #progresoPedido{
 
     display:none;
+
+}
+.asistente-pedido.minimizado .asistente-icono{
+
+    margin:0;
+    font-size:34px;
 
 }
 
