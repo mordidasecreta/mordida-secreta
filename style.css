@@ -1866,26 +1866,32 @@ ASISTENTE DE PEDIDO
 
 .asistente-pedido{
 
-    transition:.35s ease;
+position:fixed;
 
-}
+left:0;
 
-.asistente-pedido.minimizado{
+right:0;
 
-    justify-content:flex-end;
-    align-items:flex-end;
-    padding:15px;
+bottom:0;
 
-    pointer-events:none;
+display:none;
+
+justify-content:center;
+
+padding:18px;
+
+z-index:99999;
 
 }
 
 .asistente-pedido.activo{
 
-    display:flex;
-    pointer-events:auto;
+display:flex;
+
+animation:aparecerAsistente .30s ease;
 
 }
+
 .asistente-card{
 
 width:100%;
@@ -2145,287 +2151,21 @@ transform:scale(1);
     opacity:1;
 
 }
-/*==================================
-FACTURA PREMIUM
-==================================*/
 
-.factura{
 
-background:#f8f8f8;
 
-color:#111;
 
-border-radius:22px;
 
-padding:22px;
 
-margin-top:20px;
 
-box-shadow:
-0 15px 35px rgba(0,0,0,.25);
 
-font-family:monospace;
 
-}
 
-.factura-logo{
 
-text-align:center;
 
-font-size:18px;
 
-font-weight:900;
 
-letter-spacing:2px;
 
-margin-bottom:15px;
-
-}
-
-
-.factura-linea{
-
-height:1px;
-
-background:repeating-linear-gradient(
-90deg,
-#999 0 6px,
-transparent 6px 12px);
-
-margin:16px 0;
-
-}
-
-
-#facturaCliente{
-
-line-height:1.8;
-
-font-size:15px;
-
-}
-
-#facturaProductos{
-
-display:flex;
-
-flex-direction:column;
-
-gap:10px;
-
-font-size:15px;
-
-}
-
-.factura-item{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:6px 0;
-
-font-size:15px;
-
-}
-
-.factura-item span:last-child{
-
-font-weight:800;
-
-}
-
-#facturaPago{
-
-font-size:15px;
-
-line-height:1.8;
-
-}
-
-.factura-seccion{
-
-margin:12px 0;
-
-}
-
-.factura-titulo{
-
-font-size:11px;
-
-font-weight:800;
-
-letter-spacing:3px;
-
-color:#888;
-
-margin-bottom:12px;
-
-text-transform:uppercase;
-
-}
-
-.facturaTotal{
-
-text-align:center;
-
-margin:20px 0;
-
-}
-
-.facturaTotal small{
-
-display:block;
-
-font-size:12px;
-
-letter-spacing:3px;
-
-color:#777;
-
-margin-bottom:8px;
-
-}
-
-#facturaTotalValor{
-
-font-size:42px;
-
-font-weight:900;
-
-color:#111;
-
-margin:0;
-
-}
-
-.factura-ok{
-
-text-align:center;
-
-font-size:14px;
-
-color:#2e7d32;
-
-font-weight:700;
-
-margin-top:15px;
-
-line-height:1.6;
-
-}
-#facturaInfoPedido{
-
-text-align:center;
-
-line-height:1.8;
-
-font-size:14px;
-
-color:#555;
-
-}
-
-#numeroPedido{
-
-font-weight:900;
-
-color:#111;
-
-letter-spacing:1px;
-
-}
-.asistente-card{
-
-max-height:90vh;
-overflow:hidden;
-display:flex;
-flex-direction:column;
-
-}
-.asistente-contenido{
-
-overflow-y:auto;
-flex:1;
-padding-right:4px;
-
-}
-
-.barra-asistente{
-
-position:fixed;
-
-left:15px;
-right:15px;
-bottom:15px;
-
-height:58px;
-
-display:none;
-
-align-items:center;
-justify-content:center;
-
-border-radius:18px;
-
-background:#171717;
-
-border:1px solid rgba(212,175,55,.25);
-
-color:white;
-
-font-weight:700;
-
-cursor:pointer;
-
-z-index:999999;
-
-box-shadow:0 12px 30px rgba(0,0,0,.35);
-
-transition:.25s;
-
-}
-
-.barra-asistente.visible{
-
-display:flex;
-
-animation:aparecerAsistente .25s;
-
-}
-/*==============================
-MINIMIZAR ASISTENTE
-==============================*/
-
-.asistente-card{
-
-transition:.35s ease;
-
-overflow:hidden;
-
-}
-
-.asistente-card.minimizada{
-
-max-height:95px;
-
-padding-bottom:18px;
-
-}
-
-.asistente-card.minimizada #asistenteIcono,
-.asistente-card.minimizada #asistenteSubtitulo,
-.asistente-card.minimizada #asistenteInput,
-.asistente-card.minimizada #contenedorPago,
-.asistente-card.minimizada #resumenPedido,
-.asistente-card.minimizada #btnContinuarAsistente,
-.asistente-card.minimizada #mensajeError{
-
-opacity:0;
-
-pointer-events:none;
 
 transform:translateY(15px);
 
