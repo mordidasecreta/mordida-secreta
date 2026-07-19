@@ -2100,13 +2100,13 @@ transition:.30s;
 }
 #ultimoPaso.activo{
 
-background:#d4af37;
+background:transparent;
 
-color:#111;
+color:#d4af37;
 
-box-shadow:0 0 10px rgba(212,175,55,.45);
+box-shadow:none;
 
-animation:popPaso .28s ease;
+animation:popPaso .25s ease;
 
 }
 
