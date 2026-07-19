@@ -344,7 +344,6 @@ Método de pago: ${pago}
 
 Total aproximado: $${total.toLocaleString('es-CO')}`;
 
-const tarjeta = document.querySelector(".asistente-card");
 
 
 const contenido = document.querySelector(".asistente-card");
