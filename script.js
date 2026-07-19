@@ -929,3 +929,14 @@ function cerrarAsistente(){
     .classList.add("visible");
 
 }
+document.getElementById("asistenteInput").addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+
+        e.preventDefault();
+
+        siguientePaso();
+
+    }
+
+});
