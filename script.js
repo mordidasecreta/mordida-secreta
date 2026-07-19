@@ -554,13 +554,25 @@ let pasoActual = 1;
 
 const titulos = {
 
-    1:"¿Cómo te llamas?",
+1:"¿Cómo te llamas?",
 
-    2:"¿En qué barrio estás?",
+2:"¿En qué barrio estás?",
 
-    3:"¿Cuál es la dirección?",
+3:"¿Cuál es la dirección?",
 
-    4:"¿Cómo deseas pagar?"
+4:"¿Cómo deseas pagar?"
+
+};
+
+const iconos = {
+
+1:"👤",
+
+2:"📍",
+
+3:"🏠",
+
+4:"💳"
 
 };
 
@@ -568,37 +580,49 @@ const btnPaso = document.getElementById("btnPaso");
 
 if(btnPaso){
 
-    btnPaso.onclick=function(){
+btnPaso.onclick=function(){
 
-        if(pasoActual<4){
+if(pasoActual<4){
 
-            document
-            .getElementById("paso"+pasoActual)
-            .classList.remove("activo");
+document
+.getElementById("paso"+pasoActual)
+.classList.remove("activo");
 
-            pasoActual++;
+pasoActual++;
 
-            document
-            .getElementById("paso"+pasoActual)
-            .classList.add("activo");
+document
+.getElementById("paso"+pasoActual)
+.classList.add("activo");
 
-            document
-            .getElementById("numeroPaso")
-            .innerHTML=pasoActual;
+document
+.getElementById("checkout-titulo")
+.innerHTML=titulos[pasoActual];
 
-            document
-            .getElementById("tituloPaso")
-            .innerHTML=titulos[pasoActual];
+document
+.getElementById("checkout-icon")
+.innerHTML=iconos[pasoActual];
 
-        }
+const bolitas=document.querySelectorAll(".checkout-progress span");
 
-        else{
+bolitas.forEach((b,i)=>{
 
-            pedirWhatsapp();
+b.classList.toggle("activo",i<pasoActual);
 
-        }
+});
 
-    }
+if(pasoActual===4){
+
+btnPaso.innerHTML="🟢 Enviar pedido";
+
+}
+
+}else{
+
+pedirWhatsapp();
+
+}
+
+}
 
 }
 /*==================================
