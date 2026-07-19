@@ -553,7 +553,7 @@ document.querySelectorAll(".card").forEach(card=>{
     });
 
 });
-let pasoActual = 1;
+/*==let pasoActual = 1;
 
 const titulos = {
 
@@ -627,7 +627,7 @@ pedirWhatsapp();
 
 }
 
-}
+}===*/
 /*==================================
 SECRETO AUTOMÁTICO V3
 ==================================*/
@@ -673,4 +673,59 @@ document.querySelectorAll(".producto-v3").forEach(card=>{
     });
 
 });
+/*==================================
+ASISTENTE DE PEDIDO
+==================================*/
 
+let pasoActual = 0;
+
+const pedido = {
+
+    nombre: "",
+
+    barrio: "",
+
+    direccion: "",
+
+    pago: "Efectivo"
+
+};
+
+const pasos = [
+
+    {
+        icono: "👋",
+        titulo: "¿Cómo te llamas?",
+        placeholder: "Escribe tu nombre",
+        boton: "Continuar →"
+    },
+
+    {
+        icono: "📍",
+        titulo: "¿A qué barrio llevamos tu mordida?",
+        placeholder: "Escribe tu barrio",
+        boton: "Continuar →"
+    },
+
+    {
+        icono: "🏠",
+        titulo: "¿Dónde la entregamos?",
+        placeholder: "Escribe tu dirección",
+        boton: "Continuar →"
+    },
+
+    {
+        icono: "💳",
+        titulo: "¿Cómo prefieres pagar?",
+        placeholder: "",
+        boton: "Revisar pedido →"
+    },
+
+    {
+        icono: "🤫",
+        titulo: "🔥 Tu pedido ya casi está en camino.",
+        placeholder: "",
+        boton: "🟢 Enviar por WhatsApp"
+    }
+
+];
