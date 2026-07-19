@@ -529,59 +529,104 @@ Incluye papas artesanales 🍟
 
    <section class="pedido oculto" id="pedido">
 
-    <h2>Haz tu pedido</h2>
+<div class="checkout-card">
 
-    <input
-        type="text"
-        id="nombre"
-        placeholder="Nombre">
+    <div class="checkout-header">
 
-    <input
-        type="text"
-        id="barrio"
-        placeholder="Barrio">
+        <div class="checkout-icon" id="checkout-icon">
+            👤
+        </div>
 
-    <input
-        type="text"
-        id="direccion"
-        placeholder="Dirección">
+        <h2 id="checkout-titulo">
+            ¿Cómo te llamas?
+        </h2>
 
-    <h3>Método de pago</h3>
+        <div class="checkout-progress">
 
-    <div class="metodo-pago">
+            <span class="activo"></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-        <label class="opcion-pago">
+        </div>
 
-            <input
-                type="radio"
-                name="pago"
-                value="Efectivo"
-                checked>
+    </div>
 
-            <span>💵 Efectivo</span>
+    <!-- PASO 1 -->
 
-        </label>
+    <div class="paso activo" id="paso1">
 
-        <label class="opcion-pago">
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Escribe tu nombre">
 
-            <input
-                type="radio"
-                name="pago"
-                value="Transferencia">
+    </div>
 
-            <span>📲 Transferencia</span>
+    <!-- PASO 2 -->
 
-        </label>
+    <div class="paso" id="paso2">
+
+        <input
+            type="text"
+            id="barrio"
+            placeholder="¿En qué barrio estás?">
+
+    </div>
+
+    <!-- PASO 3 -->
+
+    <div class="paso" id="paso3">
+
+        <input
+            type="text"
+            id="direccion"
+            placeholder="Dirección completa">
+
+    </div>
+
+    <!-- PASO 4 -->
+
+    <div class="paso" id="paso4">
+
+        <div class="metodo-pago">
+
+            <label class="opcion-pago">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Efectivo"
+                    checked>
+
+                <span>💵 Efectivo</span>
+
+            </label>
+
+            <label class="opcion-pago">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Transferencia">
+
+                <span>📲 Transferencia</span>
+
+            </label>
+
+        </div>
 
     </div>
 
     <button
-        class="btn-whatsapp"
-        onclick="pedirWhatsapp()">
+        class="btn-siguiente"
+        id="btnPaso">
 
-        🟢 PEDIR POR WHATSAPP
+        Siguiente →
 
     </button>
+
+</div>
 
 </section>
     <section class="info animar">
