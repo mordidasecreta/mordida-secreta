@@ -871,3 +871,18 @@ puntos.forEach((punto, indice)=>{
     }
 
 });
+function volverPaso(){
+
+    if(pasoActual > 0){
+
+        pasoActual--;
+
+        mostrarPaso();
+
+    }else{
+
+        cerrarAsistente();
+
+    }
+
+}
