@@ -347,8 +347,11 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 const tarjeta = document.querySelector(".asistente-card");
 
 
-tarjeta.innerHTML = `
+const contenido = document.querySelector(".asistente-card");
 
+const estadoAnterior = contenido.innerHTML;
+
+contenido.innerHTML = `
     <div class="preparando-pedido">
 
         <div class="fuego-preparando">
@@ -356,7 +359,7 @@ tarjeta.innerHTML = `
         </div>
 
         <h2>
-           Preparando tu Mordida Secreta...
+            Preparando tu Mordida Secreta...
         </h2>
 
         <div class="puntos-preparando">
@@ -368,20 +371,7 @@ tarjeta.innerHTML = `
         </div>
 
     </div>
-
 `;
-
-
-setTimeout(()=>{
-
-    window.open(
-        "https://wa.me/573183785587?text=" +
-        encodeURIComponent(mensaje),
-        "_blank"
-    );
-
-},700);
-}
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
