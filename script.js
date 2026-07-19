@@ -371,6 +371,15 @@ contenido.innerHTML = `
 
     </div>
 `;
+   setTimeout(()=>{
+
+    window.open(
+        "https://wa.me/573183785587?text=" +
+        encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+},700);
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
