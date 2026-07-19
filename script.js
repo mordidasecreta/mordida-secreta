@@ -729,3 +729,48 @@ const pasos = [
     }
 
 ];
+function mostrarPaso(){
+
+    const paso = pasos[pasoActual];
+
+    document.getElementById("asistenteIcono").textContent = paso.icono;
+
+    document.getElementById("asistenteTitulo").textContent = paso.titulo;
+
+    document.getElementById("btnContinuarAsistente").textContent = paso.boton;
+
+    const input = document.getElementById("asistenteInput");
+
+    const pago = document.getElementById("contenedorPago");
+
+    const resumen = document.getElementById("resumenPedido");
+
+    // Ocultamos todo
+    input.style.display = "none";
+    pago.style.display = "none";
+    resumen.style.display = "none";
+
+    // Paso 1,2,3
+    if(pasoActual <= 2){
+
+        input.style.display = "block";
+
+        input.placeholder = paso.placeholder;
+
+    }
+
+    // Paso 4
+    if(pasoActual === 3){
+
+        pago.style.display = "block";
+
+    }
+
+    // Paso 5
+    if(pasoActual === 4){
+
+        resumen.style.display = "block";
+
+    }
+
+}
