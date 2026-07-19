@@ -2188,6 +2188,7 @@ margin-bottom:15px;
 
 }
 
+
 .factura-linea{
 
 height:1px;
@@ -2200,6 +2201,7 @@ transparent 6px 12px);
 margin:16px 0;
 
 }
+
 
 #facturaCliente{
 
@@ -2241,7 +2243,6 @@ font-weight:800;
 
 }
 
-
 #facturaPago{
 
 font-size:15px;
@@ -2250,7 +2251,7 @@ line-height:1.8;
 
 }
 
-.factur.factura-seccion{
+.factura-seccion{
 
 margin:12px 0;
 
@@ -2270,7 +2271,9 @@ margin-bottom:12px;
 
 text-transform:uppercase;
 
-}aTotal{
+}
+
+.facturaTotal{
 
 text-align:center;
 
@@ -2316,8 +2319,9 @@ font-weight:700;
 
 margin-top:15px;
 
-}
+line-height:1.6;
 
+}
 
 
 
