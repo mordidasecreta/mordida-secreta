@@ -1113,3 +1113,27 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
 
 });
 
+function minimizarAsistente(){
+
+    document
+    .getElementById("asistentePedido")
+    .classList.remove("activo");
+
+    document
+    .getElementById("barraAsistente")
+    .classList.add("visible");
+
+}
+
+function abrirAsistente(){
+
+    document
+    .getElementById("barraAsistente")
+    .classList.remove("visible");
+
+    document
+    .getElementById("asistentePedido")
+    .classList.add("activo");
+
+}
+
