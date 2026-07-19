@@ -911,13 +911,6 @@ function limpiarError(){
     error.classList.remove("mostrar");
 
 }
-.progreso-pedido span.activo{
-
-background:#d4af37;
-
-box-shadow:0 0 8px rgba(212,175,55,.45);
-
-}
 
 function cerrarAsistente(){
 
