@@ -2090,6 +2090,17 @@ color:transparent;
 transition:.35s;
 
 }
+#ultimoPaso.activo{
+
+background:#d4af37;
+
+color:#111;
+
+box-shadow:0 0 10px rgba(212,175,55,.45);
+
+animation:popPaso .28s ease;
+
+}
 
 @keyframes popPaso{
 
