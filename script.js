@@ -902,7 +902,6 @@ function actualizarFactura(){
 
     "🏠 "+pedido.direccion;
 
-}
    // Productos
 const cantidades = obtenerCantidades();
 
@@ -925,11 +924,12 @@ for(const id in cantidades){
         `;
 
     }
-
 }
+
 
 document.getElementById("facturaProductos").innerHTML =
 productosHTML;
+
    // Método de pago
 
 document.getElementById("facturaPago").innerHTML =
@@ -937,6 +937,7 @@ document.getElementById("facturaPago").innerHTML =
 "<strong>Método de pago</strong><br>" +
 
 pedido.pago;
+  
    // Total
 
 const total = calcularTotal(cantidades);
@@ -944,6 +945,8 @@ const total = calcularTotal(cantidades);
 document.getElementById("facturaTotalValor").innerText =
 
 "$" + total.toLocaleString("es-CO");
+
+}
    
 const ultimo =
 document.getElementById("ultimoPaso");
@@ -953,7 +956,8 @@ if(pasoActual === 4){
     ultimo.classList.add("activo");
     ultimo.innerHTML = "✓";
 
-}else{
+}
+else{
 
     ultimo.classList.remove("activo");
     ultimo.innerHTML = "";
