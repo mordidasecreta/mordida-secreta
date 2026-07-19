@@ -1136,4 +1136,12 @@ function abrirAsistente(){
     .classList.add("activo");
 
 }
+function minimizarAsistente(){
+
+    const tarjeta =
+    document.querySelector(".asistente-card");
+
+    tarjeta.classList.toggle("minimizada");
+
+}
 
