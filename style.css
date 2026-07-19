@@ -2401,7 +2401,66 @@ display:flex;
 animation:aparecerAsistente .25s;
 
 }
+/*==============================
+MINIMIZAR ASISTENTE
+==============================*/
 
+.asistente-card{
+
+transition:.35s ease;
+
+overflow:hidden;
+
+}
+
+.asistente-card.minimizada{
+
+max-height:95px;
+
+padding-bottom:18px;
+
+}
+
+.asistente-card.minimizada #asistenteIcono,
+.asistente-card.minimizada #asistenteSubtitulo,
+.asistente-card.minimizada #asistenteInput,
+.asistente-card.minimizada #contenedorPago,
+.asistente-card.minimizada #resumenPedido,
+.asistente-card.minimizada #btnContinuarAsistente,
+.asistente-card.minimizada #mensajeError{
+
+opacity:0;
+
+pointer-events:none;
+
+transform:translateY(15px);
+
+transition:.25s;
+
+}
+.btn-minimizar{
+
+background:none;
+
+border:none;
+
+color:#d4af37;
+
+font-size:24px;
+
+font-weight:900;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.btn-minimizar:hover{
+
+transform:scale(1.2);
+
+}
 
 
 
