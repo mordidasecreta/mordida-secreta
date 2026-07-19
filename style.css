@@ -2075,9 +2075,9 @@ animation:popPaso .28s ease;
 }
 #ultimoPaso{
 
-width:18px;
+width:7px;
 
-height:18px;
+height:7px;
 
 display:flex;
 
@@ -2089,13 +2089,15 @@ border-radius:50%;
 
 background:#444;
 
-font-size:11px;
+font-size:0;
 
 font-weight:900;
 
 color:transparent;
 
 transition:.30s;
+
+overflow:visible;
 
 }
 #ultimoPaso.activo{
