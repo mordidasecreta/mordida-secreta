@@ -2107,6 +2107,51 @@ function cerrarAsistente(){
     opacity:1;
 
 }
+.fila-resumen{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin:10px 0;
+
+font-size:15px;
+
+}
+
+.fila-total{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:18px;
+
+font-size:22px;
+
+font-weight:900;
+
+color:#f5c542;
+
+}
+
+.mensaje-final{
+
+margin-top:22px;
+
+text-align:center;
+
+font-size:15px;
+
+line-height:1.6;
+
+color:#ddd;
+
+}
 
 
 
