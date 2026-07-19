@@ -405,6 +405,7 @@ function actualizarFactura(){
     "$" + total.toLocaleString("es-CO");
 
 }
+
 /* ===========================
    ANIMACIÓN SCROLL
 =========================== */
@@ -870,6 +871,33 @@ puntos.forEach((punto, indice)=>{
     }
 
 });
+   // Productos
+const cantidades = obtenerCantidades();
+
+let productosHTML = "";
+
+for(const id in cantidades){
+
+    if(cantidades[id] > 0){
+
+        productosHTML += `
+
+        <div class="factura-item">
+
+            <span>${NOMBRES[id]}</span>
+
+            <span>x${cantidades[id]}</span>
+
+        </div>
+
+        `;
+
+    }
+
+}
+
+document.getElementById("facturaProductos").innerHTML =
+productosHTML;
 function actualizarFactura(){
 
     // Número de pedido
