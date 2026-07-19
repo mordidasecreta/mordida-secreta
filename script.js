@@ -474,6 +474,19 @@ document
     iniciarAnimaciones();
 
 };
+document.querySelector(".asistente-card")
+.addEventListener("click",function(){
+
+    const asistente =
+    document.getElementById("asistentePedido");
+
+    if(asistente.classList.contains("minimizado")){
+
+        asistente.classList.remove("minimizado");
+
+    }
+
+});
 
 
 /* ===========================
