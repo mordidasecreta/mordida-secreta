@@ -754,11 +754,15 @@ function mostrarPaso(){
     // Paso 1,2,3
     if(pasoActual <= 2){
 
-        input.style.display = "block";
+    input.style.display = "block";
 
-        input.placeholder = paso.placeholder;
+    input.placeholder = paso.placeholder;
 
-    }
+    input.value = "";
+
+    input.focus();
+
+}
 
     // Paso 4
     if(pasoActual === 3){
