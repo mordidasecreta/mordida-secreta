@@ -350,12 +350,15 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 function mostrarFormulario(){
 
     document
-        .getElementById("checkout")
-        .classList.add("abierto");
+        .getElementById("pedido")
+        .classList.remove("oculto");
 
     document
-        .getElementById("overlay")
-        .classList.add("activo");
+        .getElementById("pedido")
+        .scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
 
 }
 /* ===========================
