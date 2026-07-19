@@ -956,8 +956,7 @@ if(pasoActual === 4){
     ultimo.classList.add("activo");
     ultimo.innerHTML = "✓";
 
-}
-else{
+}else{
 
     ultimo.classList.remove("activo");
     ultimo.innerHTML = "";
