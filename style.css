@@ -2086,3 +2086,14 @@ transform:translateX(0) scale(1);
 overflow:hidden;
 
 }
+.oculto{
+
+    display:none;
+
+}
+
+.pedido{
+
+    display:block;
+
+}
