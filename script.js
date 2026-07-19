@@ -1117,11 +1117,7 @@ function minimizarAsistente(){
 
     document
     .getElementById("asistentePedido")
-    .classList.remove("activo");
-
-    document
-    .getElementById("barraAsistente")
-    .classList.add("visible");
+    .classList.toggle("minimizado");
 
 }
 
