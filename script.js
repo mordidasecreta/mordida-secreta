@@ -855,3 +855,19 @@ function siguientePaso(){
     }
 
 }
+// Actualizar punticos
+const puntos = document.querySelectorAll("#progresoPedido span");
+
+puntos.forEach((punto, indice)=>{
+
+    if(indice <= pasoActual){
+
+        punto.classList.add("activo");
+
+    }else{
+
+        punto.classList.remove("activo");
+
+    }
+
+});
