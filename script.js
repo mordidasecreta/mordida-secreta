@@ -84,7 +84,7 @@ explosiva:[
 "🤤 Imposible comer solo uno",
 "🤤 Esa nunca falla",
 "🔥 Buena elección",
-"😮‍💨 Vas a querer otra",
+"😮💨 Vas a querer otra",
 "💥 La favorita de la casa"
 ],
 
@@ -116,7 +116,7 @@ coca:[
 "🥶 Salida del hielo",
 "🥤 El complemento perfecto",
 "❤️ La pareja perfecta",
-"😮‍💨 Ahora sí",
+"😮💨 Ahora sí",
 "🥤 No puede faltar"
 ]
 
@@ -255,13 +255,6 @@ barra.classList.toggle("visible", cantidadTotal > 0);
       mensajeAhorro;
 
 }
-const resumen = document.getElementById("productosResumen");
-
-if(resumen){
-
-    resumen.innerHTML = listaHTML;
-
-}
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
@@ -344,63 +337,28 @@ Método de pago: ${pago}
 
 Total aproximado: $${total.toLocaleString('es-CO')}`;
 
-
-
-const contenido = document.querySelector(".asistente-card");
-
-const estadoAnterior = contenido.innerHTML;
-
-contenido.innerHTML = `
-    <div class="preparando-pedido">
-
-        <div class="fuego-preparando">
-            🔥
-        </div>
-
-        <h2>
-            Preparando tu Mordida Secreta...
-        </h2>
-
-        <div class="puntos-preparando">
-            <span>●</span>
-            <span>●</span>
-            <span>●</span>
-            <span>●</span>
-            <span>●</span>
-        </div>
-
-    </div>
-`;
-   setTimeout(()=>{
-
-    window.open(
-        "https://wa.me/573183785587?text=" +
-        encodeURIComponent(mensaje),
-        "_blank"
-    );
-
-},700);
+  window.open(
+    "https://wa.me/573183785587?text=" +
+    encodeURIComponent(mensaje),
+    "_blank"
+  );
+}
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
 
 function mostrarFormulario(){
 
-    pasoActual = 0;
-
-    mostrarPaso();
+    document
+        .getElementById("pedido")
+        .classList.remove("oculto");
 
     document
-    .getElementById("barra-compra")
-    .classList.remove("visible");
-
-    document
-    .getElementById("asistentePedido")
-    .classList.add("activo");
-
-    document
-    .getElementById("asistenteInput")
-    .value = "";
+        .getElementById("pedido")
+        .scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
 
 }
 /* ===========================
@@ -793,31 +751,13 @@ function mostrarPaso(){
     resumen.style.display = "none";
 
     // Paso 1,2,3
-  if(pasoActual <= 2){
+    if(pasoActual <= 2){
 
-    input.style.display = "block";
+        input.style.display = "block";
 
-    input.placeholder = paso.placeholder;
-
-    if(pasoActual === 0){
-
-        input.value = pedido.nombre;
+        input.placeholder = paso.placeholder;
 
     }
-
-    if(pasoActual === 1){
-
-        input.value = pedido.barrio;
-
-    }
-
-    if(pasoActual === 2){
-
-        input.value = pedido.direccion;
-
-    }
-
-}
 
     // Paso 4
     if(pasoActual === 3){
@@ -827,13 +767,11 @@ function mostrarPaso(){
     }
 
     // Paso 5
-   if(pasoActual === 4){
+    if(pasoActual === 4){
 
-    resumen.style.display="block";
+        resumen.style.display = "block";
 
-    mostrarResumen();
-
-}
+    }
 
 }
 function siguientePaso(){
@@ -971,59 +909,5 @@ function limpiarError(){
     error.textContent = "";
 
     error.classList.remove("mostrar");
-
-}
-function mostrarResumen(){
-
-    const resumen =
-    document.getElementById("resumenPedido");
-
-    resumen.innerHTML = `
-
-        <div class="fila-resumen">
-            <strong>👤</strong>
-            <span>${pedido.nombre}</span>
-        </div>
-
-        <div class="fila-resumen">
-            <strong>📍</strong>
-            <span>${pedido.barrio}</span>
-        </div>
-
-        <div class="fila-resumen">
-            <strong>🏠</strong>
-            <span>${pedido.direccion}</span>
-        </div>
-
-        <div class="fila-resumen">
-            <strong>💳</strong>
-            <span>${pedido.pago}</span>
-        </div>
-
-        <hr>
-
-        <div id="productosResumen"></div>
-
-        <hr>
-
-        <div class="fila-total">
-
-            <strong>TOTAL</strong>
-
-            <span>$${calcularTotal().toLocaleString("es-CO")}</span>
-
-        </div>
-
-        <div class="mensaje-final">
-
-            🔥 Tu pedido ya casi está en camino.
-
-            <br>
-
-            Solo confirma el envío.
-
-        </div>
-
-    `;
 
 }
