@@ -2359,6 +2359,48 @@ padding-right:4px;
 
 }
 
+.barra-asistente{
+
+position:fixed;
+
+left:15px;
+right:15px;
+bottom:15px;
+
+height:58px;
+
+display:none;
+
+align-items:center;
+justify-content:center;
+
+border-radius:18px;
+
+background:#171717;
+
+border:1px solid rgba(212,175,55,.25);
+
+color:white;
+
+font-weight:700;
+
+cursor:pointer;
+
+z-index:999999;
+
+box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+transition:.25s;
+
+}
+
+.barra-asistente.visible{
+
+display:flex;
+
+animation:aparecerAsistente .25s;
+
+}
 
 
 
