@@ -2082,6 +2082,13 @@ transition:.35s;
     transition:.25s;
 
 }
+.progreso-pedido span.activo{
+
+background:#d4af37;
+
+box-shadow:0 0 8px rgba(212,175,55,.45);
+
+}
 
 .mensaje-error.mostrar{
 
