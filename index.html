@@ -565,7 +565,72 @@ Incluye papas artesanales 🍟
     </button>
 
 </div>
+<div id="asistentePedido" class="asistente-pedido">
 
+    <div class="asistente-card">
+
+        <button id="btnVolver" class="btn-volver">
+            ← Volver
+        </button>
+
+        <div class="asistente-icono" id="asistenteIcono">
+            👤
+        </div>
+
+        <h2 id="asistenteTitulo">
+            ¿Cómo te llamas?
+        </h2>
+
+        <p id="asistenteSubtitulo">
+            Empecemos por conocerte.
+        </p>
+
+       <input
+    id="asistenteInput"
+    type="text"
+    placeholder="Escribe tu nombre"
+    autocomplete="off">
+
+        <div id="contenedorPago" style="display:none;">
+
+            <label class="opcion-pago">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Efectivo"
+                    checked>
+
+                <span>💵 Efectivo</span>
+
+            </label>
+
+            <label class="opcion-pago">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="Transferencia">
+
+                <span>📲 Transferencia</span>
+
+            </label>
+
+        </div>
+
+        <div id="resumenPedido" style="display:none;">
+
+        </div>
+
+        <button id="btnContinuarAsistente">
+
+            Continuar →
+
+        </button>
+
+    </div>
+
+</div>
     
 
 
