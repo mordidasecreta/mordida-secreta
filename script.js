@@ -777,13 +777,33 @@ function mostrarPaso(){
         resumen.style.display = "block";
 
     }
-const puntos = document.querySelectorAll("#progresoPedido span");
+const puntos =
+document.querySelectorAll("#progresoPedido span");
 
 puntos.forEach((punto, indice)=>{
 
-    punto.classList.toggle("activo", indice <= pasoActual);
+    // El último se controla aparte
+    if(indice < 4){
+
+        punto.classList.toggle("activo", indice <= pasoActual);
+
+    }
 
 });
+
+const ultimo =
+document.getElementById("ultimoPaso");
+
+if(pasoActual === 4){
+
+    ultimo.classList.add("activo");
+    ultimo.innerHTML = "✓";
+
+}else{
+
+    ultimo.classList.remove("activo");
+    ultimo.innerHTML = "";
+
 }
 function siguientePaso(){
 
