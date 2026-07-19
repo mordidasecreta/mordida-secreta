@@ -2151,8 +2151,139 @@ transform:scale(1);
     opacity:1;
 
 }
+/*==================================
+FACTURA PREMIUM
+==================================*/
 
+.factura{
 
+background:#f8f8f8;
+
+color:#111;
+
+border-radius:22px;
+
+padding:22px;
+
+margin-top:20px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+
+font-family:monospace;
+
+}
+
+.factura-logo{
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+margin-bottom:15px;
+
+}
+
+.factura-linea{
+
+height:1px;
+
+background:repeating-linear-gradient(
+90deg,
+#999 0 6px,
+transparent 6px 12px);
+
+margin:16px 0;
+
+}
+
+#facturaCliente{
+
+line-height:1.8;
+
+font-size:15px;
+
+}
+
+#facturaProductos{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+font-size:15px;
+
+}
+
+.factura-item{
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+#facturaPago{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.facturaTotal{
+
+text-align:center;
+
+margin:20px 0;
+
+}
+
+.facturaTotal small{
+
+display:block;
+
+font-size:12px;
+
+letter-spacing:3px;
+
+color:#777;
+
+margin-bottom:8px;
+
+}
+
+#facturaTotalValor{
+
+font-size:42px;
+
+font-weight:900;
+
+color:#111;
+
+margin:0;
+
+}
+
+.factura-ok{
+
+text-align:center;
+
+font-size:14px;
+
+color:#2e7d32;
+
+font-weight:700;
+
+margin-top:15px;
+
+}
 
 
 
