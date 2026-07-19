@@ -694,40 +694,40 @@ const pedido = {
 
 const pasos = [
 
-    {
-        icono: "👋",
-        titulo: "¿Cómo te llamas?",
-        placeholder: "Escribe tu nombre",
-        boton: "Continuar →"
-    },
+{
+icono:"👋",
+titulo:"¿Cómo te llamas?",
+placeholder:"Escribe tu nombre",
+boton:"Continuar →"
+},
 
-    {
-        icono: "📍",
-        titulo: "¿A qué barrio llevamos tu mordida?",
-        placeholder: "Escribe tu barrio",
-        boton: "Continuar →"
-    },
+{
+icono:"📍",
+titulo:"",
+placeholder:"Escribe tu barrio",
+boton:"Continuar →"
+},
 
-    {
-        icono: "🏠",
-        titulo: "¿Dónde la entregamos?",
-        placeholder: "Escribe tu dirección",
-        boton: "Continuar →"
-    },
+{
+icono:"🏠",
+titulo:"",
+placeholder:"Escribe tu dirección",
+boton:"Continuar →"
+},
 
-    {
-        icono: "💳",
-        titulo: "¿Cómo prefieres pagar?",
-        placeholder: "",
-        boton: "Revisar pedido →"
-    },
+{
+icono:"💳",
+titulo:"",
+placeholder:"",
+boton:"Revisar pedido →"
+},
 
-    {
-        icono: "🤫",
-        titulo: "🔥 Tu pedido ya casi está en camino.",
-        placeholder: "",
-        boton: "🟢 Enviar por WhatsApp"
-    }
+{
+icono:"🤫",
+titulo:"",
+placeholder:"",
+boton:"🟢 Enviar por WhatsApp"
+}
 
 ];
 function mostrarPaso(){
@@ -736,7 +736,42 @@ function mostrarPaso(){
 
     document.getElementById("asistenteIcono").textContent = paso.icono;
 
-    document.getElementById("asistenteTitulo").textContent = paso.titulo;
+   const titulo =
+document.getElementById("asistenteTitulo");
+
+if(pasoActual===0){
+
+    titulo.innerHTML="¿Cómo te llamas?";
+
+}
+
+else if(pasoActual===1){
+
+    titulo.innerHTML=
+    `Mucho gusto <span style="color:#d4af37">${pedido.nombre}</span>.<br>¿A qué barrio llevamos tu mordida?`;
+
+}
+
+else if(pasoActual===2){
+
+    titulo.innerHTML=
+    `Perfecto.<br>Entonces vamos para <span style="color:#d4af37">${pedido.barrio}</span>.<br>¿Cuál es la dirección?`;
+
+}
+
+else if(pasoActual===3){
+
+    titulo.innerHTML=
+    `Excelente.<br>Ya sabemos dónde entregar.<br>¿Cómo deseas pagar?`;
+
+}
+
+else{
+
+    titulo.innerHTML=
+    `Perfecto <span style="color:#d4af37">${pedido.nombre}</span>.<br>Solo revisa tu pedido.`;
+
+}
 
     document.getElementById("btnContinuarAsistente").textContent = paso.boton;
 
