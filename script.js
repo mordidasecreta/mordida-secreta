@@ -864,23 +864,7 @@ limpiarError();
     }
 
 }
-// Actualizar punticos
-const puntos =
-document.querySelectorAll("#progresoPedido span");
 
-puntos.forEach((punto, indice)=>{
-
-    if(indice <= pasoActual){
-
-        punto.classList.add("activo");
-
-    }else{
-
-        punto.classList.remove("activo");
-
-    }
-
-});
 function volverPaso(){
 
     if(pasoActual > 0){
@@ -938,5 +922,12 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
         siguientePaso();
 
     }
+
+});
+const puntos = document.querySelectorAll("#progresoPedido span");
+
+puntos.forEach((punto, indice)=>{
+
+    punto.classList.toggle("activo", indice <= pasoActual);
 
 });
