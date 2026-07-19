@@ -1115,9 +1115,10 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
 
 function minimizarAsistente(){
 
-    document
-    .getElementById("asistentePedido")
-    .classList.toggle("minimizado");
+    const asistente =
+    document.getElementById("asistentePedido");
+
+    asistente.classList.toggle("minimizado");
 
 }
 
