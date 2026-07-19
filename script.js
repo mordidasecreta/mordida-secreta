@@ -1108,3 +1108,11 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
     }
 
 });
+
+function minimizarAsistente(){
+
+document
+.getElementById("asistentePedido")
+.classList.add("minimizado");
+
+}
