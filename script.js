@@ -870,7 +870,37 @@ puntos.forEach((punto, indice)=>{
     }
 
 });
+function actualizarFactura(){
 
+    // Número de pedido
+    const numero =
+    "#" + Math.floor(1000 + Math.random()*9000);
+
+    document.getElementById("numeroPedido").innerText =
+    numero;
+
+    // Fecha y hora
+    const ahora = new Date();
+
+    document.getElementById("fechaPedido").innerText =
+    ahora.toLocaleDateString("es-CO");
+
+    document.getElementById("horaPedido").innerText =
+    ahora.toLocaleTimeString("es-CO",{
+        hour:"2-digit",
+        minute:"2-digit"
+    });
+
+    // Cliente
+    document.getElementById("facturaCliente").innerHTML =
+
+    "<strong>"+pedido.nombre+"</strong><br><br>" +
+
+    "📍 "+pedido.barrio+"<br>" +
+
+    "🏠 "+pedido.direccion;
+
+}
 const ultimo =
 document.getElementById("ultimoPaso");
 
