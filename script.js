@@ -774,3 +774,84 @@ function mostrarPaso(){
     }
 
 }
+function siguientePaso(){
+
+    // PASO 1
+    if(pasoActual === 0){
+
+        const valor = document
+        .getElementById("asistenteInput")
+        .value
+        .trim();
+
+        if(valor === ""){
+
+            alert("Escribe tu nombre.");
+
+            return;
+
+        }
+
+        pedido.nombre = valor;
+
+    }
+
+    // PASO 2
+    if(pasoActual === 1){
+
+        const valor = document
+        .getElementById("asistenteInput")
+        .value
+        .trim();
+
+        if(valor === ""){
+
+            alert("Escribe tu barrio.");
+
+            return;
+
+        }
+
+        pedido.barrio = valor;
+
+    }
+
+    // PASO 3
+    if(pasoActual === 2){
+
+        const valor = document
+        .getElementById("asistenteInput")
+        .value
+        .trim();
+
+        if(valor === ""){
+
+            alert("Escribe tu dirección.");
+
+            return;
+
+        }
+
+        pedido.direccion = valor;
+
+    }
+
+    // PASO 4
+    if(pasoActual === 3){
+
+        pedido.pago =
+        document.querySelector(
+        'input[name="pago"]:checked'
+        ).value;
+
+    }
+
+    if(pasoActual < 4){
+
+        pasoActual++;
+
+        mostrarPaso();
+
+    }
+
+}
