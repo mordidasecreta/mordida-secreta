@@ -1029,3 +1029,112 @@ function mostrarResumen(){
     `;
 
 }
+.preparando-pedido{
+
+    text-align:center;
+    padding:45px 20px;
+
+}
+
+
+.fuego-preparando{
+
+    font-size:55px;
+
+    animation:
+    fuego-movimiento .8s infinite alternate;
+
+}
+
+
+.preparando-pedido h2{
+
+    margin-top:15px;
+
+    font-weight:800;
+
+}
+
+
+.puntos-preparando{
+
+    margin-top:25px;
+
+}
+
+
+.puntos-preparando span{
+
+    display:inline-block;
+
+    font-size:22px;
+
+    margin:0 4px;
+
+    animation:
+    punto-brillo 1s infinite;
+
+}
+
+
+.puntos-preparando span:nth-child(2){
+
+    animation-delay:.15s;
+
+}
+
+.puntos-preparando span:nth-child(3){
+
+    animation-delay:.30s;
+
+}
+
+.puntos-preparando span:nth-child(4){
+
+    animation-delay:.45s;
+
+}
+
+.puntos-preparando span:nth-child(5){
+
+    animation-delay:.60s;
+
+}
+
+
+
+@keyframes punto-brillo{
+
+    0%,100%{
+
+        opacity:.3;
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        opacity:1;
+        transform:translateY(-6px);
+
+    }
+
+}
+
+
+
+@keyframes fuego-movimiento{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.12);
+
+    }
+
+}
