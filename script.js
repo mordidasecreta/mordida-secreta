@@ -805,6 +805,7 @@ if(pasoActual === 4){
     ultimo.innerHTML = "";
 
 }
+}
 function siguientePaso(){
 
     // PASO 1
