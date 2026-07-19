@@ -2045,45 +2045,47 @@ display:flex;
 
 justify-content:flex-end;
 
-gap:6px;
+gap:8px;
 
 margin-bottom:15px;
 
 }
 .progreso-pedido span{
 
-    transition:.30s;
+width:7px;
+
+height:7px;
+
+border-radius:50%;
+
+background:#444;
+
+transition:.30s;
 
 }
 
 .progreso-pedido span.activo{
 
-    background:#d4af37;
+background:#d4af37;
 
-    box-shadow:0 0 10px rgba(212,175,55,.45);
+box-shadow:0 0 10px rgba(212,175,55,.45);
 
-    animation:popPaso .28s ease;
+animation:popPaso .28s ease;
 
 }
 
 @keyframes popPaso{
 
 0%{
-
 transform:scale(.4);
-
 }
 
 70%{
-
 transform:scale(1.35);
-
 }
 
 100%{
-
 transform:scale(1);
-
 }
 
 }
