@@ -767,11 +767,13 @@ function mostrarPaso(){
     }
 
     // Paso 5
-    if(pasoActual === 4){
+   if(pasoActual === 4){
 
-        resumen.style.display = "block";
+    resumen.style.display="block";
 
-    }
+    mostrarResumen();
+
+}
 
 }
 function siguientePaso(){
@@ -909,5 +911,59 @@ function limpiarError(){
     error.textContent = "";
 
     error.classList.remove("mostrar");
+
+}
+function mostrarResumen(){
+
+    const resumen =
+    document.getElementById("resumenPedido");
+
+    resumen.innerHTML = `
+
+        <div class="fila-resumen">
+            <strong>👤</strong>
+            <span>${pedido.nombre}</span>
+        </div>
+
+        <div class="fila-resumen">
+            <strong>📍</strong>
+            <span>${pedido.barrio}</span>
+        </div>
+
+        <div class="fila-resumen">
+            <strong>🏠</strong>
+            <span>${pedido.direccion}</span>
+        </div>
+
+        <div class="fila-resumen">
+            <strong>💳</strong>
+            <span>${pedido.pago}</span>
+        </div>
+
+        <hr>
+
+        <div id="productosResumen"></div>
+
+        <hr>
+
+        <div class="fila-total">
+
+            <strong>TOTAL</strong>
+
+            <span>$${calcularTotal().toLocaleString("es-CO")}</span>
+
+        </div>
+
+        <div class="mensaje-final">
+
+            🔥 Tu pedido ya casi está en camino.
+
+            <br>
+
+            Solo confirma el envío.
+
+        </div>
+
+    `;
 
 }
