@@ -360,6 +360,8 @@ function mostrarFormulario(){
     document
     .getElementById("asistentePedido")
     .classList.add("activo");
+   
+   document.body.style.overflow = "hidden";
 
 }
 function actualizarFactura(){
@@ -1095,6 +1097,8 @@ function cerrarAsistente(){
     document
     .getElementById("barra-compra")
     .classList.add("visible");
+   
+   document.body.style.overflow = "";
 
 }
 document.getElementById("asistenteInput").addEventListener("keydown", function(e){
