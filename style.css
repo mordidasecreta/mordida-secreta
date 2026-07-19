@@ -1709,3 +1709,98 @@ body{
     margin-bottom:110px;
 
 }
+/*==============================
+PANTALLA DE INICIO PREMIUM
+==============================*/
+
+#splash{
+
+position:fixed;
+
+inset:0;
+
+background:#090909;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+animation:desaparecer .6s ease forwards;
+
+animation-delay:1.3s;
+
+}
+
+.splash-logo{
+
+width:170px;
+
+animation:logoEntrada .8s ease;
+
+}
+
+#splash h1{
+
+margin:25px 0 8px;
+
+font-size:42px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+}
+
+#splash span{
+
+color:#d4af37;
+
+}
+
+#splash p{
+
+color:#bdbdbd;
+
+font-size:16px;
+
+text-align:center;
+
+}
+
+@keyframes logoEntrada{
+
+0%{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes desaparecer{
+
+to{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}
