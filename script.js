@@ -255,6 +255,13 @@ barra.classList.toggle("visible", cantidadTotal > 0);
       mensajeAhorro;
 
 }
+const resumen = document.getElementById("productosResumen");
+
+if(resumen){
+
+    resumen.innerHTML = listaHTML;
+
+}
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
@@ -349,16 +356,21 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 
 function mostrarFormulario(){
 
-    document
-        .getElementById("pedido")
-        .classList.remove("oculto");
+    pasoActual = 0;
+
+    mostrarPaso();
 
     document
-        .getElementById("pedido")
-        .scrollIntoView({
-            behavior:"smooth",
-            block:"center"
-        });
+    .getElementById("barra-compra")
+    .classList.remove("visible");
+
+    document
+    .getElementById("asistentePedido")
+    .classList.add("activo");
+
+    document
+    .getElementById("asistenteInput")
+    .value = "";
 
 }
 /* ===========================
