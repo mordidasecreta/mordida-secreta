@@ -777,7 +777,13 @@ function mostrarPaso(){
         resumen.style.display = "block";
 
     }
+const puntos = document.querySelectorAll("#progresoPedido span");
 
+puntos.forEach((punto, indice)=>{
+
+    punto.classList.toggle("activo", indice <= pasoActual);
+
+});
 }
 function siguientePaso(){
 
@@ -922,12 +928,5 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
         siguientePaso();
 
     }
-
-});
-const puntos = document.querySelectorAll("#progresoPedido span");
-
-puntos.forEach((punto, indice)=>{
-
-    punto.classList.toggle("activo", indice <= pasoActual);
 
 });
