@@ -349,16 +349,17 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 
 function mostrarFormulario(){
 
-    document
-        .getElementById("pedido")
-        .classList.remove("oculto");
+    pasoActual = 0;
+
+    mostrarPaso();
 
     document
-        .getElementById("pedido")
-        .scrollIntoView({
-            behavior:"smooth",
-            block:"center"
-        });
+    .getElementById("barra-compra")
+    .classList.remove("visible");
+
+    document
+    .getElementById("asistentePedido")
+    .classList.add("activo");
 
 }
 /* ===========================
@@ -860,7 +861,8 @@ limpiarError();
 
 }
 // Actualizar punticos
-const puntos = document.querySelectorAll("#progresoPedido span");
+const puntos =
+document.querySelectorAll("#progresoPedido span");
 
 puntos.forEach((punto, indice)=>{
 
