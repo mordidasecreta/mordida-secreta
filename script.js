@@ -344,11 +344,43 @@ Método de pago: ${pago}
 
 Total aproximado: $${total.toLocaleString('es-CO')}`;
 
-  window.open(
-    "https://wa.me/573183785587?text=" +
-    encodeURIComponent(mensaje),
-    "_blank"
-  );
+const tarjeta = document.querySelector(".asistente-card");
+
+
+tarjeta.innerHTML = `
+
+    <div class="preparando-pedido">
+
+        <div class="fuego-preparando">
+            🔥
+        </div>
+
+        <h2>
+           Preparando tu Mordida Secreta...
+        </h2>
+
+        <div class="puntos-preparando">
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+        </div>
+
+    </div>
+
+`;
+
+
+setTimeout(()=>{
+
+    window.open(
+        "https://wa.me/573183785587?text=" +
+        encodeURIComponent(mensaje),
+        "_blank"
+    );
+
+},700);
 }
 /* ===========================
    MOSTRAR FORMULARIO
