@@ -763,13 +763,31 @@ function mostrarPaso(){
     resumen.style.display = "none";
 
     // Paso 1,2,3
-    if(pasoActual <= 2){
+  if(pasoActual <= 2){
 
-        input.style.display = "block";
+    input.style.display = "block";
 
-        input.placeholder = paso.placeholder;
+    input.placeholder = paso.placeholder;
+
+    if(pasoActual === 0){
+
+        input.value = pedido.nombre;
 
     }
+
+    if(pasoActual === 1){
+
+        input.value = pedido.barrio;
+
+    }
+
+    if(pasoActual === 2){
+
+        input.value = pedido.direccion;
+
+    }
+
+}
 
     // Paso 4
     if(pasoActual === 3){
