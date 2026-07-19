@@ -2343,8 +2343,21 @@ color:#111;
 letter-spacing:1px;
 
 }
+.asistente-card{
 
+max-height:90vh;
+overflow:hidden;
+display:flex;
+flex-direction:column;
 
+}
+.asistente-contenido{
+
+overflow-y:auto;
+flex:1;
+padding-right:4px;
+
+}
 
 
 
