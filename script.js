@@ -786,11 +786,11 @@ function siguientePaso(){
 
         if(valor === ""){
 
-            alert("Escribe tu nombre.");
+    alert("Escribe tu nombre.");
 
-            return;
+    return;
 
-        }
+}
 
         pedido.nombre = valor;
 
@@ -806,11 +806,13 @@ function siguientePaso(){
 
         if(valor === ""){
 
-            alert("Escribe tu barrio.");
+    mostrarError("Escribe tu barrio.");
 
-            return;
+    return;
 
-        }
+}
+
+limpiarError();
 
         pedido.barrio = valor;
 
@@ -824,13 +826,15 @@ function siguientePaso(){
         .value
         .trim();
 
-        if(valor === ""){
+     if(valor === ""){
 
-            alert("Escribe tu dirección.");
+    alert("Escribe tu dirección.");
 
-            return;
+    return;
 
-        }
+}
+
+limpiarError();
 
         pedido.direccion = valor;
 
@@ -884,5 +888,26 @@ function volverPaso(){
         cerrarAsistente();
 
     }
+
+}
+function mostrarError(texto){
+
+    const error =
+    document.getElementById("mensajeError");
+
+    error.textContent = texto;
+
+    error.classList.add("mostrar");
+
+}
+
+function limpiarError(){
+
+    const error =
+    document.getElementById("mensajeError");
+
+    error.textContent = "";
+
+    error.classList.remove("mostrar");
 
 }
