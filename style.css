@@ -1804,3 +1804,10 @@ visibility:hidden;
 }
 
 }
+.splash-logo{
+
+width:170px;
+
+animation:logoEntrada .8s ease;
+
+}
