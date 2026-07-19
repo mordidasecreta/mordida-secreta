@@ -2084,7 +2084,29 @@ function cerrarAsistente(){
     .classList.add("visible");
 
 }
+.mensaje-error{
 
+    min-height:20px;
+
+    margin-top:10px;
+
+    color:#ff6b6b;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    opacity:0;
+
+    transition:.25s;
+
+}
+
+.mensaje-error.mostrar{
+
+    opacity:1;
+
+}
 
 
 
