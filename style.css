@@ -2039,7 +2039,39 @@ transform:translateY(0);
 }
 
 }
+.progreso-pedido{
 
+display:flex;
+
+justify-content:flex-end;
+
+gap:6px;
+
+margin-bottom:15px;
+
+}
+
+.progreso-pedido span{
+
+width:7px;
+
+height:7px;
+
+border-radius:50%;
+
+background:#444;
+
+transition:.35s;
+
+}
+
+.progreso-pedido span.activo{
+
+background:#d4af37;
+
+box-shadow:0 0 8px rgba(212,175,55,.45);
+
+}
 
 
 
