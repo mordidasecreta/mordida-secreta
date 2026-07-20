@@ -1093,6 +1093,8 @@ const urlWhatsapp =
 
 animacionEnviarPedido(urlWhatsapp);
    
+ }
+   
 function animacionEnviarPedido(urlWhatsapp){
 
     const overlay = document.getElementById("overlayEnvio");
@@ -1139,3 +1141,6 @@ function animacionEnviarPedido(urlWhatsapp){
     window.open(urlWhatsapp, "_blank");
 
 }, 300);
+ 
+ }
+                                  
