@@ -572,166 +572,190 @@ Incluye papas artesanales 🍟
     <div class="asistente-card">
 
         <button
-id="btnVolver"
-class="btn-volver"
-onclick="volverPaso()">
+            id="btnVolver"
+            class="btn-volver"
+            onclick="volverPaso()">
+
             ← Volver
+
         </button>
-<div class="asistente-scroll">
-        <div class="asistente-icono" id="asistenteIcono">
-            👤
+
+        <div class="asistente-scroll">
+
+            <div class="asistente-icono" id="asistenteIcono">
+                👤
+            </div>
+
+            <div class="progreso-pedido" id="progresoPedido">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span id="ultimoPaso"></span>
+
+            </div>
+
+            <h2 id="asistenteTitulo">
+
+                ¿Cómo te llamas?
+
+            </h2>
+
+            <p id="asistenteSubtitulo">
+
+                Empecemos por conocerte.
+
+            </p>
+
+            <input
+                id="asistenteInput"
+                type="text"
+                placeholder="Escribe tu nombre"
+                autocomplete="off">
+
+            <p id="mensajeError" class="mensaje-error"></p>
+
+            <div id="contenedorPago" style="display:none;">
+
+                <label class="opcion-pago">
+
+                    <input
+                        type="radio"
+                        name="pago"
+                        value="Efectivo"
+                        checked>
+
+                    <span>💵 Efectivo</span>
+
+                </label>
+
+                <label class="opcion-pago">
+
+                    <input
+                        type="radio"
+                        name="pago"
+                        value="Transferencia">
+
+                    <span>📲 Transferencia</span>
+
+                </label>
+
+            </div>
+
+            <div id="resumenPedido" style="display:none;">
+
+                <div class="factura">
+
+                    <div class="factura-logo">
+
+                        <small>ORDEN DE PEDIDO</small>
+
+                        🍔 MORDIDA SECRETA
+
+                    </div>
+
+                    <div class="factura-info">
+
+                        <span id="numeroPedido">#0000</span>
+
+                        <span id="fechaPedido"></span>
+
+                    </div>
+
+                    <div class="factura-linea"></div>
+
+                    <div class="factura-seccion">
+
+                        <div class="factura-titulo">
+
+                            CLIENTE
+
+                        </div>
+
+                        <div id="facturaCliente"></div>
+
+                    </div>
+
+                    <div class="factura-linea"></div>
+
+                    <div class="factura-seccion">
+
+                        <div class="factura-titulo">
+
+                            PEDIDO
+
+                        </div>
+
+                        <div id="facturaProductos"></div>
+
+                    </div>
+
+                    <div class="factura-linea"></div>
+
+                    <div class="factura-seccion">
+
+                        <div class="factura-titulo">
+
+                            PAGO
+
+                        </div>
+
+                        <div id="facturaPago"></div>
+
+                    </div>
+
+                    <div class="factura-linea"></div>
+
+                    <div class="facturaTotal">
+
+                        <small>TOTAL</small>
+
+                        <h2 id="facturaTotalValor">$0</h2>
+
+                    </div>
+
+                    <div class="factura-ok">
+
+                        <div class="factura-secreto">
+
+                            🤫
+
+                        </div>
+
+                        <div class="factura-mensaje">
+
+                            ESTE PEDIDO<br>
+                            YA FORMA PARTE<br>
+                            DEL SECRETO
+
+                        </div>
+
+                        <div class="factura-confirmacion">
+
+                            ✔ Esperando confirmación
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    
-        <div class="progreso-pedido" id="progresoPedido">
 
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span id="ultimoPaso"></span>
+        <button
+            id="btnContinuarAsistente"
+            onclick="siguientePaso()">
 
-</div>
+            Continuar →
 
-        <h2 id="asistenteTitulo">
-            ¿Cómo te llamas?
-        </h2>
-
-        <p id="asistenteSubtitulo">
-            Empecemos por conocerte.
-        </p>
-
-       <input
-    id="asistenteInput"
-    type="text"
-    placeholder="Escribe tu nombre"
-    autocomplete="off">
-<p id="mensajeError" class="mensaje-error"></p>
-        <div id="contenedorPago" style="display:none;">
-
-            <label class="opcion-pago">
-
-                <input
-                    type="radio"
-                    name="pago"
-                    value="Efectivo"
-                    checked>
-
-                <span>💵 Efectivo</span>
-
-            </label>
-
-            <label class="opcion-pago">
-
-                <input
-                    type="radio"
-                    name="pago"
-                    value="Transferencia">
-
-                <span>📲 Transferencia</span>
-
-            </label>
-
-        </div>
-
-      <div id="resumenPedido" style="display:none;">
-
-    <div class="factura">
-
-      <div class="factura-logo">
-
-    <small>ORDEN DE PEDIDO</small>
-
-    🍔 MORDIDA SECRETA
-
-</div>
-
-<div class="factura-info">
-
-    <span id="numeroPedido">#0000</span>
-
-    <span id="fechaPedido"></span>
-
-</div>
-
-        <div class="factura-linea"></div>
-
-       <div class="factura-seccion">
-
-    <div class="factura-titulo">CLIENTE</div>
-
-    <div id="facturaCliente"></div>
-
-</div>
-
-<div class="factura-linea"></div>
-
-<div class="factura-seccion">
-
-    <div class="factura-titulo">PEDIDO</div>
-
-    <div id="facturaProductos"></div>
-
-</div>
-
-<div class="factura-linea"></div>
-
-<div class="factura-seccion">
-
-    <div class="factura-titulo">PAGO</div>
-
-    <div id="facturaPago"></div>
-
-</div>
-
-        <div class="factura-linea"></div>
-
-        <div class="facturaTotal">
-
-            <small>TOTAL</small>
-
-            <h2 id="facturaTotalValor">$0</h2>
-
-        </div>
-
-       <div class="factura-ok">
-
-    <div class="factura-secreto">
-
-        🤫
-
-    </div>
-
-    <div class="factura-mensaje">
-
-        ESTE PEDIDO<br>
-        YA FORMA PARTE<br>
-        DEL SECRETO
-
-    </div>
-
-    <div class="factura-confirmacion">
-
-        ✔ Esperando confirmación
+        </button>
 
     </div>
 
 </div>
-
-    </div>
-
-</div>
-
-<button
-id="btnContinuarAsistente"
-onclick="siguientePaso()">
-
-    Continuar →
-
-</button>
-
-</div> <!-- asistente-card -->
-
-</div> <!-- asistentePedido -->
     <div id="overlayEnvio" class="overlay-envio">
 
     <div class="overlay-card">
