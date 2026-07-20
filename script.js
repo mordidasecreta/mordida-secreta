@@ -807,11 +807,13 @@ else{
     }
 
     // Paso 5
-    if(pasoActual === 4){
+   if(pasoActual === 4){
 
-        resumen.style.display = "block";
+    resumen.style.display = "block";
 
-    }
+    actualizarFactura();
+
+}
 const puntos =
 document.querySelectorAll("#progresoPedido span");
 
@@ -986,4 +988,47 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
     }
 
 });
+function actualizarFactura(){
 
+    // Cliente
+    document.getElementById("facturaCliente").innerHTML = `
+        👤 <strong>${pedido.nombre}</strong><br>
+        📍 ${pedido.barrio}<br>
+        🏠 ${pedido.direccion}
+    `;
+
+    // Productos
+    const cantidades = obtenerCantidades();
+
+    let html = "";
+
+    for(const id in cantidades){
+
+        if(cantidades[id] > 0){
+
+            html += `
+            <div class="factura-item">
+                <span>${NOMBRES[id]}</span>
+                <span>x${cantidades[id]}</span>
+            </div>
+            `;
+
+        }
+
+    }
+
+    document.getElementById("facturaProductos").innerHTML = html;
+
+    // Pago
+    document.getElementById("facturaPago").innerHTML = `
+        💳 <strong>Método de pago</strong><br>
+        ${pedido.pago}
+    `;
+
+    // Total
+    const total = calcularTotal(cantidades);
+
+    document.getElementById("facturaTotalValor").innerHTML =
+        "$" + total.toLocaleString("es-CO");
+
+}
