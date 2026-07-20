@@ -812,6 +812,15 @@ else{
     resumen.style.display = "block";
 
     actualizarFactura();
+      // Número del pedido
+document.getElementById("numeroPedido").innerText =
+"#" + Math.floor(1000 + Math.random()*9000);
+
+// Fecha
+const hoy = new Date();
+
+document.getElementById("fechaPedido").innerText =
+hoy.toLocaleDateString("es-CO");
 
 }
 const puntos =
