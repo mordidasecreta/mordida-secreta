@@ -2268,15 +2268,55 @@ margin:0;
 
 text-align:center;
 
-font-size:14px;
+margin-top:25px;
+
+padding-top:18px;
+
+border-top:1px dashed #999;
+
+}
+
+.factura-secreto{
+
+font-size:36px;
+
+margin-bottom:10px;
+
+}
+
+.factura-mensaje{
+
+font-size:15px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+line-height:1.6;
+
+text-transform:uppercase;
+
+color:#222;
+
+margin-bottom:15px;
+
+}
+
+.factura-confirmacion{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border-radius:20px;
+
+background:#e8f5e9;
 
 color:#2e7d32;
 
-font-weight:700;
+font-size:13px;
 
-margin-top:15px;
-
-line-height:1.6;
+font-weight:800;
 
 }
 #facturaInfoPedido{
