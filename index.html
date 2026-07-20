@@ -213,7 +213,7 @@ Incluye papas artesanales 🍟
 
         <div class="cantidad">
 
-          <button onclick="cambiarCantidad('explosiva',-1); return false;">
+          <button onclick="cambiarCantidad('explosiva',-1,event); return false;">
                 −
             </button>
 
@@ -221,7 +221,7 @@ Incluye papas artesanales 🍟
                 0
             </span>
 
-            <button onclick="cambiarCantidad('explosiva',1); return false;">
+           <button onclick="cambiarCantidad('explosiva',1,event); return false;">
                 +
             </button>
 
@@ -286,13 +286,13 @@ COMBO EXPLOSIVA V3
 
         <div class="cantidad">
 
-            <button onclick="cambiarCantidad('comboExplosiva',-1); return false;">
+            <button onclick="cambiarCantidad('comboExplosiva',-1,event); return false;">
                 −
             </button>
 
             <span id="comboExplosiva">0</span>
 
-            <button onclick="cambiarCantidad('comboExplosiva',1); return false;">
+             <button onclick="cambiarCantidad('comboExplosiva',1,event); return false;">
                 +
             </button>
 
