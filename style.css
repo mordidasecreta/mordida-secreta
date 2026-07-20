@@ -2319,7 +2319,7 @@ flex-direction:column;
 
 max-height:92vh;
 
-overflow:hidden;
+overflow:visible;
 
 }
 .asistente-contenido{
@@ -2375,102 +2375,6 @@ animation:aparecerAsistente .25s;
 /*==============================
 MINIMIZAR ASISTENTE
 ==============================*/
-
-.asistente-card{
-
-transition:.35s ease;
-
-overflow:hidden;
-
-}
-
-.asistente-card.minimizada{
-
-max-height:95px;
-
-padding-bottom:18px;
-
-}
-
-.asistente-card.minimizada #asistenteIcono,
-.asistente-card.minimizada #asistenteSubtitulo,
-.asistente-card.minimizada #asistenteInput,
-.asistente-card.minimizada #contenedorPago,
-.asistente-card.minimizada #resumenPedido,
-.asistente-card.minimizada #btnContinuarAsistente,
-.asistente-card.minimizada #mensajeError{
-
-opacity:0;
-
-pointer-events:none;
-
-transform:translateY(15px);
-
-transition:.25s;
-
-}
-
-.btn-minimizar{
-
-background:none;
-
-border:none;
-
-color:#d4af37;
-
-font-size:24px;
-
-font-weight:900;
-
-cursor:pointer;
-
-transition:.25s;
-
-}
-
-.btn-minimizar:hover{
-
-transform:scale(1.2);
-
-}
-.asistente-pedido.minimizado .asistente-card{
-
-    width:70px;
-    height:70px;
-
-    border-radius:50%;
-
-    padding:0;
-
-    overflow:hidden;
-
-    cursor:pointer;
-
-    pointer-events:auto;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-}
-.asistente-pedido.minimizado .btn-volver,
-.asistente-pedido.minimizado #asistenteTitulo,
-.asistente-pedido.minimizado #asistenteSubtitulo,
-.asistente-pedido.minimizado #asistenteInput,
-.asistente-pedido.minimizado #contenedorPago,
-.asistente-pedido.minimizado #resumenPedido,
-.asistente-pedido.minimizado #btnContinuarAsistente,
-.asistente-pedido.minimizado #progresoPedido{
-
-    display:none;
-
-}
-.asistente-pedido.minimizado .asistente-icono{
-
-    margin:0;
-    font-size:34px;
-
-}
 .factura-info{
 
 display:flex;
@@ -2597,5 +2501,26 @@ overflow-y:auto;
 padding:28px 22px;
 
 }
+#resumenPedido{
 
+max-height:55vh;
+
+overflow-y:auto;
+
+padding-right:6px;
+
+}
+#resumenPedido::-webkit-scrollbar{
+
+width:6px;
+
+}
+
+#resumenPedido::-webkit-scrollbar-thumb{
+
+background:#d4af37;
+
+border-radius:10px;
+
+}
 
