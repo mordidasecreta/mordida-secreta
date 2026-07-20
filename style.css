@@ -2288,7 +2288,35 @@ position:relative;
 overflow:hidden;
 
 }
+.factura-logo{
 
+text-align:center;
+
+font-size:20px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+margin-bottom:6px;
+
+}
+
+.factura-logo small{
+
+display:block;
+
+font-size:11px;
+
+letter-spacing:4px;
+
+color:#777;
+
+margin-top:6px;
+
+text-transform:uppercase;
+
+}
 
 
 
