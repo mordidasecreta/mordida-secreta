@@ -459,7 +459,7 @@ function mostrarPlusUno(x, y){
    EFECTO LUZ PREMIUM
 =========================== */
 
-document.querySelectorAll(".card").forEach(card=>{
+document.querySelectorAll(".card, .producto-v3").forEach(card=>{
 
     const luz = document.createElement("div");
 
@@ -472,9 +472,7 @@ document.querySelectorAll(".card").forEach(card=>{
         const rect = card.getBoundingClientRect();
 
         luz.style.left = (e.clientX - rect.left) + "px";
-
         luz.style.top = (e.clientY - rect.top) + "px";
-
         luz.style.opacity = "1";
 
     });
