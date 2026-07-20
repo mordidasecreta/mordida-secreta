@@ -528,7 +528,7 @@ Incluye papas artesanales 🍟
 
 </section>
 
-  ...
+  
     <section class="info animar">
 
     <h2>📍 Cali</h2>
@@ -631,20 +631,21 @@ onclick="volverPaso()">
 
         </div>
 
-       <div id="resumenPedido" style="display:none;">
+      <div id="resumenPedido" style="display:none;">
 
     <div class="factura">
 
         <div class="factura-logo">
             🍔 MORDIDA SECRETA
         </div>
-         <div class="factura-info">
 
-    <span id="numeroPedido">#0000</span>
+        <div class="factura-info">
 
-    <span id="fechaPedido"></span>
+            <span id="numeroPedido">#0000</span>
 
-</div>
+            <span id="fechaPedido"></span>
+
+        </div>
 
         <div class="factura-linea"></div>
 
@@ -678,8 +679,19 @@ onclick="volverPaso()">
 
 </div>
 
+<button
+id="btnContinuarAsistente"
+onclick="siguientePaso()">
+
+    Continuar →
+
+</button>
+
+</div> <!-- asistente-card -->
+
+</div> <!-- asistentePedido -->
 
 <script src="script.js"></script>
+
 </body>
 </html>
-
