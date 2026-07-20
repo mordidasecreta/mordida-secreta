@@ -1094,3 +1094,55 @@ ${productos}
     );
 
 }
+function animacionEnviarPedido(urlWhatsapp){
+
+    const overlay = document.getElementById("overlayEnvio");
+    const barra = document.getElementById("progresoEnvio");
+    const texto = document.getElementById("textoEnvio");
+
+    overlay.classList.add("activo");
+
+    barra.style.width = "0%";
+
+    let progreso = 0;
+
+    const intervalo = setInterval(()=>{
+
+        progreso += 2;
+
+        barra.style.width = progreso + "%";
+
+        // Animación de los puntos
+        if(progreso < 35){
+
+            texto.innerText = "Un momento.";
+
+        }else if(progreso < 70){
+
+            texto.innerText = "Un momento..";
+
+        }else{
+
+            texto.innerText = "Un momento...";
+
+        }
+
+        if(progreso >= 100){
+
+            clearInterval(intervalo);
+
+            texto.innerText = "¡Todo listo!";
+
+            setTimeout(()=>{
+
+                overlay.classList.remove("activo");
+
+                window.open(urlWhatsapp,"_blank");
+
+            },300);
+
+        }
+
+    },35);
+
+}
