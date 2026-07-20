@@ -2233,6 +2233,21 @@ transform:scale(1.2);
     font-size:34px;
 
 }
+.factura-info{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:13px;
+
+color:#777;
+
+margin-top:10px;
+
+margin-bottom:15px;
+
+}
 
 
 
