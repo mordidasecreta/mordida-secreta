@@ -46,6 +46,11 @@ function calcularTotal(cantidades){
     return total;
 
 }
+function formatoDinero(valor){
+
+    return "$" + valor.toLocaleString("es-CO");
+
+}
 
 /* ===========================
          PRECIOS
@@ -201,10 +206,27 @@ for(const id in cantidades){
 
     if(cantidades[id] > 0){
 
+        const subtotal = PRECIOS[id] * cantidades[id];
+
         listaHTML += `
         <div class="producto-item">
-            <span>${NOMBRES[id]}</span>
-            <span>x${cantidades[id]}</span>
+
+            <div class="producto-info">
+
+                <strong>${NOMBRES[id]}</strong>
+
+                <small>
+                    ${cantidades[id]} × $${PRECIOS[id].toLocaleString("es-CO")}
+                </small>
+
+            </div>
+
+            <div class="producto-precio">
+
+                $${subtotal.toLocaleString("es-CO")}
+
+            </div>
+
         </div>`;
     }
 
@@ -213,7 +235,9 @@ for(const id in cantidades){
 const lista = document.getElementById("lista-productos");
 
 if(lista){
+
     lista.innerHTML = listaHTML;
+
 }
 
 
@@ -241,14 +265,14 @@ document.getElementById("barra-cantidad").innerText =
 cantidadTotal + (cantidadTotal===1 ? " producto" : " productos");
 
 document.getElementById("barra-total").innerText =
-"$" + total.toLocaleString("es-CO");
+formatoDinero(total);
 
 const barra = document.getElementById("barra-compra");
 
 barra.classList.toggle("visible", cantidadTotal > 0);
 
-  document.getElementById("total").innerText =
-      "$" + total.toLocaleString("es-CO");
+document.getElementById("total").innerText =
+formatoDinero(total);
      let mensajeAhorro = "";
 
   if(comboExplosiva > 0 || comboCallejera > 0){
@@ -1015,24 +1039,43 @@ function actualizarFactura(){
     // Productos
     const cantidades = obtenerCantidades();
 
-    let html = "";
+let html = "";
 
-    for(const id in cantidades){
+for(const id in cantidades){
 
-        if(cantidades[id] > 0){
+    if(cantidades[id] > 0){
 
-            html += `
-            <div class="factura-item">
-                <span>${NOMBRES[id]}</span>
-                <span>x${cantidades[id]}</span>
+        const subtotal = PRECIOS[id] * cantidades[id];
+
+        html += `
+
+        <div class="factura-item">
+
+            <div>
+
+                <strong>${NOMBRES[id]}</strong><br>
+
+                <small>
+                    ${cantidades[id]} × $${PRECIOS[id].toLocaleString("es-CO")}
+                </small>
+
             </div>
-            `;
 
-        }
+            <strong>
+
+                $${subtotal.toLocaleString("es-CO")}
+
+            </strong>
+
+        </div>
+
+        `;
 
     }
 
-    document.getElementById("facturaProductos").innerHTML = html;
+}
+
+document.getElementById("facturaProductos").innerHTML = html;
 
     // Pago
     document.getElementById("facturaPago").innerHTML = `
@@ -1043,50 +1086,66 @@ function actualizarFactura(){
     // Total
     const total = calcularTotal(cantidades);
 
-    document.getElementById("facturaTotalValor").innerHTML =
-        "$" + total.toLocaleString("es-CO");
+document.getElementById("facturaTotalValor").innerHTML =
+formatoDinero(total);
 
 }
 function enviarPedidoWhatsApp(){
 
-    const cantidades = obtenerCantidades();
+let productos = "";
 
-    let productos = "";
+for(const id in cantidades){
 
-    for(const id in cantidades){
+    if(cantidades[id] > 0){
 
-        if(cantidades[id] > 0){
+        const subtotal = PRECIOS[id] * cantidades[id];
 
-            productos +=
-            `• ${NOMBRES[id]} x${cantidades[id]}\n`;
+        productos +=
+`• ${NOMBRES[id]}
+   ${cantidades[id]} × $${PRECIOS[id].toLocaleString("es-CO")} = $${subtotal.toLocaleString("es-CO")}
 
-        }
+`;
 
     }
 
+}
+
     const total = calcularTotal(cantidades);
 
-    const mensaje =
+   const mensaje =
 `🍔 *MORDIDA SECRETA*
 
-📝 *Nuevo pedido*
+━━━━━━━━━━━━━━
 
-👤 ${pedido.nombre}
+📝 *NUEVO PEDIDO*
 
-📍 ${pedido.barrio}
+👤 Cliente:
+${pedido.nombre}
 
-🏠 ${pedido.direccion}
+📍 Barrio:
+${pedido.barrio}
 
--------------------------
+🏠 Dirección:
+${pedido.direccion}
+
+━━━━━━━━━━━━━━
+
+🥪 *PRODUCTOS*
 
 ${productos}
 
--------------------------
+━━━━━━━━━━━━━━
 
-💳 Pago: ${pedido.pago}
+💳 Pago:
+${pedido.pago}
 
-💰 Total: $${total.toLocaleString("es-CO")}`;
+💰 *TOTAL*
 
+$${total.toLocaleString("es-CO")}
+
+━━━━━━━━━━━━━━
+
+🤫 Gracias por pedir en Mordida Secreta.`;
     const numero = "573183785587";
 
     const urlWhatsapp =
