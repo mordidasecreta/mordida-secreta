@@ -1141,6 +1141,8 @@ function animacionEnviarPedido(urlWhatsapp){
     window.open(urlWhatsapp, "_blank");
 
 }, 300);
- 
  }
-                                  
+
+},35);
+
+}
