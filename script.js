@@ -258,7 +258,7 @@ barra.classList.toggle("visible", cantidadTotal > 0);
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
-function pedirWhatsapp() {
+/* ===function pedirWhatsapp() {
 
 const explosiva = obtenerCantidad("explosiva");
 
@@ -342,7 +342,7 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
     encodeURIComponent(mensaje),
     "_blank"
   );
-}
+}=== */
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
@@ -1086,14 +1086,13 @@ ${productos}
 
 💰 Total: $${total.toLocaleString("es-CO")}`;
 
-    const numero = "573183785587"; // <-- aquí pones tu número
+  const numero = "573183785587";
 
-    window.open(
-        `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`,
-        "_blank"
-    );
+const urlWhatsapp =
+`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
-}
+animacionEnviarPedido(urlWhatsapp);
+   
 function animacionEnviarPedido(urlWhatsapp){
 
     const overlay = document.getElementById("overlayEnvio");
@@ -1127,22 +1126,18 @@ function animacionEnviarPedido(urlWhatsapp){
 
         }
 
-        if(progreso >= 100){
+       if(progreso >= 100){
 
-            clearInterval(intervalo);
+    clearInterval(intervalo);
 
-            texto.innerText = "¡Todo listo!";
+    texto.innerText = "¡Todo listo!";
 
-            setTimeout(()=>{
+    setTimeout(()=>{
 
-                overlay.classList.remove("activo");
+        overlay.classList.remove("activo");
 
-                animacionEnviarPedido(urlWhatsapp);
+        window.open(urlWhatsapp, "_blank");
 
-            },300);
-
-        }
-
-    },35);
+    },300);
 
 }
