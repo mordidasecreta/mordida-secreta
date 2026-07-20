@@ -323,7 +323,7 @@ formatoDinero(total);
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
-function pedirWhatsapp() {
+/* =====function pedirWhatsapp() {
 
 const explosiva = obtenerCantidad("explosiva");
 
@@ -407,7 +407,7 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 encodeURIComponent(mensaje);
 
 animacionEnviarPedido(urlWhatsapp);
-}
+}== */
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
@@ -1221,6 +1221,8 @@ function animacionEnviarPedido(urlWhatsapp){
             setTimeout(()=>{
 
                 overlay.classList.remove("activo");
+
+               console.log(urlWhatsapp);
 
                 window.location.href = urlWhatsapp;
 
