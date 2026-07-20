@@ -258,7 +258,7 @@ barra.classList.toggle("visible", cantidadTotal > 0);
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
-/* =====function pedirWhatsapp() {
+function pedirWhatsapp() {
 
 const explosiva = obtenerCantidad("explosiva");
 
@@ -337,12 +337,12 @@ Método de pago: ${pago}
 
 Total aproximado: $${total.toLocaleString('es-CO')}`;
 
-  window.open(
-    "https://wa.me/573183785587?text=" +
-    encodeURIComponent(mensaje),
-    "_blank"
-  );
-}=== */
+ const urlWhatsapp =
+"https://wa.me/573183785587?text=" +
+encodeURIComponent(mensaje);
+
+animacionEnviarPedido(urlWhatsapp);
+}
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
@@ -1132,12 +1132,10 @@ function animacionEnviarPedido(urlWhatsapp){
 
     texto.innerText = "¡Todo listo!";
 
-    setTimeout(()=>{
+   setTimeout(() => {
 
-        overlay.classList.remove("activo");
+    overlay.classList.remove("activo");
 
-        window.open(urlWhatsapp, "_blank");
+    window.open(urlWhatsapp, "_blank");
 
-    },300);
-
-}
+}, 300);
