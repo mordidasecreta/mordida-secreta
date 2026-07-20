@@ -1123,6 +1123,8 @@ formatoDinero(total);
 }
 function enviarPedidoWhatsApp(){
 
+   const cantidades = obtenerCantidades();
+   
 let productos = "";
 
 for(const id in cantidades){
