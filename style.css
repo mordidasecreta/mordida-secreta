@@ -2588,6 +2588,14 @@ background-size:22px 22px;
 background-repeat:repeat-x;
 
 }
+.asistente-scroll{
 
+flex:1;
+
+overflow-y:auto;
+
+padding:28px 22px;
+
+}
 
 
