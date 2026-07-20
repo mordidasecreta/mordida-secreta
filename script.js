@@ -934,8 +934,12 @@ limpiarError();
 
         mostrarPaso();
 
-    }
+    }else{
 
+    enviarPedidoWhatsApp();
+
+}
+   
 }
 
 function volverPaso(){
@@ -1039,5 +1043,54 @@ function actualizarFactura(){
 
     document.getElementById("facturaTotalValor").innerHTML =
         "$" + total.toLocaleString("es-CO");
+
+}
+function enviarPedidoWhatsApp(){
+
+    const cantidades = obtenerCantidades();
+
+    let productos = "";
+
+    for(const id in cantidades){
+
+        if(cantidades[id] > 0){
+
+            productos +=
+            `• ${NOMBRES[id]} x${cantidades[id]}\n`;
+
+        }
+
+    }
+
+    const total = calcularTotal(cantidades);
+
+    const mensaje =
+
+`🍔 *MORDIDA SECRETA*
+
+📝 *Nuevo pedido*
+
+👤 ${pedido.nombre}
+
+📍 ${pedido.barrio}
+
+🏠 ${pedido.direccion}
+
+-------------------------
+
+${productos}
+
+-------------------------
+
+💳 Pago: ${pedido.pago}
+
+💰 Total: $${total.toLocaleString("es-CO")}`;
+
+    const numero = "573183785587"; // <-- aquí pones tu número
+
+    window.open(
+        `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`,
+        "_blank"
+    );
 
 }
