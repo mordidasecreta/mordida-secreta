@@ -1137,7 +1137,7 @@ function animacionEnviarPedido(urlWhatsapp){
 
                 overlay.classList.remove("activo");
 
-                window.open(urlWhatsapp,"_blank");
+                animacionEnviarPedido(urlWhatsapp);
 
             },300);
 
