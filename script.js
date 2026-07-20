@@ -360,54 +360,8 @@ function mostrarFormulario(){
     document
     .getElementById("asistentePedido")
     .classList.add("activo");
-   
-   document.body.style.overflow = "hidden";
 
 }
-function actualizarFactura(){
-
-    // Cliente
-    document.getElementById("facturaCliente").innerHTML = `
-        👤 ${pedido.nombre}<br>
-        📍 ${pedido.barrio}<br>
-        🏠 ${pedido.direccion}
-    `;
-
-    // Productos
-    const cantidades = obtenerCantidades();
-
-    let html = "";
-
-    for(const id in cantidades){
-
-        if(cantidades[id] > 0){
-
-            html += `
-            <div class="factura-item">
-
-                <span>${NOMBRES[id]}</span>
-
-                <span>x${cantidades[id]}</span>
-
-            </div>`;
-        }
-
-    }
-
-    document.getElementById("facturaProductos").innerHTML = html;
-
-    // Pago
-    document.getElementById("facturaPago").innerHTML =
-    "💳 " + pedido.pago;
-
-    // Total
-    const total = calcularTotal(cantidades);
-
-    document.getElementById("facturaTotalValor").innerHTML =
-    "$" + total.toLocaleString("es-CO");
-
-}
-
 /* ===========================
    ANIMACIÓN SCROLL
 =========================== */
@@ -474,19 +428,6 @@ document
     iniciarAnimaciones();
 
 };
-document.querySelector(".asistente-card")
-.addEventListener("click",function(){
-
-    const asistente =
-    document.getElementById("asistentePedido");
-
-    if(asistente.classList.contains("minimizado")){
-
-        asistente.classList.remove("minimizado");
-
-    }
-
-});
 
 
 /* ===========================
@@ -866,13 +807,11 @@ else{
     }
 
     // Paso 5
-if(pasoActual === 4){
+    if(pasoActual === 4){
 
-    resumen.style.display = "block";
+        resumen.style.display = "block";
 
-    actualizarFactura();
-
-}
+    }
 const puntos =
 document.querySelectorAll("#progresoPedido span");
 
@@ -887,82 +826,6 @@ puntos.forEach((punto, indice)=>{
 
 });
 
-function actualizarFactura(){
-
-    // Número de pedido
-    const numero =
-    "#" + Math.floor(1000 + Math.random()*9000);
-
-    document.getElementById("numeroPedido").innerText =
-    numero;
-
-    // Fecha y hora
-    const ahora = new Date();
-
-    document.getElementById("fechaPedido").innerText =
-    ahora.toLocaleDateString("es-CO");
-
-    document.getElementById("horaPedido").innerText =
-    ahora.toLocaleTimeString("es-CO",{
-        hour:"2-digit",
-        minute:"2-digit"
-    });
-
-    // Cliente
-    document.getElementById("facturaCliente").innerHTML =
-
-    "<strong>"+pedido.nombre+"</strong><br><br>" +
-
-    "📍 "+pedido.barrio+"<br>" +
-
-    "🏠 "+pedido.direccion;
-
-   // Productos
-const cantidades = obtenerCantidades();
-
-let productosHTML = "";
-
-for(const id in cantidades){
-
-    if(cantidades[id] > 0){
-
-        productosHTML += `
-
-        <div class="factura-item">
-
-            <span>${NOMBRES[id]}</span>
-
-            <span>x${cantidades[id]}</span>
-
-        </div>
-
-        `;
-
-    }
-}
-
-
-document.getElementById("facturaProductos").innerHTML =
-productosHTML;
-
-   // Método de pago
-
-document.getElementById("facturaPago").innerHTML =
-
-"<strong>Método de pago</strong><br>" +
-
-pedido.pago;
-  
-   // Total
-
-const total = calcularTotal(cantidades);
-
-document.getElementById("facturaTotalValor").innerText =
-
-"$" + total.toLocaleString("es-CO");
-
-}
-   
 const ultimo =
 document.getElementById("ultimoPaso");
 
@@ -1110,8 +973,6 @@ function cerrarAsistente(){
     document
     .getElementById("barra-compra")
     .classList.add("visible");
-   
-   document.body.style.overflow = "";
 
 }
 document.getElementById("asistenteInput").addEventListener("keydown", function(e){
@@ -1125,33 +986,4 @@ document.getElementById("asistenteInput").addEventListener("keydown", function(e
     }
 
 });
-
-function minimizarAsistente(){
-
-    const asistente =
-    document.getElementById("asistentePedido");
-
-    asistente.classList.toggle("minimizado");
-
-}
-
-function abrirAsistente(){
-
-    document
-    .getElementById("barraAsistente")
-    .classList.remove("visible");
-
-    document
-    .getElementById("asistentePedido")
-    .classList.add("activo");
-
-}
-function minimizarAsistente(){
-
-    const tarjeta =
-    document.querySelector(".asistente-card");
-
-    tarjeta.classList.toggle("minimizada");
-
-}
 
