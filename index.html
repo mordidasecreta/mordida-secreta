@@ -2,146 +2,193 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Mordida Secreta</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSPHXTJSD0"></script>
+
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-HSPHXTJSD0">
+    </script>
 
     <script>
+
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
+
         gtag('config', 'G-HSPHXTJSD0');
+
     </script>
 
 </head>
 
 <body>
+
+    <!-- =========================================
+                 SPLASH
+    ========================================== -->
+
     <div id="splash">
 
-    <img src="images/logo.png" class="splash-logo">
+        <img
+            src="images/logo.png"
+            class="splash-logo"
+            alt="Logo Mordida Secreta">
 
-    <h1>MORDIDA <span>SECRETA</span></h1>
+        <h1>
 
-    <p>El sabor que no podrás guardar en secreto.</p>
+            MORDIDA <span>SECRETA</span>
 
-</div>
-   
-<!--=========================================
-HERO V3
-==========================================-->
+        </h1>
 
-<header class="hero">
+        <p>
 
-    <div class="hero-overlay"></div>
+            El sabor que no podrás guardar en secreto.
 
-    <div class="hero-container">
+        </p>
 
-        <div class="logo-box">
+    </div>
 
-            <img
-                src="images/logo.png"
-                alt="Mordida Secreta">
+    <!-- =========================================
+                    HERO
+    ========================================== -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container">
+
+            <div class="logo-box">
+
+                <img
+                    src="images/logo.png"
+                    alt="Mordida Secreta">
+
+            </div>
+
+            <div class="hero-text">
+
+                <span class="mini-title">
+
+                    ESTO NO ES
+
+                </span>
+
+                <h1>
+
+                    UN SÁNDWICH MÁS
+
+                </h1>
+
+                <h2>
+
+                    MORDIDA <span>SECRETA</span>
+
+                </h2>
+
+                <p>
+
+                    Hay sabores que no se olvidan.
+
+                    <br>
+
+                    Este es uno de ellos.
+
+                </p>
+
+            </div>
+
+            <div class="hero-badges">
+
+                <div class="badge">
+
+                    🟢 Pedidos abiertos
+
+                </div>
+
+                <div class="badge">
+
+                    📍 Cali
+
+                </div>
+
+                <div class="badge">
+
+                    🚚 Domicilios
+
+                </div>
+
+                <div class="badge">
+
+                    🕛 Sábados y domingos
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-principal"
+                onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
+
+                🥪 PEDIR AHORA
+
+            </button>
+
+            <div class="scroll-down">
+
+                ↓
+
+            </div>
+
+            <div class="hero-divider">
+
+                <span>
+
+                    DESCUBRE NUESTRO MENÚ
+
+                </span>
+
+            </div>
 
         </div>
 
-        <div class="hero-text">
+    </header>
 
-            <span class="mini-title">
+    <!-- =========================================
+                    MENÚ
+    ========================================== -->
 
-                ESTO NO ES
-
-            </span>
-
-            <h1>
-
-                UN SÁNDWICH MÁS
-
-            </h1>
-
-            <h2>
-
-                MORDIDA <span>SECRETA</span>
-
-            </h2>
-
-            <p>
-
-                Hay sabores que no se olvidan.
-
-                <br>
-
-                Este es uno de ellos.
-
-            </p>
-
-        </div>
-
-        <div class="hero-badges">
-
-            <div class="badge">
-
-                🟢 Pedidos abiertos
-
-            </div>
-
-            <div class="badge">
-
-                📍 Cali
-
-            </div>
-
-            <div class="badge">
-
-                🚚 Domicilios
-
-            </div>
-
-            <div class="badge">
-
-                🕛 Sábados y domingos
-
-            </div>
-
-        </div>
-
-<button
-    class="btn-principal"
-    onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'})">
-
-    🥪 PEDIR AHORA
-
-</button>
-
-<div class="scroll-down">
-
-    ↓
-
-</div>
-
-<div class="hero-divider">
-
-    <span>DESCUBRE NUESTRO MENÚ</span>
-
-</div>
-
-</div> <!-- hero-container -->
-
-</header>
     <section class="menu">
         
-        <div class="menu-title">
+       <div class="menu-title">
 
     <span></span>
 
@@ -150,17 +197,17 @@ HERO V3
     <span></span>
 
 </div>
-        <!--==================================================
-PRODUCTO V3 - LA EXPLOSIVA
+
+<!--==================================================
+LA EXPLOSIVA
 ===================================================-->
 
 <div class="producto-v3">
 
     <div class="producto-imagen">
 
-        <img
-            src="images/explosiva.jpg"
-            alt="La Explosiva">
+        <img src="images/explosiva.jpg"
+             alt="La Explosiva">
 
         <div class="imagen-overlay"></div>
 
@@ -176,11 +223,7 @@ PRODUCTO V3 - LA EXPLOSIVA
 
         <div class="premium-line"></div>
 
-        <h2>
-
-            💥 La Explosiva
-
-        </h2>
+        <h2>💥 La Explosiva</h2>
 
         <p class="producto-descripcion">
 
@@ -196,80 +239,84 @@ PRODUCTO V3 - LA EXPLOSIVA
 
         </span>
 
-        <h3>
+        <h3>$18.000</h3>
 
-            $18.000
-
-        </h3>
         <div class="precio-detalle">
 
-Incluye papas artesanales 🍟
+            Incluye papas artesanales 🍟
 
-</div>
+        </div>
+
         <div class="hint-secreto">
 
-    👆 Toca la tarjeta para descubrir el secreto
+            👆 Toca la tarjeta para descubrir el secreto
+
         </div>
 
         <div class="cantidad">
 
-          <button onclick="cambiarCantidad('explosiva',-1,event); return false;">
+            <button onclick="cambiarCantidad('explosiva',-1,event);return false;">
                 −
             </button>
 
-            <span id="explosiva">
-                0
-            </span>
+            <span id="explosiva">0</span>
 
-           <button onclick="cambiarCantidad('explosiva',1,event); return false;">
+            <button onclick="cambiarCantidad('explosiva',1,event);return false;">
                 +
             </button>
 
         </div>
 
-   <div class="ingredientes">
+        <div class="ingredientes">
 
-    <h4>🤫 EL SECRETO</h4>
+            <h4>🤫 EL SECRETO</h4>
 
-    <p>
+            <p>
 
-        Jugoso pollo desmechado en nuestra cremosa salsa especial,
-        con maicitos, tocineta, queso, tomate fresco,
-        lechuga crespa y la inconfundible salsa de la casa🔥.
+                Jugoso pollo desmechado en nuestra cremosa salsa especial,
+                con maicitos,
+                tocineta,
+                queso,
+                tomate fresco,
+                lechuga crespa
+                y la inconfundible salsa de la casa 🔥.
 
-    </p>
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
 
-</div> <!-- producto-contenido -->
-
-</div> <!-- producto-v3 -->
-    
-       <!--==================================================
-COMBO EXPLOSIVA V3
+<!--==================================================
+COMBO EXPLOSIVA
 ===================================================-->
 
 <div class="producto-v3 combo-v3">
 
     <div class="producto-imagen">
 
-        <img
-            src="images/explosiva-combo.jpg"
-            alt="Combo Explosiva">
+        <img src="images/explosiva-combo.jpg"
+             alt="Combo Explosiva">
 
         <div class="imagen-overlay"></div>
 
         <div class="badge-producto">
 
-    💰 AHORRA MÁS
+            💰 AHORRA MÁS
 
-</div>
+        </div>
 
     </div>
 
     <div class="producto-contenido">
 
-        <h2>🥤 Combo Explosiva</h2>
+        <h2>
+
+            🥤 Combo Explosiva
+
+        </h2>
 
         <div class="linea-precio"></div>
 
@@ -279,20 +326,31 @@ COMBO EXPLOSIVA V3
 
         </span>
 
-        <h3>$21.000</h3>
+        <h3>
+
+            $21.000
+
+        </h3>
+
         <p class="combo-beneficio">
-🥤 Incluye Coca-Cola 400 ml + 🍟 Papas artesanales
-</p>
+
+            🥤 Incluye Coca-Cola 400 ml + 🍟 Papas artesanales
+
+        </p>
 
         <div class="cantidad">
 
-            <button onclick="cambiarCantidad('comboExplosiva',-1,event); return false;">
+            <button onclick="cambiarCantidad('comboExplosiva',-1,event);return false;">
                 −
             </button>
 
-            <span id="comboExplosiva">0</span>
+            <span id="comboExplosiva">
 
-             <button onclick="cambiarCantidad('comboExplosiva',1,event); return false;">
+                0
+
+            </span>
+
+            <button onclick="cambiarCantidad('comboExplosiva',1,event);return false;">
                 +
             </button>
 
@@ -301,12 +359,16 @@ COMBO EXPLOSIVA V3
     </div>
 
 </div>
+  <!--==================================================
+LA CALLEJERA
+===================================================-->
 
-   <div class="producto-v3" id="card-callejera">
+<div class="producto-v3" id="card-callejera">
 
     <div class="producto-imagen">
 
-        <img src="images/callejera.jpg" alt="La Callejera">
+        <img src="images/callejera.jpg"
+             alt="La Callejera">
 
         <div class="imagen-overlay"></div>
 
@@ -337,11 +399,12 @@ COMBO EXPLOSIVA V3
         </span>
 
         <h3>$20.000</h3>
+
         <div class="precio-detalle">
 
-Incluye papas artesanales 🍟
+            Incluye papas artesanales 🍟
 
-</div>
+        </div>
 
         <div class="hint-secreto">
 
@@ -349,19 +412,19 @@ Incluye papas artesanales 🍟
 
         </div>
 
-       <div class="cantidad">
+        <div class="cantidad">
 
-    <button onclick="cambiarCantidad('callejera',-1); return false;">
-        −
-    </button>
+            <button onclick="cambiarCantidad('callejera',-1,event);return false;">
+                −
+            </button>
 
-    <span id="callejera">0</span>
+            <span id="callejera">0</span>
 
-    <button onclick="cambiarCantidad('callejera',1); return false;">
-        +
-    </button>
+            <button onclick="cambiarCantidad('callejera',1,event);return false;">
+                +
+            </button>
 
-</div>
+        </div>
 
         <div class="ingredientes">
 
@@ -387,11 +450,17 @@ Incluye papas artesanales 🍟
 
 </div>
 
-    <div class="producto-v3 combo-v3" id="card-combo-callejera">
+<!--==================================================
+COMBO CALLEJERA
+===================================================-->
+
+<div class="producto-v3 combo-v3"
+     id="card-combo-callejera">
 
     <div class="producto-imagen">
 
-        <img src="images/callejera-combo.jpg" alt="Combo Callejera">
+        <img src="images/callejera-combo.jpg"
+             alt="Combo Callejera">
 
         <div class="imagen-overlay"></div>
 
@@ -405,7 +474,11 @@ Incluye papas artesanales 🍟
 
     <div class="producto-contenido">
 
-        <h2>🥤 Combo Callejera</h2>
+        <h2>
+
+            🥤 Combo Callejera
+
+        </h2>
 
         <p class="producto-descripcion">
 
@@ -431,17 +504,17 @@ Incluye papas artesanales 🍟
 
         <div class="cantidad">
 
-    <button onclick="cambiarCantidad('comboCallejera',-1); return false;">
-        −
-    </button>
+            <button onclick="cambiarCantidad('comboCallejera',-1,event);return false;">
+                −
+            </button>
 
-    <span id="comboCallejera">0</span>
+            <span id="comboCallejera">0</span>
 
-    <button onclick="cambiarCantidad('comboCallejera',1); return false;">
-        +
-    </button>
+            <button onclick="cambiarCantidad('comboCallejera',1,event);return false;">
+                +
+            </button>
 
-</div>
+        </div>
 
         <div class="ingredientes">
 
@@ -466,49 +539,79 @@ Incluye papas artesanales 🍟
     </div>
 
 </div>
+
+<!--==================================================
+COCA-COLA
+===================================================-->
+
 <div class="card coca">
 
     <div class="cinta-coca">
+
         ❄️ HELADA
+
     </div>
 
-    <img src="images/coca400.png" class="coca-img">
+    <img src="images/coca400.png"
+         class="coca-img"
+         alt="Coca-Cola">
 
-    <h2>Coca-Cola 400 ml</h2>
+    <h2>
+
+        Coca-Cola 400 ml
+
+    </h2>
 
     <p>
 
-🥤 Nada acompaña mejor tu Mordida Secreta que una Coca-Cola bien fría.
+        🥤 Nada acompaña mejor tu Mordida Secreta que una Coca-Cola bien fría.
 
-</p>
+    </p>
 
-    <h3>$4.000</h3>
+    <h3>
+
+        $4.000
+
+    </h3>
 
     <div class="cantidad">
 
-        <button onclick="cambiarCantidad('coca',-1)">−</button>
+        <button onclick="cambiarCantidad('coca',-1,event);return false;">
+            −
+        </button>
 
         <span id="coca">0</span>
 
-        <button onclick="cambiarCantidad('coca',1)">+</button>
+        <button onclick="cambiarCantidad('coca',1,event);return false;">
+            +
+        </button>
 
     </div>
 
 </div>
-  <div class="total-box">
+
+<!--==================================================
+RESUMEN DEL PEDIDO
+===================================================-->
+
+<div class="total-box">
 
     <div class="resumen-pedido">
 
         <div class="info-pedido">
 
             <div id="cantidad-total">
+
                 0 productos
+
             </div>
 
             <div id="lista-productos"></div>
 
             <div id="total">
+
                 $0
+
             </div>
 
         </div>
@@ -525,16 +628,20 @@ Incluye papas artesanales 🍟
 
     <p id="mensaje-ahorro"></p>
 
-</div>   <!-- ESTA ETIQUETA FALTABA -->
+</div>
 
 </section>
 
-  
-    <section class="info animar">
+    
+  <!-- =========================================
+INFORMACIÓN
+========================================= -->
+
+<section class="info animar">
 
     <h2>📍 Cali</h2>
 
-    <p>🕛 Sábado 4 de julio</p>
+    <p>🕛 Sábado y Domingo</p>
 
     <p>12:00 PM - 10:00 PM</p>
 
@@ -544,16 +651,24 @@ Incluye papas artesanales 🍟
 
 </section>
 
-    <div class="barra-compra" id="barra-compra">
+<!-- =========================================
+BARRA FLOTANTE
+========================================= -->
+
+<div class="barra-compra" id="barra-compra">
 
     <div class="barra-info">
 
         <div id="barra-cantidad">
+
             0 productos
+
         </div>
 
         <div id="barra-total">
+
             $0
+
         </div>
 
     </div>
@@ -567,6 +682,11 @@ Incluye papas artesanales 🍟
     </button>
 
 </div>
+    
+<!-- =========================================
+ASISTENTE
+========================================= -->
+
 <div id="asistentePedido" class="asistente-pedido">
 
     <div class="asistente-card">
@@ -582,11 +702,17 @@ Incluye papas artesanales 🍟
 
         <div class="asistente-scroll">
 
-            <div class="asistente-icono" id="asistenteIcono">
+            <div
+                class="asistente-icono"
+                id="asistenteIcono">
+
                 👤
+
             </div>
 
-            <div class="progreso-pedido" id="progresoPedido">
+            <div
+                class="progreso-pedido"
+                id="progresoPedido">
 
                 <span></span>
                 <span></span>
@@ -614,10 +740,19 @@ Incluye papas artesanales 🍟
                 placeholder="Escribe tu nombre"
                 autocomplete="off">
 
-            <p id="mensajeError" class="mensaje-error"></p>
+            <p
+                id="mensajeError"
+                class="mensaje-error">
 
-            <div id="contenedorPago" style="display:none;">
-                
+            </p>
+
+            <!--==============================
+            MÉTODO DE PAGO
+            ==============================-->
+
+            <div
+                id="contenedorPago"
+                style="display:none;">
 
                 <label class="opcion-pago">
 
@@ -627,7 +762,11 @@ Incluye papas artesanales 🍟
                         value="Efectivo"
                         checked>
 
-                    <span>💵 Efectivo</span>
+                    <span>
+
+                        💵 Efectivo
+
+                    </span>
 
                 </label>
 
@@ -638,130 +777,160 @@ Incluye papas artesanales 🍟
                         name="pago"
                         value="Transferencia">
 
-                    <span>📲 Transferencia</span>
+                    <span>
+
+                        📲 Transferencia
+
+                    </span>
 
                 </label>
 
             </div>
 
-            <div id="resumenPedido" style="display:none;">
+            <!--==============================
+            AQUÍ COMIENZA LA FACTURA
+            ==============================-->
 
-                <div class="factura">
+            <div
+                id="resumenPedido"
+                style="display:none;">
 
-                    <div class="factura-logo">
+               <div class="factura">
 
-                        <small>ORDEN DE PEDIDO</small>
+    <div class="factura-logo">
 
-                        🍔 MORDIDA SECRETA
+        <small>ORDEN DE PEDIDO</small>
 
-                    </div>
-                
-                <div class="factura-info">
+        🍔 MORDIDA SECRETA
 
-                        <span id="numeroPedido">#0000</span>
+    </div>
 
-                        <span id="fechaPedido"></span>
+    <div class="factura-info">
 
-                    </div>
+        <span id="numeroPedido">#0000</span>
 
-                    <div class="factura-linea"></div>
+        <span id="fechaPedido"></span>
 
-                    <div class="factura-seccion">
+    </div>
 
-                        <div class="factura-titulo">
+    <div class="factura-linea"></div>
 
-                            CLIENTE
+    <div class="factura-seccion">
 
-                        </div>
+        <div class="factura-titulo">
 
-                        <div id="facturaCliente"></div>
+            CLIENTE
 
-                    </div>
+        </div>
 
-                    <div class="factura-linea"></div>
+        <div id="facturaCliente"></div>
 
-                    <div class="factura-seccion">
+    </div>
 
-                        <div class="factura-titulo">
+    <div class="factura-linea"></div>
 
-                            PEDIDO
+    <div class="factura-seccion">
 
-                        </div>
+        <div class="factura-titulo">
 
-                        <div id="facturaProductos"></div>
+            PEDIDO
 
-                    </div>
+        </div>
 
-                    <div class="factura-linea"></div>
+        <div id="facturaProductos"></div>
 
-                    <div class="factura-seccion">
+    </div>
 
-                        <div class="factura-titulo">
+    <div class="factura-linea"></div>
 
-                            PAGO
+    <div class="factura-seccion">
 
-                        </div>
+        <div class="factura-titulo">
 
-                        <div id="facturaPago"></div>
+            PAGO
 
-                    </div>
+        </div>
 
-                    <div class="factura-linea"></div>
+        <div id="facturaPago"></div>
 
-                    <div class="facturaTotal">
+    </div>
 
-                        <small>TOTAL</small>
+    <div class="factura-linea"></div>
 
-                        <h2 id="facturaTotalValor">$0</h2>
+    <div class="facturaTotal">
 
-                    </div>
+        <small>TOTAL</small>
 
-                    <div class="factura-ok">
+        <h2 id="facturaTotalValor">$0</h2>
 
-                        <div class="factura-secreto">
+    </div>
 
-                            🤫
+    <div class="factura-ok">
 
-                        </div>
+        <div class="factura-secreto">
 
-                        <div class="factura-mensaje">
+            🤫
 
-                            ESTE PEDIDO<br>
-                            YA FORMA PARTE<br>
-                            DEL SECRETO
+        </div>
 
-                        </div>
+        <div class="factura-mensaje">
 
-                        <div class="factura-confirmacion">
+            ESTE PEDIDO<br>
 
-                            ✔ Esperando confirmación
+            YA FORMA PARTE<br>
 
-                        </div>
+            DEL SECRETO
 
-                    </div>
-                    
+        </div>
 
-        <button
-            id="btnContinuarAsistente"
-            onclick="siguientePaso()">
+        <div class="factura-confirmacion">
 
-            Continuar →
+            ✔ Esperando confirmación
 
-        </button>
+        </div>
 
     </div>
 
 </div>
-    <div id="overlayEnvio" class="overlay-envio">
+
+</div>
+<!-- FIN resumenPedido -->
+
+</div>
+<!-- FIN asistente-scroll -->
+
+<button
+    id="btnContinuarAsistente"
+    onclick="siguientePaso()">
+
+    Continuar →
+
+</button>
+
+</div>
+<!-- FIN asistente-card -->
+
+</div>
+<!-- FIN asistentePedido -->
+
+<!--=========================================
+OVERLAY DE ENVÍO
+==========================================-->
+
+<div id="overlayEnvio" class="overlay-envio">
 
     <div class="overlay-card">
 
         <div class="overlay-icono">
+
             🤫
+
         </div>
 
         <h2>
+
             Enviando tu pedido...
+
         </h2>
 
         <div class="barra-envio">
@@ -783,4 +952,5 @@ Incluye papas artesanales 🍟
 <script src="script.js"></script>
 
 </body>
+
 </html>
