@@ -1222,7 +1222,7 @@ function animacionEnviarPedido(urlWhatsapp){
 
                 overlay.classList.remove("activo");
 
-                location.href = urlWhatsapp;
+                window.location.href = urlWhatsapp;
 
             },300);
 
