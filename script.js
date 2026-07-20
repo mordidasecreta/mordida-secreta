@@ -210,7 +210,11 @@ for(const id in cantidades){
 
 }
 
-document.getElementById("lista-productos").innerHTML = listaHTML;
+const lista = document.getElementById("lista-productos");
+
+if(lista){
+    lista.innerHTML = listaHTML;
+}
 
 
    const {
@@ -258,7 +262,7 @@ barra.classList.toggle("visible", cantidadTotal > 0);
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
-function pedirWhatsapp() {
+/* ==function pedirWhatsapp() {
 
 const explosiva = obtenerCantidad("explosiva");
 
@@ -342,7 +346,7 @@ Total aproximado: $${total.toLocaleString('es-CO')}`;
 encodeURIComponent(mensaje);
 
 animacionEnviarPedido(urlWhatsapp);
-}
+}== */
 /* ===========================
    MOSTRAR FORMULARIO
 =========================== */
