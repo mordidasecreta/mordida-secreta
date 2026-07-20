@@ -51,6 +51,43 @@ function formatoDinero(valor){
     return "$" + valor.toLocaleString("es-CO");
 
 }
+function obtenerInput(){
+
+    return document
+        .getElementById("asistenteInput")
+        .value
+        .trim();
+
+}
+function mostrarElemento(id, mostrar){
+
+    document.getElementById(id).style.display =
+        mostrar ? "block" : "none";
+
+}
+function obtenerTituloPaso(){
+
+    switch(pasoActual){
+
+        case 0:
+            return "¿Cómo te llamas?";
+
+        case 1:
+            return `Mucho gusto <span style="color:#d4af37">${pedido.nombre}</span>.<br>¿A qué barrio llevamos tu mordida?`;
+
+        case 2:
+            return `Perfecto.<br>Entonces vamos para <span style="color:#d4af37">${pedido.barrio}</span>.<br>¿Cuál es la dirección?`;
+
+        case 3:
+            return `Excelente.<br>Ya sabemos dónde entregar.<br>¿Cómo deseas pagar?`;
+
+        default:
+            return `Perfecto <span style="color:#d4af37">${pedido.nombre}</span>.<br>Solo revisa tu pedido.`;
+
+    }
+
+}
+
 
 /* ===========================
          PRECIOS
@@ -655,6 +692,7 @@ pedirWhatsapp();
 }
 
 }===*/
+
 /*==================================
 SECRETO AUTOMÁTICO V3
 ==================================*/
@@ -765,7 +803,7 @@ function mostrarPaso(){
    const titulo =
 document.getElementById("asistenteTitulo");
 
-if(pasoActual===0){
+/*==if(pasoActual===0){
 
     titulo.innerHTML="¿Cómo te llamas?";
 
@@ -797,7 +835,9 @@ else{
     titulo.innerHTML=
     `Perfecto <span style="color:#d4af37">${pedido.nombre}</span>.<br>Solo revisa tu pedido.`;
 
-}
+}====*/
+   document.getElementById("asistenteTitulo").innerHTML =
+   obtenerTituloPaso();
 
     document.getElementById("btnContinuarAsistente").textContent = paso.boton;
 
@@ -808,14 +848,14 @@ else{
     const resumen = document.getElementById("resumenPedido");
 
     // Ocultamos todo
-    input.style.display = "none";
-    pago.style.display = "none";
-    resumen.style.display = "none";
+    mostrarElemento("asistenteInput", false);
+   mostrarElemento("contenedorPago", false);
+   mostrarElemento("resumenPedido", false);
 
     // Paso 1,2,3
     if(pasoActual <= 2){
 
-    input.style.display = "block";
+    mostrarElemento("asistenteInput", true);
 
     input.placeholder = paso.placeholder;
 
@@ -828,14 +868,14 @@ else{
     // Paso 4
     if(pasoActual === 3){
 
-        pago.style.display = "block";
+        mostrarElemento("contenedorPago", true);
 
     }
 
     // Paso 5
    if(pasoActual === 4){
 
-    resumen.style.display = "block";
+   mostrarElemento("resumenPedido", true);
 
     actualizarFactura();
       // Número del pedido
@@ -883,10 +923,7 @@ function siguientePaso(){
     // PASO 1
     if(pasoActual === 0){
 
-        const valor = document
-        .getElementById("asistenteInput")
-        .value
-        .trim();
+       const valor = obtenerInput();
 
         if(valor === ""){
 
@@ -903,10 +940,7 @@ function siguientePaso(){
     // PASO 2
     if(pasoActual === 1){
 
-        const valor = document
-        .getElementById("asistenteInput")
-        .value
-        .trim();
+        const valor = obtenerInput();
 
         if(valor === ""){
 
@@ -925,10 +959,7 @@ limpiarError();
     // PASO 3
     if(pasoActual === 2){
 
-        const valor = document
-        .getElementById("asistenteInput")
-        .value
-        .trim();
+       const valor = obtenerInput();
 
      if(valor === ""){
 
