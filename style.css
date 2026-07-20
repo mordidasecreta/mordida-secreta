@@ -2317,6 +2317,67 @@ margin-bottom:8px;
 text-transform:uppercase;
 
 }
+.factura{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Borde superior rasgado */
+.factura::before{
+
+content:"";
+
+position:absolute;
+
+top:-10px;
+
+left:0;
+
+width:100%;
+
+height:20px;
+
+background:
+radial-gradient(circle at 10px 10px,
+transparent 10px,
+#fffdf8 11px);
+
+background-size:20px 20px;
+
+background-repeat:repeat-x;
+
+}
+
+/* Borde inferior rasgado */
+.factura::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-10px;
+
+left:0;
+
+width:100%;
+
+height:20px;
+
+background:
+radial-gradient(circle at 10px 10px,
+transparent 10px,
+#fffdf8 11px);
+
+background-size:20px 20px;
+
+background-repeat:repeat-x;
+
+transform:rotate(180deg);
+
+}
 
 
 
