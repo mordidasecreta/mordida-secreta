@@ -1065,7 +1065,6 @@ function enviarPedidoWhatsApp(){
     const total = calcularTotal(cantidades);
 
     const mensaje =
-
 `🍔 *MORDIDA SECRETA*
 
 📝 *Nuevo pedido*
@@ -1086,14 +1085,14 @@ ${productos}
 
 💰 Total: $${total.toLocaleString("es-CO")}`;
 
-  const numero = "573183785587";
+    const numero = "573183785587";
 
-const urlWhatsapp =
+    const urlWhatsapp =
 `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
-animacionEnviarPedido(urlWhatsapp);
-   
- }
+    animacionEnviarPedido(urlWhatsapp);
+
+}   // ← ESTA LLAVE FALTABA
    
 function animacionEnviarPedido(urlWhatsapp){
 
@@ -1113,36 +1112,30 @@ function animacionEnviarPedido(urlWhatsapp){
 
         barra.style.width = progreso + "%";
 
-        // Animación de los puntos
         if(progreso < 35){
-
             texto.innerText = "Un momento.";
-
         }else if(progreso < 70){
-
             texto.innerText = "Un momento..";
-
         }else{
-
             texto.innerText = "Un momento...";
+        }
+
+        if(progreso >= 100){
+
+            clearInterval(intervalo);
+
+            texto.innerText = "¡Todo listo!";
+
+            setTimeout(()=>{
+
+                overlay.classList.remove("activo");
+
+                window.open(urlWhatsapp,"_blank");
+
+            },300);
 
         }
 
-       if(progreso >= 100){
-
-    clearInterval(intervalo);
-
-    texto.innerText = "¡Todo listo!";
-
-   setTimeout(() => {
-
-    overlay.classList.remove("activo");
-
-    window.open(urlWhatsapp, "_blank");
-
-}, 300);
- }
-
-},35);
+    },25);
 
 }
