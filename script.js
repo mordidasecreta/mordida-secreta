@@ -1145,9 +1145,8 @@ for(const id in cantidades){
 
     const total = calcularTotal(cantidades);
 
-  const mensaje = `
-*MORDIDA SECRETA*
-`;
+   const mensaje =
+`🍔 *MORDIDA SECRETA*
 
 ━━━━━━━━━━━━━━
 
