@@ -1200,12 +1200,40 @@ $${total.toLocaleString("es-CO")}
 ━━━━━━━━━━━━━━
 
 🤫 Gracias por pedir en Mordida Secreta.`;
-    const numero = "573183785587";
+   const numero = "573183785587";
 
-    const urlWhatsapp =
+const urlWhatsapp =
 `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
+fetch("https://script.google.com/macros/s/AKfycbxKsEr9lxT-oSNwz8i6i2-N21OIWY8qdaD-w7aCwy-5CH-TYCFke5oihSKAvjq-h9VDfg/exec", {
+
+    method: "POST",
+
+    headers: {
+        "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify(datosPedido)
+
+})
+
+.then(response => response.json())
+
+.then(resultado => {
+
+    console.log(resultado);
+
     animacionEnviarPedido(urlWhatsapp);
+
+})
+
+.catch(error => {
+
+    console.error(error);
+
+    alert("❌ No fue posible guardar el pedido.");
+
+});
 
 }   // ← ESTA LLAVE FALTABA
    
