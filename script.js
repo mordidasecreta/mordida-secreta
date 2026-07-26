@@ -320,6 +320,27 @@ formatoDinero(total);
       mensajeAhorro;
 
 }
+const datosPedido = {
+
+    id: Date.now(),
+
+    fecha: new Date().toLocaleDateString("es-CO"),
+
+    hora: new Date().toLocaleTimeString("es-CO"),
+
+    cliente: pedido.nombre,
+
+    barrio: pedido.barrio,
+
+    direccion: pedido.direccion,
+
+    productos: productos,
+
+    total: total,
+
+    pago: pedido.pago
+
+};
 /* ===========================
    PEDIR POR WHATSAPP
 =========================== */
