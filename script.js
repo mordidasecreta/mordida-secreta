@@ -1284,3 +1284,28 @@ function animacionEnviarPedido(urlWhatsapp){
     },25);
 
 }
+function doPost(e) {
+
+  const hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Pedidos");
+
+  const datos = JSON.parse(e.postData.contents);
+
+  hoja.appendRow([
+    new Date(),
+    datos.nombre,
+    datos.barrio,
+    datos.direccion,
+    datos.pago,
+    datos.productos,
+    datos.total
+  ]);
+
+  return ContentService
+    .createTextOutput(
+      JSON.stringify({
+        ok: true
+      })
+    )
+    .setMimeType(ContentService.MimeType.JSON);
+
+}
